@@ -1,0 +1,2753 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 1 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-1 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+---
+Subtotal: $30.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $30.00"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 1 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-2 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+---
+Subtotal: $90.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $90.00"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 1 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-3 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+---
+Subtotal: $300.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $300.00"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 1 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-4 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+---
+Subtotal: $750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $750.00"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 1 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-5 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+---
+Subtotal: $9000.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $9000.00"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 2 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-6 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+---
+Subtotal: $42.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.38
+TOTAL: $42.88"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 2 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-7 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+---
+Subtotal: $127.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.13
+TOTAL: $128.63"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 2 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-8 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+---
+Subtotal: $425.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.75
+TOTAL: $428.75"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 2 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-9 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+---
+Subtotal: $1062.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $9.38
+TOTAL: $1071.88"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 2 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-10 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+---
+Subtotal: $12750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $112.50
+TOTAL: $12862.50"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 3 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-11 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+---
+Subtotal: $47.70
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.74
+TOTAL: $48.44"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 3 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-12 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+---
+Subtotal: $143.10
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $2.22
+TOTAL: $145.32"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 3 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-13 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+---
+Subtotal: $477.00
+Descuento de la suerte: -$7.84 (1.64%)
+Impuestos: $7.39
+TOTAL: $476.55"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 3 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-14 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+---
+Subtotal: $1192.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $18.48
+TOTAL: $1210.98"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 3 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-15 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+---
+Subtotal: $14310.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $221.70
+TOTAL: $14531.70"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 4 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-16 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+---
+Subtotal: $51.60
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.01
+TOTAL: $52.61"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 4 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-17 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+---
+Subtotal: $154.80
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.04
+TOTAL: $157.84"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 4 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-18 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+---
+Subtotal: $516.00
+Descuento de la suerte: -$17.79 (3.45%)
+Impuestos: $10.12
+TOTAL: $508.33"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 4 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-19 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+---
+Subtotal: $1290.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $25.30
+TOTAL: $1315.30"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 4 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-20 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+---
+Subtotal: $15480.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $303.60
+TOTAL: $15783.60"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 5 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-21 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+5. Té verde 200g (FD-222) x1 = $6.75
+---
+Subtotal: $58.35
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.21
+TOTAL: $59.56"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 5 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-22 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+5. Té verde 200g (FD-222) x3 = $20.25
+---
+Subtotal: $175.05
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.64
+TOTAL: $178.69"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 5 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-23 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+5. Té verde 200g (FD-222) x10 = $67.50
+---
+Subtotal: $583.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $12.15
+TOTAL: $595.65"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 5 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-24 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+5. Té verde 200g (FD-222) x25 = $168.75
+---
+Subtotal: $1458.75
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $30.36
+TOTAL: $1489.11"
+`;
+
+exports[`Receipt Printer > Given a customer Ana > Given a number of items 5 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-25 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+5. Té verde 200g (FD-222) x300 = $2025.00
+---
+Subtotal: $17505.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $364.35
+TOTAL: $17869.35"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 1 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-76 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+---
+Subtotal: $30.00
+Descuento de la suerte: -$0.03 (0.11%)
+Impuestos: $0.00
+TOTAL: $29.97"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 1 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-77 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+---
+Subtotal: $90.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $90.00"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 1 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-78 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+---
+Subtotal: $300.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $300.00"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 1 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-79 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+---
+Subtotal: $750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $750.00"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 1 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-80 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+---
+Subtotal: $9000.00
+Descuento de la suerte: -$107.31 (1.19%)
+Impuestos: $0.00
+TOTAL: $8892.69"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 2 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-81 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+---
+Subtotal: $42.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.38
+TOTAL: $42.88"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 2 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-82 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+---
+Subtotal: $127.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.13
+TOTAL: $128.63"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 2 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-83 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+---
+Subtotal: $425.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.75
+TOTAL: $428.75"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 2 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-84 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+---
+Subtotal: $1062.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $9.38
+TOTAL: $1071.88"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 2 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-85 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+---
+Subtotal: $12750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $112.50
+TOTAL: $12862.50"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 3 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-86 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+---
+Subtotal: $47.70
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.74
+TOTAL: $48.44"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 3 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-87 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+---
+Subtotal: $143.10
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $2.22
+TOTAL: $145.32"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 3 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-88 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+---
+Subtotal: $477.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $7.39
+TOTAL: $484.39"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 3 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-89 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+---
+Subtotal: $1192.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $18.48
+TOTAL: $1210.98"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 3 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-90 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+---
+Subtotal: $14310.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $221.70
+TOTAL: $14531.70"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 4 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-91 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+---
+Subtotal: $51.60
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.01
+TOTAL: $52.61"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 4 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-92 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+---
+Subtotal: $154.80
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.04
+TOTAL: $157.84"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 4 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-93 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+---
+Subtotal: $516.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $10.12
+TOTAL: $526.12"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 4 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-94 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+---
+Subtotal: $1290.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $25.30
+TOTAL: $1315.30"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 4 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-95 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+---
+Subtotal: $15480.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $303.60
+TOTAL: $15783.60"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 5 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-96 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+5. Té verde 200g (FD-222) x1 = $6.75
+---
+Subtotal: $58.35
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.21
+TOTAL: $59.56"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 5 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-97 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+5. Té verde 200g (FD-222) x3 = $20.25
+---
+Subtotal: $175.05
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.64
+TOTAL: $178.69"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 5 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-98 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+5. Té verde 200g (FD-222) x10 = $67.50
+---
+Subtotal: $583.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $12.15
+TOTAL: $595.65"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 5 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-99 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+5. Té verde 200g (FD-222) x25 = $168.75
+---
+Subtotal: $1458.75
+Descuento de la suerte: -$19.90 (1.36%)
+Impuestos: $30.36
+TOTAL: $1469.21"
+`;
+
+exports[`Receipt Printer > Given a customer Iván > Given a number of items 5 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-100 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+5. Té verde 200g (FD-222) x300 = $2025.00
+---
+Subtotal: $17505.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $364.35
+TOTAL: $17869.35"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 1 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-26 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+---
+Subtotal: $30.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $30.00"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 1 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-27 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+---
+Subtotal: $90.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $90.00"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 1 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-28 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+---
+Subtotal: $300.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $300.00"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 1 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-29 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+---
+Subtotal: $750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $750.00"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 1 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-30 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+---
+Subtotal: $9000.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $9000.00"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 2 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-31 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+---
+Subtotal: $42.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.38
+TOTAL: $42.88"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 2 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-32 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+---
+Subtotal: $127.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.13
+TOTAL: $128.63"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 2 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-33 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+---
+Subtotal: $425.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.75
+TOTAL: $428.75"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 2 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-34 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+---
+Subtotal: $1062.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $9.38
+TOTAL: $1071.88"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 2 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-35 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+---
+Subtotal: $12750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $112.50
+TOTAL: $12862.50"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 3 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-36 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+---
+Subtotal: $47.70
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.74
+TOTAL: $48.44"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 3 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-37 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+---
+Subtotal: $143.10
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $2.22
+TOTAL: $145.32"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 3 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-38 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+---
+Subtotal: $477.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $7.39
+TOTAL: $484.39"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 3 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-39 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+---
+Subtotal: $1192.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $18.48
+TOTAL: $1210.98"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 3 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-40 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+---
+Subtotal: $14310.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $221.70
+TOTAL: $14531.70"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 4 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-41 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+---
+Subtotal: $51.60
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.01
+TOTAL: $52.61"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 4 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-42 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+---
+Subtotal: $154.80
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.04
+TOTAL: $157.84"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 4 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-43 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+---
+Subtotal: $516.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $10.12
+TOTAL: $526.12"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 4 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-44 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+---
+Subtotal: $1290.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $25.30
+TOTAL: $1315.30"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 4 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-45 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+---
+Subtotal: $15480.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $303.60
+TOTAL: $15783.60"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 5 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-46 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+5. Té verde 200g (FD-222) x1 = $6.75
+---
+Subtotal: $58.35
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.21
+TOTAL: $59.56"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 5 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-47 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+5. Té verde 200g (FD-222) x3 = $20.25
+---
+Subtotal: $175.05
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.64
+TOTAL: $178.69"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 5 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-48 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+5. Té verde 200g (FD-222) x10 = $67.50
+---
+Subtotal: $583.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $12.15
+TOTAL: $595.65"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 5 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-49 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+5. Té verde 200g (FD-222) x25 = $168.75
+---
+Subtotal: $1458.75
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $30.36
+TOTAL: $1489.11"
+`;
+
+exports[`Receipt Printer > Given a customer Luis > Given a number of items 5 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-50 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+5. Té verde 200g (FD-222) x300 = $2025.00
+---
+Subtotal: $17505.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $364.35
+TOTAL: $17869.35"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 1 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-51 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+---
+Subtotal: $30.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $30.00"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 1 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-52 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+---
+Subtotal: $90.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $90.00"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 1 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-53 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+---
+Subtotal: $300.00
+Descuento de la suerte: -$6.00 (2.00%)
+Impuestos: $0.00
+TOTAL: $294.00"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 1 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-54 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+---
+Subtotal: $750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $750.00"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 1 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-55 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+---
+Subtotal: $9000.00
+Descuento de la suerte: -$5.84 (0.06%)
+Impuestos: $0.00
+TOTAL: $8994.16"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 2 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-56 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+---
+Subtotal: $42.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.38
+TOTAL: $42.88"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 2 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-57 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+---
+Subtotal: $127.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.13
+TOTAL: $128.63"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 2 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-58 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+---
+Subtotal: $425.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.75
+TOTAL: $428.75"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 2 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-59 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+---
+Subtotal: $1062.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $9.38
+TOTAL: $1071.88"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 2 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-60 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+---
+Subtotal: $12750.00
+Descuento de la suerte: -$611.65 (4.80%)
+Impuestos: $112.50
+TOTAL: $12250.85"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 3 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-61 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+---
+Subtotal: $47.70
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.74
+TOTAL: $48.44"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 3 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-62 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+---
+Subtotal: $143.10
+Descuento de la suerte: -$4.66 (3.25%)
+Impuestos: $2.22
+TOTAL: $140.66"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 3 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-63 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+---
+Subtotal: $477.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $7.39
+TOTAL: $484.39"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 3 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-64 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+---
+Subtotal: $1192.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $18.48
+TOTAL: $1210.98"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 3 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-65 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+---
+Subtotal: $14310.00
+Descuento de la suerte: -$371.77 (2.60%)
+Impuestos: $221.70
+TOTAL: $14159.93"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 4 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-66 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+---
+Subtotal: $51.60
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.01
+TOTAL: $52.61"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 4 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-67 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+---
+Subtotal: $154.80
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.04
+TOTAL: $157.84"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 4 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-68 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+---
+Subtotal: $516.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $10.12
+TOTAL: $526.12"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 4 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-69 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+---
+Subtotal: $1290.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $25.30
+TOTAL: $1315.30"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 4 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-70 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+---
+Subtotal: $15480.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $303.60
+TOTAL: $15783.60"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 5 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-71 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+5. Té verde 200g (FD-222) x1 = $6.75
+---
+Subtotal: $58.35
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.21
+TOTAL: $59.56"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 5 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-72 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+5. Té verde 200g (FD-222) x3 = $20.25
+---
+Subtotal: $175.05
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.64
+TOTAL: $178.69"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 5 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-73 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+5. Té verde 200g (FD-222) x10 = $67.50
+---
+Subtotal: $583.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $12.15
+TOTAL: $595.65"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 5 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-74 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+5. Té verde 200g (FD-222) x25 = $168.75
+---
+Subtotal: $1458.75
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $30.36
+TOTAL: $1489.11"
+`;
+
+exports[`Receipt Printer > Given a customer Mar > Given a number of items 5 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-75 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+5. Té verde 200g (FD-222) x300 = $2025.00
+---
+Subtotal: $17505.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $364.35
+TOTAL: $17869.35"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 1 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-101 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+---
+Subtotal: $30.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $30.00"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 1 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-102 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+---
+Subtotal: $90.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $90.00"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 1 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-103 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+---
+Subtotal: $300.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $300.00"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 1 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-104 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+---
+Subtotal: $750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $750.00"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 1 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-105 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+---
+Subtotal: $9000.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $9000.00"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 2 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-106 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+---
+Subtotal: $42.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.38
+TOTAL: $42.88"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 2 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-107 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+---
+Subtotal: $127.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.13
+TOTAL: $128.63"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 2 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-108 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+---
+Subtotal: $425.00
+Descuento de la suerte: -$10.22 (2.41%)
+Impuestos: $3.75
+TOTAL: $418.53"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 2 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-109 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+---
+Subtotal: $1062.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $9.38
+TOTAL: $1071.88"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 2 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-110 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+---
+Subtotal: $12750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $112.50
+TOTAL: $12862.50"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 3 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-111 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+---
+Subtotal: $47.70
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.74
+TOTAL: $48.44"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 3 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-112 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+---
+Subtotal: $143.10
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $2.22
+TOTAL: $145.32"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 3 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-113 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+---
+Subtotal: $477.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $7.39
+TOTAL: $484.39"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 3 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-114 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+---
+Subtotal: $1192.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $18.48
+TOTAL: $1210.98"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 3 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-115 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+---
+Subtotal: $14310.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $221.70
+TOTAL: $14531.70"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 4 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-116 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+---
+Subtotal: $51.60
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.01
+TOTAL: $52.61"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 4 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-117 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+---
+Subtotal: $154.80
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.04
+TOTAL: $157.84"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 4 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-118 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+---
+Subtotal: $516.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $10.12
+TOTAL: $526.12"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 4 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-119 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+---
+Subtotal: $1290.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $25.30
+TOTAL: $1315.30"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 4 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-120 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+---
+Subtotal: $15480.00
+Descuento de la suerte: -$499.20 (3.22%)
+Impuestos: $303.60
+TOTAL: $15284.40"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 5 > Given quantity 1 > should print a receipt 1`] = `
+"Recibo ORD-121 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+5. Té verde 200g (FD-222) x1 = $6.75
+---
+Subtotal: $58.35
+Descuento de la suerte: -$2.66 (4.56%)
+Impuestos: $1.21
+TOTAL: $56.90"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 5 > Given quantity 3 > should print a receipt 1`] = `
+"Recibo ORD-122 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+5. Té verde 200g (FD-222) x3 = $20.25
+---
+Subtotal: $175.05
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.64
+TOTAL: $178.69"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 5 > Given quantity 10 > should print a receipt 1`] = `
+"Recibo ORD-123 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+5. Té verde 200g (FD-222) x10 = $67.50
+---
+Subtotal: $583.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $12.15
+TOTAL: $595.65"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 5 > Given quantity 25 > should print a receipt 1`] = `
+"Recibo ORD-124 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+5. Té verde 200g (FD-222) x25 = $168.75
+---
+Subtotal: $1458.75
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $30.36
+TOTAL: $1489.11"
+`;
+
+exports[`Receipt Printer > Given a customer Sofía > Given a number of items 5 > Given quantity 300 > should print a receipt 1`] = `
+"Recibo ORD-125 - 2/18/2026 6:32:22 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+5. Té verde 200g (FD-222) x300 = $2025.00
+---
+Subtotal: $17505.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $364.35
+TOTAL: $17869.35"
+`;
+
+exports[`Receipt Printer > should generate a golden master 1`] = `
+"Recibo ORD-1 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+---
+Subtotal: $30.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $30.00
+==================
+Recibo ORD-2 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+---
+Subtotal: $90.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $90.00
+==================
+Recibo ORD-3 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+---
+Subtotal: $300.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $300.00
+==================
+Recibo ORD-4 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+---
+Subtotal: $750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $750.00
+==================
+Recibo ORD-5 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+---
+Subtotal: $9000.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $9000.00
+==================
+Recibo ORD-6 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+---
+Subtotal: $42.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.38
+TOTAL: $42.88
+==================
+Recibo ORD-7 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+---
+Subtotal: $127.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.13
+TOTAL: $128.63
+==================
+Recibo ORD-8 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+---
+Subtotal: $425.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.75
+TOTAL: $428.75
+==================
+Recibo ORD-9 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+---
+Subtotal: $1062.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $9.38
+TOTAL: $1071.88
+==================
+Recibo ORD-10 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+---
+Subtotal: $12750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $112.50
+TOTAL: $12862.50
+==================
+Recibo ORD-11 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+---
+Subtotal: $47.70
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.74
+TOTAL: $48.44
+==================
+Recibo ORD-12 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+---
+Subtotal: $143.10
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $2.22
+TOTAL: $145.32
+==================
+Recibo ORD-13 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+---
+Subtotal: $477.00
+Descuento de la suerte: -$14.08 (2.95%)
+Impuestos: $7.39
+TOTAL: $470.31
+==================
+Recibo ORD-14 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+---
+Subtotal: $1192.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $18.48
+TOTAL: $1210.98
+==================
+Recibo ORD-15 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+---
+Subtotal: $14310.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $221.70
+TOTAL: $14531.70
+==================
+Recibo ORD-16 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+---
+Subtotal: $51.60
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.01
+TOTAL: $52.61
+==================
+Recibo ORD-17 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+---
+Subtotal: $154.80
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.04
+TOTAL: $157.84
+==================
+Recibo ORD-18 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+---
+Subtotal: $516.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $10.12
+TOTAL: $526.12
+==================
+Recibo ORD-19 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+---
+Subtotal: $1290.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $25.30
+TOTAL: $1315.30
+==================
+Recibo ORD-20 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+---
+Subtotal: $15480.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $303.60
+TOTAL: $15783.60
+==================
+Recibo ORD-21 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+5. Té verde 200g (FD-222) x1 = $6.75
+---
+Subtotal: $58.35
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.21
+TOTAL: $59.56
+==================
+Recibo ORD-22 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+5. Té verde 200g (FD-222) x3 = $20.25
+---
+Subtotal: $175.05
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.64
+TOTAL: $178.69
+==================
+Recibo ORD-23 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+5. Té verde 200g (FD-222) x10 = $67.50
+---
+Subtotal: $583.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $12.15
+TOTAL: $595.65
+==================
+Recibo ORD-24 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+5. Té verde 200g (FD-222) x25 = $168.75
+---
+Subtotal: $1458.75
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $30.36
+TOTAL: $1489.11
+==================
+Recibo ORD-25 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+5. Té verde 200g (FD-222) x300 = $2025.00
+---
+Subtotal: $17505.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $364.35
+TOTAL: $17869.35
+==================
+Recibo ORD-26 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+---
+Subtotal: $30.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $30.00
+==================
+Recibo ORD-27 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+---
+Subtotal: $90.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $90.00
+==================
+Recibo ORD-28 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+---
+Subtotal: $300.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $300.00
+==================
+Recibo ORD-29 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+---
+Subtotal: $750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $750.00
+==================
+Recibo ORD-30 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+---
+Subtotal: $9000.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $9000.00
+==================
+Recibo ORD-31 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+---
+Subtotal: $42.50
+Descuento de la suerte: -$1.90 (4.47%)
+Impuestos: $0.38
+TOTAL: $40.98
+==================
+Recibo ORD-32 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+---
+Subtotal: $127.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.13
+TOTAL: $128.63
+==================
+Recibo ORD-33 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+---
+Subtotal: $425.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.75
+TOTAL: $428.75
+==================
+Recibo ORD-34 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+---
+Subtotal: $1062.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $9.38
+TOTAL: $1071.88
+==================
+Recibo ORD-35 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+---
+Subtotal: $12750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $112.50
+TOTAL: $12862.50
+==================
+Recibo ORD-36 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+---
+Subtotal: $47.70
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.74
+TOTAL: $48.44
+==================
+Recibo ORD-37 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+---
+Subtotal: $143.10
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $2.22
+TOTAL: $145.32
+==================
+Recibo ORD-38 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+---
+Subtotal: $477.00
+Descuento de la suerte: -$3.20 (0.67%)
+Impuestos: $7.39
+TOTAL: $481.19
+==================
+Recibo ORD-39 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+---
+Subtotal: $1192.50
+Descuento de la suerte: -$21.31 (1.79%)
+Impuestos: $18.48
+TOTAL: $1189.67
+==================
+Recibo ORD-40 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+---
+Subtotal: $14310.00
+Descuento de la suerte: -$585.35 (4.09%)
+Impuestos: $221.70
+TOTAL: $13946.35
+==================
+Recibo ORD-41 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+---
+Subtotal: $51.60
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.01
+TOTAL: $52.61
+==================
+Recibo ORD-42 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+---
+Subtotal: $154.80
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.04
+TOTAL: $157.84
+==================
+Recibo ORD-43 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+---
+Subtotal: $516.00
+Descuento de la suerte: -$19.92 (3.86%)
+Impuestos: $10.12
+TOTAL: $506.20
+==================
+Recibo ORD-44 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+---
+Subtotal: $1290.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $25.30
+TOTAL: $1315.30
+==================
+Recibo ORD-45 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+---
+Subtotal: $15480.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $303.60
+TOTAL: $15783.60
+==================
+Recibo ORD-46 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+5. Té verde 200g (FD-222) x1 = $6.75
+---
+Subtotal: $58.35
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.21
+TOTAL: $59.56
+==================
+Recibo ORD-47 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+5. Té verde 200g (FD-222) x3 = $20.25
+---
+Subtotal: $175.05
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.64
+TOTAL: $178.69
+==================
+Recibo ORD-48 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+5. Té verde 200g (FD-222) x10 = $67.50
+---
+Subtotal: $583.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $12.15
+TOTAL: $595.65
+==================
+Recibo ORD-49 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+5. Té verde 200g (FD-222) x25 = $168.75
+---
+Subtotal: $1458.75
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $30.36
+TOTAL: $1489.11
+==================
+Recibo ORD-50 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+5. Té verde 200g (FD-222) x300 = $2025.00
+---
+Subtotal: $17505.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $364.35
+TOTAL: $17869.35
+==================
+Recibo ORD-51 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+---
+Subtotal: $30.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $30.00
+==================
+Recibo ORD-52 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+---
+Subtotal: $90.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $90.00
+==================
+Recibo ORD-53 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+---
+Subtotal: $300.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $300.00
+==================
+Recibo ORD-54 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+---
+Subtotal: $750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $750.00
+==================
+Recibo ORD-55 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+---
+Subtotal: $9000.00
+Descuento de la suerte: -$156.14 (1.73%)
+Impuestos: $0.00
+TOTAL: $8843.86
+==================
+Recibo ORD-56 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+---
+Subtotal: $42.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.38
+TOTAL: $42.88
+==================
+Recibo ORD-57 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+---
+Subtotal: $127.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.13
+TOTAL: $128.63
+==================
+Recibo ORD-58 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+---
+Subtotal: $425.00
+Descuento de la suerte: -$18.03 (4.24%)
+Impuestos: $3.75
+TOTAL: $410.72
+==================
+Recibo ORD-59 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+---
+Subtotal: $1062.50
+Descuento de la suerte: -$22.61 (2.13%)
+Impuestos: $9.38
+TOTAL: $1049.27
+==================
+Recibo ORD-60 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+---
+Subtotal: $12750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $112.50
+TOTAL: $12862.50
+==================
+Recibo ORD-61 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+---
+Subtotal: $47.70
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.74
+TOTAL: $48.44
+==================
+Recibo ORD-62 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+---
+Subtotal: $143.10
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $2.22
+TOTAL: $145.32
+==================
+Recibo ORD-63 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+---
+Subtotal: $477.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $7.39
+TOTAL: $484.39
+==================
+Recibo ORD-64 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+---
+Subtotal: $1192.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $18.48
+TOTAL: $1210.98
+==================
+Recibo ORD-65 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+---
+Subtotal: $14310.00
+Descuento de la suerte: -$424.00 (2.96%)
+Impuestos: $221.70
+TOTAL: $14107.70
+==================
+Recibo ORD-66 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+---
+Subtotal: $51.60
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.01
+TOTAL: $52.61
+==================
+Recibo ORD-67 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+---
+Subtotal: $154.80
+Descuento de la suerte: -$5.32 (3.44%)
+Impuestos: $3.04
+TOTAL: $152.52
+==================
+Recibo ORD-68 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+---
+Subtotal: $516.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $10.12
+TOTAL: $526.12
+==================
+Recibo ORD-69 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+---
+Subtotal: $1290.00
+Descuento de la suerte: -$38.47 (2.98%)
+Impuestos: $25.30
+TOTAL: $1276.83
+==================
+Recibo ORD-70 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+---
+Subtotal: $15480.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $303.60
+TOTAL: $15783.60
+==================
+Recibo ORD-71 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+5. Té verde 200g (FD-222) x1 = $6.75
+---
+Subtotal: $58.35
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.21
+TOTAL: $59.56
+==================
+Recibo ORD-72 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+5. Té verde 200g (FD-222) x3 = $20.25
+---
+Subtotal: $175.05
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.64
+TOTAL: $178.69
+==================
+Recibo ORD-73 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+5. Té verde 200g (FD-222) x10 = $67.50
+---
+Subtotal: $583.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $12.15
+TOTAL: $595.65
+==================
+Recibo ORD-74 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+5. Té verde 200g (FD-222) x25 = $168.75
+---
+Subtotal: $1458.75
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $30.36
+TOTAL: $1489.11
+==================
+Recibo ORD-75 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+5. Té verde 200g (FD-222) x300 = $2025.00
+---
+Subtotal: $17505.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $364.35
+TOTAL: $17869.35
+==================
+Recibo ORD-76 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+---
+Subtotal: $30.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $30.00
+==================
+Recibo ORD-77 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+---
+Subtotal: $90.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $90.00
+==================
+Recibo ORD-78 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+---
+Subtotal: $300.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $300.00
+==================
+Recibo ORD-79 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+---
+Subtotal: $750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $750.00
+==================
+Recibo ORD-80 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+---
+Subtotal: $9000.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $9000.00
+==================
+Recibo ORD-81 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+---
+Subtotal: $42.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.38
+TOTAL: $42.88
+==================
+Recibo ORD-82 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+---
+Subtotal: $127.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.13
+TOTAL: $128.63
+==================
+Recibo ORD-83 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+---
+Subtotal: $425.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.75
+TOTAL: $428.75
+==================
+Recibo ORD-84 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+---
+Subtotal: $1062.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $9.38
+TOTAL: $1071.88
+==================
+Recibo ORD-85 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+---
+Subtotal: $12750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $112.50
+TOTAL: $12862.50
+==================
+Recibo ORD-86 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+---
+Subtotal: $47.70
+Descuento de la suerte: -$0.29 (0.60%)
+Impuestos: $0.74
+TOTAL: $48.15
+==================
+Recibo ORD-87 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+---
+Subtotal: $143.10
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $2.22
+TOTAL: $145.32
+==================
+Recibo ORD-88 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+---
+Subtotal: $477.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $7.39
+TOTAL: $484.39
+==================
+Recibo ORD-89 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+---
+Subtotal: $1192.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $18.48
+TOTAL: $1210.98
+==================
+Recibo ORD-90 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+---
+Subtotal: $14310.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $221.70
+TOTAL: $14531.70
+==================
+Recibo ORD-91 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+---
+Subtotal: $51.60
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.01
+TOTAL: $52.61
+==================
+Recibo ORD-92 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+---
+Subtotal: $154.80
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.04
+TOTAL: $157.84
+==================
+Recibo ORD-93 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+---
+Subtotal: $516.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $10.12
+TOTAL: $526.12
+==================
+Recibo ORD-94 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+---
+Subtotal: $1290.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $25.30
+TOTAL: $1315.30
+==================
+Recibo ORD-95 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+---
+Subtotal: $15480.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $303.60
+TOTAL: $15783.60
+==================
+Recibo ORD-96 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+5. Té verde 200g (FD-222) x1 = $6.75
+---
+Subtotal: $58.35
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.21
+TOTAL: $59.56
+==================
+Recibo ORD-97 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+5. Té verde 200g (FD-222) x3 = $20.25
+---
+Subtotal: $175.05
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.64
+TOTAL: $178.69
+==================
+Recibo ORD-98 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+5. Té verde 200g (FD-222) x10 = $67.50
+---
+Subtotal: $583.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $12.15
+TOTAL: $595.65
+==================
+Recibo ORD-99 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+5. Té verde 200g (FD-222) x25 = $168.75
+---
+Subtotal: $1458.75
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $30.36
+TOTAL: $1489.11
+==================
+Recibo ORD-100 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+5. Té verde 200g (FD-222) x300 = $2025.00
+---
+Subtotal: $17505.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $364.35
+TOTAL: $17869.35
+==================
+Recibo ORD-101 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+---
+Subtotal: $30.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $30.00
+==================
+Recibo ORD-102 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+---
+Subtotal: $90.00
+Descuento de la suerte: -$2.92 (3.24%)
+Impuestos: $0.00
+TOTAL: $87.08
+==================
+Recibo ORD-103 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+---
+Subtotal: $300.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $300.00
+==================
+Recibo ORD-104 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+---
+Subtotal: $750.00
+Descuento de la suerte: -$18.34 (2.45%)
+Impuestos: $0.00
+TOTAL: $731.66
+==================
+Recibo ORD-105 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+---
+Subtotal: $9000.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $9000.00
+==================
+Recibo ORD-106 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+---
+Subtotal: $42.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.38
+TOTAL: $42.88
+==================
+Recibo ORD-107 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+---
+Subtotal: $127.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.13
+TOTAL: $128.63
+==================
+Recibo ORD-108 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+---
+Subtotal: $425.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.75
+TOTAL: $428.75
+==================
+Recibo ORD-109 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+---
+Subtotal: $1062.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $9.38
+TOTAL: $1071.88
+==================
+Recibo ORD-110 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+---
+Subtotal: $12750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $112.50
+TOTAL: $12862.50
+==================
+Recibo ORD-111 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+---
+Subtotal: $47.70
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.74
+TOTAL: $48.44
+==================
+Recibo ORD-112 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+---
+Subtotal: $143.10
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $2.22
+TOTAL: $145.32
+==================
+Recibo ORD-113 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+---
+Subtotal: $477.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $7.39
+TOTAL: $484.39
+==================
+Recibo ORD-114 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+---
+Subtotal: $1192.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $18.48
+TOTAL: $1210.98
+==================
+Recibo ORD-115 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+---
+Subtotal: $14310.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $221.70
+TOTAL: $14531.70
+==================
+Recibo ORD-116 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+---
+Subtotal: $51.60
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.01
+TOTAL: $52.61
+==================
+Recibo ORD-117 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+---
+Subtotal: $154.80
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.04
+TOTAL: $157.84
+==================
+Recibo ORD-118 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+---
+Subtotal: $516.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $10.12
+TOTAL: $526.12
+==================
+Recibo ORD-119 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+---
+Subtotal: $1290.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $25.30
+TOTAL: $1315.30
+==================
+Recibo ORD-120 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+---
+Subtotal: $15480.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $303.60
+TOTAL: $15783.60
+==================
+Recibo ORD-121 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+5. Té verde 200g (FD-222) x1 = $6.75
+---
+Subtotal: $58.35
+Descuento de la suerte: -$2.28 (3.91%)
+Impuestos: $1.21
+TOTAL: $57.28
+==================
+Recibo ORD-122 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+5. Té verde 200g (FD-222) x3 = $20.25
+---
+Subtotal: $175.05
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.64
+TOTAL: $178.69
+==================
+Recibo ORD-123 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+5. Té verde 200g (FD-222) x10 = $67.50
+---
+Subtotal: $583.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $12.15
+TOTAL: $595.65
+==================
+Recibo ORD-124 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+5. Té verde 200g (FD-222) x25 = $168.75
+---
+Subtotal: $1458.75
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $30.36
+TOTAL: $1489.11
+==================
+Recibo ORD-125 - 2/18/2026 6:32:33 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+5. Té verde 200g (FD-222) x300 = $2025.00
+---
+Subtotal: $17505.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $364.35
+TOTAL: $17869.35"
+`;

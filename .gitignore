@@ -1,0 +1,67 @@
+# Project exclude paths
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node.js / TypeScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+dist/
+build/
+.env
+.env.local
+.env.*.local
+coverage/
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# PHP
+vendor/
+composer.phar
+composer.lock
+.phpunit.result.cache
+
+# C#
+bin/
+obj/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+[Dd]ebug/
+[Rr]elease/
+*.dll
+*.exe
+*.pdb
+.vs/
+packages/
+*.nupkg
+
+# OS
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,7 @@
+vendor/
+coverage/
+.phpunit.cache/
+.git/
+.gitignore
+README.md
+docker-compose.yml

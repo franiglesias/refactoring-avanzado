@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Receipt Printer > Given a customer > Given a number of items > Given quantity > should print a receipt 1`] = `
+"Recibo ORD-1 - 2/1/2022 12:00:00 AM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+---
+Subtotal: $30.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $30.00"
+`;

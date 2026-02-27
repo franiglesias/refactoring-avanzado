@@ -1,0 +1,1 @@
+# Couplers code smells

@@ -1,0 +1,38 @@
+# Composer
+/vendor/
+composer.phar
+
+# PHPUnit
+/coverage/
+/.phpunit.cache/
+.phpunit.result.cache
+
+# Environment variables
+.env
+.env.*
+!.env.example
+!.env.dist
+
+# IDE/editor settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.swm
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+.tmp/
+tmp/
+~$*
+
+# Docker (local overrides)
+docker-compose.override.yml

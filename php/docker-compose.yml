@@ -1,0 +1,21 @@
+services:
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: refactoring-php
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: tail -f /dev/null
+    stdin_open: true
+    tty: true
+    environment:
+      # Xdebug configuration
+      XDEBUG_MODE: debug,coverage
+      XDEBUG_CONFIG: client_host=host.docker.internal client_port=9003
+      PHP_IDE_CONFIG: serverName=refactoring-php
+    ports:
+      - "9003:9003"  # Xdebug port
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
