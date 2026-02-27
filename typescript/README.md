@@ -1,12 +1,36 @@
-# Curso Refactoring Avanzado
+# Curso Refactoring Avanzado (TypeScript)
 
-Ejemplos y ejercicios del Curso de Refactoring Avanzado.
+Ejemplos y ejercicios del Curso de Refactoring Avanzado en TypeScript.
 
 ## Preparación
 
-Ejecutar `npm install` para instalar las dependencias.
+### Instalar dependencias
+
+```bash
+npm install
+```
+
+### Ejecutar tests
+
+```bash
+# Ejecutar todos los tests
+npm test
+
+# Ejecutar tests en modo watch
+npm run test:watch
+
+# Ejecutar tests con cobertura
+npm run test:coverage
+
+# Ejecutar tests específicos
+npm test golden-master
+```
 
 ## Contenido
+
+### Técnicas de Refactoring
+
+Ejercicios prácticos de técnicas avanzadas de refactoring disponibles en el proyecto.
 
 ### Mantenimiento diario de código: Calistenia
 
@@ -72,3 +96,45 @@ Code smells debido a la aplicación inadecuada de la orientación a objetos.
 - [Refused bequest](src/code-smells/oop-abusers/refused-bequest.readme.md)
 - [Switch statements](src/code-smells/oop-abusers/switch-statements.readme.md)
 - [Temporal instance variables](src/code-smells/oop-abusers/temporal-instance-variables.readme.md)
+
+## Estructura del Proyecto
+
+```
+typescript/
+├── src/
+│   ├── calisthenics-exercises/   # Ejercicios de Object Calisthenics
+│   └── code-smells/              # Ejemplos de Code Smells
+│       ├── bloaters/
+│       ├── change-preventers/
+│       ├── couplers/
+│       ├── dispensables/
+│       └── oop-abusers/
+├── package.json
+└── tsconfig.json
+```
+
+## Comandos Útiles
+
+```bash
+# Instalar dependencias
+npm install
+
+# Ejecutar todos los tests
+npm test
+
+# Ejecutar tests en modo watch
+npm run test:watch
+
+# Ver cobertura de tests
+npm run test:coverage
+
+# Ejecutar linter
+npm run lint
+
+# Formatear código
+npm run format
+```
+
+## Versión de Node.js
+
+Este proyecto está optimizado para Node.js 18+ y TypeScript 5+.

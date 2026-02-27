@@ -27,6 +27,8 @@ pytest src/refactoring/test_golden_master.py -v
 
 ### Técnicas de Refactoring
 
+Ejercicios prácticos de técnicas avanzadas de refactoring:
+
 #### Golden Master
 
 Técnica para caracterizar el comportamiento de código legado sin tests.
@@ -39,7 +41,7 @@ pytest src/refactoring/test_golden_master.py -v
 
 #### Parallel Change
 
-Técnicas para realizar cambios seguros en código en producción.
+Técnicas para realizar cambios seguros en código en producción:
 
 - Expand-Migrate-Contract
 - Sprout Change
