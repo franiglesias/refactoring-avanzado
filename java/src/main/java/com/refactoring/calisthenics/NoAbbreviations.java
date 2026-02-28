@@ -11,14 +11,14 @@ public class NoAbbreviations {
 
     public static void main(String[] args) {
         C config = new C("admin", "secret", "localhost", "prod");
-        System.out.println("Connection: " + config.cnx());
+        System.out.println("Connection: " + config.cx());
     }
 
     public static class C {
-        String u;  // ¿username? ¿url? ¿user?
-        String p;  // ¿password? ¿port? ¿path?
-        String s;  // ¿server? ¿service? ¿schema?
-        String e;  // ¿environment? ¿endpoint?
+        String u;
+        String p;
+        String s;
+        String e;
 
         public C(String u, String p, String s, String e) {
             this.u = u;
@@ -27,7 +27,7 @@ public class NoAbbreviations {
             this.e = e;
         }
 
-        public String cnx() {  // ¿connection? ¿context?
+        public String cx() {  // ¿connection? ¿context?
             return String.format("%s:%s@%s/%s", u, p, s, e);
         }
     }
