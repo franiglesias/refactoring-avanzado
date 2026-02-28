@@ -1,17 +1,10 @@
 package com.refactoring.calisthenics;
 
-/**
- * Object Calisthenics: Don't Use Abbreviations
- * Las abreviaturas dificultan la comprensión del código.
- * Los nombres deben ser completos y expresivos.
- *
- * Clase C con variables u, p, s, e y método cnx() - imposible de entender.
- */
 public class NoAbbreviations {
 
     public static void main(String[] args) {
-        C config = new C("admin", "secret", "localhost", "prod");
-        System.out.println("Connection: " + config.cx());
+        C c = new C("admin", "secret", "localhost", "prod");
+        System.out.println("Connection: " + c.cx());
     }
 
     public static class C {
@@ -27,7 +20,7 @@ public class NoAbbreviations {
             this.e = e;
         }
 
-        public String cx() {  // ¿connection? ¿context?
+        public String cx() {
             return String.format("%s:%s@%s/%s", u, p, s, e);
         }
     }
