@@ -8,6 +8,7 @@ Este curso está disponible en múltiples lenguajes:
 
 - **[TypeScript](./typescript/README.md)**: Versión con Node.js, TypeScript y Vitest
 - **[Python](./python/README.md)**: Versión con Python 3.11+ y pytest
+- **[Java](./java/README.md)**: Versión con Java 11+, Maven, JUnit 5 y AssertJ
 - **[Go](./go/README.md)**: Versión con Go 1.21+ y testing estándar
 - **[C#](./csharp/README.md)**: Versión con .NET 8, C# 12 y xUnit
 - **[PHP](./php/README.md)**: Versión con PHP 8.2+, Composer, PHPUnit y Docker

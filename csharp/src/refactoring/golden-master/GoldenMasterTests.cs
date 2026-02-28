@@ -33,10 +33,10 @@ public class ReceiptPrinterWithDiscountForTest : ReceiptPrinter
 
 public class GoldenMasterTests
 {
-    private int _counter = 0;
+    private static int _counter = 0;
 
     [Fact]
-    public void ShouldPrintAReceipt()
+    public Task ShouldPrintAReceipt()
     {
         // Given a customer
         const string customer = "Ana";
@@ -49,10 +49,6 @@ public class GoldenMasterTests
         var pedido = OrderGenerator.GenerateOrder($"ORD-{_counter}", customer, item, quantity);
         var receipt = new ReceiptPrinterWithoutDiscountForTest().Print(pedido);
 
-        // Use Verify for snapshot testing
-        // await Verify(receipt);
-
-        // For now, just assert it's not empty (you'll need to setup Verify)
-        Assert.NotEmpty(receipt);
+        return Verify(receipt);
     }
 }
