@@ -1,52 +1,29 @@
-# Long Parameter List
+# Long Parameter List - Ejercicio en TypeScript
 
-Lista larga de parámetros.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Long Parameter List](../../../../docs/code-smells/bloaters/long-parameter-list.md)**
 
-Una función recibe más de tres o cuatro parámetros.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```typescript
-class ReportGenerator {
-  generateReport(
-    title: string,
-    startDate: Date,
-    endDate: Date,
-    includeCharts: boolean,
-    includeSummary: boolean,
-    authorName: string,
-    authorEmail: string,
-  ) {
-    console.log(`Generando reporte: ${title}`)
-    console.log(`Desde ${startDate.toDateString()} hasta ${endDate.toDateString()}`)
-    console.log(`Autor: ${authorName} (${authorEmail})`)
-    if (includeCharts) console.log('Incluyendo gráficos...')
-    if (includeSummary) console.log('Incluyendo resumen...')
-    console.log('Reporte generado exitosamente.')
-  }
-}
+**Archivo**: `long-parameter-list.ts`
 
-export function demoLongParameterList(): void {
-  const gen = new ReportGenerator()
-  gen.generateReport(
-    'Ventas Q1',
-    new Date('2025-01-01'),
-    new Date('2025-03-31'),
-    true,
-    false,
-    'Pat Smith',
-    'pat@example.com',
-  )
-}
+**Tarea**: Añade dos opciones más (p. ej., locale y pageSize) al reporte.
+
+## Ejecutar tests
+
+```bash
+npm test -- long-parameter-list.test.ts
 ```
 
-## Ejercicio
+## Problema a experimentar
 
-Añade dos opciones más (p. ej., locale y pageSize) al reporte.
-
-## Problemas que encontrarás
-
-Con más de tres parámetros es difícil recordar con exactitud cuáles son, el orden o el tipo de cada
-uno. Añadir parámetros no hace más que aumentar la dificultad de uso y mantenimiento.
+Con más de tres parámetros es difícil recordar con exactitud cuáles son, el orden o el tipo de cada uno. Añadir parámetros no hace más que aumentar la dificultad de uso y mantenimiento.

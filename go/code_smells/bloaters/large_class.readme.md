@@ -1,96 +1,29 @@
-# Large class
+# Large Class - Ejercicio en Go
 
-Clase grande.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Large Class](../../../docs/code-smells/bloaters/large-class.md)**
 
-Una clase contiene muchas propiedades, muchos métodos o muchas líneas de código, acumulando muchas responsabilidades no relacionadas o que pueden responder a necesidades diferentes.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```go
-type UserAccount struct {
-	name          string
-	email         string
-	password      string
-	lastLogin     time.Time
-	loginAttempts int
-	notifications []string
-	isAdmin       bool
-}
+**Archivo**: `large_class.go`
 
-func NewUserAccount(name, email, password string, isAdmin bool) *UserAccount {
-	return &UserAccount{
-		name:          name,
-		email:         email,
-		password:      password,
-		lastLogin:     time.Now(),
-		loginAttempts: 0,
-		notifications: []string{},
-		isAdmin:       isAdmin,
-	}
-}
+**Tarea**: Añade soporte para autenticación de dos factores (2FA) y preferencias de notificación.
 
-// --- Autenticación ---
+## Ejecutar tests
 
-func (u *UserAccount) Login(password string) bool {
-	if u.password == password {
-		u.lastLogin = time.Now()
-		u.loginAttempts = 0
-		fmt.Println("Inicio de sesión exitoso")
-		return true
-	}
-	u.loginAttempts++
-	fmt.Println("Contraseña incorrecta")
-	return false
-}
-
-func (u *UserAccount) ResetPassword(newPassword string) {
-	u.password = newPassword
-	fmt.Println("Contraseña actualizada")
-}
-
-// --- Perfil ---
-
-func (u *UserAccount) UpdateEmail(newEmail string) {
-	u.email = newEmail
-	fmt.Println("Correo actualizado")
-}
-
-func (u *UserAccount) UpdateName(newName string) {
-	u.name = newName
-	fmt.Println("Nombre actualizado")
-}
-
-// --- Notificaciones ---
-
-func (u *UserAccount) AddNotification(message string) {
-	u.notifications = append(u.notifications, message)
-}
-
-func (u *UserAccount) GetNotifications() []string {
-	return u.notifications
-}
-
-func (u *UserAccount) ClearNotifications() {
-	u.notifications = []string{}
-}
-
-// --- Administración ---
-
-func (u *UserAccount) PromoteToAdmin() {
-	u.isAdmin = true
-}
-
-func (u *UserAccount) RevokeAdmin() {
-	u.isAdmin = false
-}
+```bash
+go test ./code_smells/bloaters/large_class_test.go
 ```
 
-## Ejercicio
-
-Añade soporte para autenticación de dos factores (2FA) y preferencias de notificación.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Tocarás autenticación, estado y notificaciones en una clase inflada, aumentando la probabilidad de romper comportamiento no relacionado.

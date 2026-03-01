@@ -1,53 +1,29 @@
-# Long Parameter List
+# Long Parameter List - Ejercicio en Go
 
-Lista larga de parámetros.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Long Parameter List](../../../docs/code-smells/bloaters/long-parameter-list.md)**
 
-Una función recibe más de tres o cuatro parámetros.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```go
-package bloaters
+**Archivo**: `long_parameter_list.go`
 
-import "fmt"
+**Tarea**: Añade dos opciones más (p. ej., locale y pageSize) al usuario.
 
-// CreateUser demonstrates long parameter list code smell
-func CreateUser(
-	username string,
-	email string,
-	firstName string,
-	lastName string,
-	age int,
-	country string,
-	city string,
-	address string,
-	postalCode string,
-	phoneNumber string,
-	isActive bool,
-	role string,
-) error {
-	// Validation
-	if username == "" || email == "" {
-		return fmt.Errorf("username and email are required")
-	}
+## Ejecutar tests
 
-	// Business logic
-	fmt.Printf("Creating user: %s (%s)\n", username, email)
-	fmt.Printf("Name: %s %s\n", firstName, lastName)
-	fmt.Printf("Location: %s, %s, %s, %s\n", address, city, postalCode, country)
-	fmt.Printf("Contact: %s\n", phoneNumber)
-	fmt.Printf("Age: %d, Role: %s, Active: %t\n", age, role, isActive)
-
-	return nil
-}
+```bash
+go test ./code_smells/bloaters/long_parameter_list_test.go
 ```
 
-## Ejercicio
-
-Añade dos opciones más (p. ej., locale y pageSize) al usuario.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Con más de tres parámetros es difícil recordar con exactitud cuáles son, el orden o el tipo de cada uno. Añadir parámetros no hace más que aumentar la dificultad de uso y mantenimiento.

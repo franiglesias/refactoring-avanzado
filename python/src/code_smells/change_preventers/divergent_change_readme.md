@@ -1,62 +1,29 @@
-# Divergent change
+# Divergent Change - Ejercicio en Python
 
-## Definición
+## 📚 Documentación Completa
 
-Una clase tiene múltiples razones para cambiar, lo que normalmente indica que se ocupa de muchas responsabilidades que se deberían separar en clases especialistas más pequeñas.
+👉 **[Ver documentación completa de Divergent Change](../../../../docs/code-smells/change-preventers/divergent-change.md)**
 
-## Ejemplo
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-ProfileManager maneja validación, persistencia, exportación y envío de emails—múltiples razones para cambiar concentradas en una sola clase.
+## 🎯 Ejercicio
 
-```typescript
-export type User = { id: string; name: string; email: string }
+**Archivo**: `divergent_change.py`
 
-export class ProfileManager {
-  private store = new Map<string, User>()
+**Tarea**: Añade un número de teléfono con validación, inclúyelo en las exportaciones y envía un SMS.
 
-  register(user: User): void {
-    if (!user.name.trim()) throw new Error('invalid name')
-    if (!user.email.includes('@')) throw new Error('invalid email')
-    this.store.set(user.id, user)
-  }
+## Ejecutar tests
 
-  updateEmail(id: string, newEmail: string): void {
-    if (!newEmail.includes('@')) throw new Error('invalid email')
-    const u = this.store.get(id)
-    if (!u) throw new Error('not found')
-    this.store.set(id, {...u, email: newEmail})
-  }
-
-  exportAsJson(): string {
-    return JSON.stringify(Array.from(this.store.values()))
-  }
-
-  exportAsCsv(): string {
-    const rows = [
-      'id,name,email',
-      ...Array.from(this.store.values()).map((u) => `${u.id},${u.name},${u.email}`),
-    ]
-    return rows.join('\n')
-  }
-
-  sendWelcomeEmail(user: User): string {
-    return `Welcome ${user.name}! Sent to ${user.email}`
-  }
-}
-
-export function demoDivergentChange(pm: ProfileManager, u: User): string {
-  pm.register(u)
-  pm.updateEmail(u.id, u.email)
-  return pm.exportAsJson()
-}
-
+```bash
+pytest src/code_smells/change_preventers/test_divergent_change.py
 ```
 
-## Ejercicio
-
-Añade un número de teléfono con validación, inclúyelo en las exportaciones y envía un SMS.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Tocarás validación, almacenamiento, exportAsJson/Csv y mensajería en un solo lugar, demostrando cómo un cambio fuerza ediciones en responsabilidades no relacionadas.
-

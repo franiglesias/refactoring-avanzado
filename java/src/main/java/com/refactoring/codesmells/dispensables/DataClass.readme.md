@@ -1,58 +1,29 @@
-# Data Class
+# Data Class - Ejercicio en Java
 
-Clase de datos.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Data Class](../../../../../../../docs/code-smells/dispensables/data-class.md)**
 
-Una clase que solo contiene datos (getters y setters) sin comportamiento propio. Toda la lógica relacionada con esos datos está en otras clases, violando el principio de que los datos y el comportamiento deben estar juntos.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```java
-public static class UserRecord {
-    public String id;
-    public String name;
-    public String email;
-    public Date createdAt;
+**Archivo**: `DataClass.java`
 
-    public UserRecord(String id, String name, String email, Date createdAt) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.createdAt = createdAt;
-    }
-}
+**Tarea**: Añade validación de formato de nombre y generación de nombre de usuario único.
 
-public static class UserService {
-    public UserRecord createUser(String name, String email) {
-        if (!email.contains("@")) {
-            throw new IllegalArgumentException("Invalid email");
-        }
+## Ejecutar tests
 
-        return new UserRecord(UUID.randomUUID().toString(), name, email, new Date());
-    }
-
-    public void updateUserEmail(UserRecord user, String newEmail) {
-        if (!newEmail.contains("@")) {
-            throw new IllegalArgumentException("Invalid email");
-        }
-        user.email = newEmail;
-    }
-}
-
-public static class UserReportGenerator {
-    public String generateUserSummary(UserRecord user) {
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-        return String.format("User %s (%s) created on %s",
-            user.name, user.email, sdf.format(user.createdAt));
-    }
-}
+```bash
+mvn test -Dtest=DataClassTest
 ```
 
-## Ejercicio
-
-Añade validación de formato de nombre y generación de nombre de usuario único.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 La lógica relacionada con usuarios seguirá esparcida en múltiples clases, haciendo difícil encontrar y modificar comportamientos relacionados.

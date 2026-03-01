@@ -1,70 +1,29 @@
-# Data clump
+# Data Clump - Ejercicio en Go
 
-Grupo de datos.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Data Clump](../../../docs/code-smells/bloaters/data-clump.md)**
 
-El mismo grupo de campos de datos viaja junto por muchos lugares, lo que sugiere un Value Object faltante y duplicación.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```go
-package bloaters
+**Archivo**: `data_clump.go`
 
-import "fmt"
+**Tarea**: Añade país y provincia y reglas de formateo internacional de la dirección.
 
-// ProductService demonstrates data clump code smell
-// The same group of data (street, city, postalCode, country) appears together repeatedly
-type ProductService struct{}
+## Ejecutar tests
 
-// ShipProduct ships a product to an address
-func (ps *ProductService) ShipProduct(
-	productID string,
-	street string,
-	city string,
-	postalCode string,
-	country string,
-) error {
-	fmt.Printf("Shipping product %s to:\n", productID)
-	fmt.Printf("%s\n%s, %s\n%s\n", street, city, postalCode, country)
-	return nil
-}
-
-// ValidateDeliveryAddress validates a delivery address
-func (ps *ProductService) ValidateDeliveryAddress(
-	street string,
-	city string,
-	postalCode string,
-	country string,
-) bool {
-	return street != "" && city != "" && postalCode != "" && country != ""
-}
-
-// CalculateShippingCost calculates shipping cost based on address
-func (ps *ProductService) CalculateShippingCost(
-	street string,
-	city string,
-	postalCode string,
-	country string,
-	weight float64,
-) float64 {
-	baseCost := 10.0
-	// International shipping costs more
-	if country != "Spain" {
-		baseCost += 15.0
-	}
-	// City surcharge
-	if city == "Madrid" || city == "Barcelona" {
-		baseCost += 2.0
-	}
-	return baseCost + (weight * 0.5)
-}
+```bash
+go test ./code_smells/bloaters/data_clump_test.go
 ```
 
-## Ejercicio
-
-Añade país y provincia y reglas de formateo internacional de la dirección.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Necesitarás modificar constructores, impresores y cualquier lugar que pase estos campos juntos, multiplicando la superficie de cambio.

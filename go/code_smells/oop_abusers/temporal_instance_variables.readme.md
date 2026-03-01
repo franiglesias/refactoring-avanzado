@@ -1,66 +1,29 @@
-# Temporal Instance Variables
+# Temporal Instance Variables - Ejercicio en Go
 
-Variables de instancia temporales.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Temporal Instance Variables](../../../docs/code-smells/oop-abusers/temporal-instance-variables.md)**
 
-Este smell ocurre cuando un objeto tiene campos que solo están llenos (o tienen sentido) en ciertas etapas de su ciclo de vida. Esto suele indicar un acoplamiento temporal, donde los métodos deben llamarse en un orden específico para que el objeto sea válido, dejando al objeto en un estado inconsistente fuera de esa secuencia.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-`PizzaOrder` utiliza variables de instancia que solo son válidas entre la llamada a `Start()` y `Place()`.
+**Archivo**: `temporal_instance_variables.go`
 
-```go
-type PizzaOrder struct {
-	size     *string
-	toppings []string
-	address  *string
-}
+**Tarea**: Añade una validación para que no se pueda llamar a `Place()` si no se ha añadido al menos un ingrediente.
 
-func NewPizzaOrder() *PizzaOrder {
-	return &PizzaOrder{
-		toppings: []string{},
-	}
-}
+## Ejecutar tests
 
-func (p *PizzaOrder) Start(size string) {
-	p.size = &size
-	p.toppings = []string{}
-	p.address = nil
-}
-
-func (p *PizzaOrder) AddTopping(topping string) {
-	if p.size == nil {
-		return
-	}
-	p.toppings = append(p.toppings, topping)
-}
-
-func (p *PizzaOrder) SetDeliveryAddress(address string) {
-	p.address = &address
-}
-
-func (p *PizzaOrder) Place() string {
-	sizeStr := "?"
-	if p.size != nil {
-		sizeStr = *p.size
-	}
-	addressStr := "UNKNOWN"
-	if p.address != nil {
-		addressStr = *p.address
-	}
-	summary := fmt.Sprintf("Pizza %s to %s with [%s]", sizeStr, addressStr, strings.Join(p.toppings, ", "))
-	p.size = nil
-	p.address = nil
-	p.toppings = []string{}
-	return summary
-}
+```bash
+go test ./code_smells/oop_abusers/temporal_instance_variables_test.go
 ```
 
-## Ejercicio
-
-Añade una validación para que no se pueda llamar a `Place()` si no se ha añadido al menos un ingrediente.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Te darás cuenta de que el objeto es una "máquina de estados" frágil. Si un cliente olvida llamar a `Start()` o intenta llamar a `AddTopping()` fuera de orden, el sistema puede fallar silenciosamente o requerir comprobaciones constantes de nulidad en cada método.

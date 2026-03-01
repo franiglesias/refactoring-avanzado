@@ -1,50 +1,29 @@
-# Message Chains
+# Message Chains - Ejercicio en Python
 
-Cadenas de mensajes.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Message Chains](../../../../docs/code-smells/couplers/message-chains.md)**
 
-La navegación profunda por grafos de objetos acopla a los clientes a la estructura de los intermediarios y conduce a código frágil.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```typescript
-export class Level2 {
-  constructor(private value: number) {
-  }
+**Archivo**: `message_chains.py`
 
-  getValue(): number {
-    return this.value
-  }
-}
+**Tarea**: Inserta un nuevo `Level` entre `Root` y `Level1`, o reubica `getValue`.
 
-export class Level1 {
-  constructor(private next: Level2) {
-  }
+## Ejecutar tests
 
-  getNext(): Level2 {
-    return this.next
-  }
-}
-
-export class Root {
-  constructor(private next: Level1) {
-  }
-
-  getNext(): Level1 {
-    return this.next
-  }
-}
-
-export function readDeep(root: Root): number {
-  return root.getNext().getNext().getValue()
-}
+```bash
+pytest src/code_smells/couplers/test_message_chains.py
 ```
 
-## Ejercicio
-
-Inserta un nuevo `Level` entre `Root` y `Level1`, o reubica `getValue`.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Observa cómo cada cliente que usa root.getNext().getNext().getValue() debe cambiar, revelando cómo las cadenas de mensajes vuelven costosas refactorizaciones simples.

@@ -1,53 +1,29 @@
-# Feature Envy
+# Feature Envy - Ejercicio en PHP
 
-Envidia de características.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Feature Envy](../../../../docs/code-smells/couplers/feature-envy.md)**
 
-Una clase usa la información de otra clase colaboradora para hacer cálculos o tomar decisiones, sugiriendo que la segunda clase debería exponer esos comportamientos. Al depender de la estructura de la colaboradora, la clase cliente queda acoplada.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-`ShippingCalculator` se mete en los datos de `Customer` para tomar decisiones, lo que indica que el comportamiento quizá debería pertenecer a `Customer`.
+**Archivo**: `ShippingCalculator.php` y `Customer.php`
 
-```php
-<?php
+**Tarea**: Añade envío gratis para clientes en ciertas ciudades y un recargo de fin de semana.
 
-declare(strict_types=1);
+## Ejecutar tests
 
-namespace CodeSmells\Couplers;
-
-class Customer
-{
-    public function __construct(
-        public string $name,
-        public string $street,
-        public string $city,
-        public string $zip
-    ) {
-    }
-}
-
-class ShippingCalculator
-{
-    public function cost(Customer $customer): int
-    {
-        $base = str_starts_with($customer->zip, '9') ? 10 : 20;
-        $distant = strlen($customer->city) > 6 ? 5 : 0;
-        return $base + $distant;
-    }
-}
-
-function demoFeatureEnvy(Customer $c): int
-{
-    return (new ShippingCalculator())->cost($c);
-}
+```bash
+./vendor/bin/phpunit tests/CodeSmells/Couplers/FeatureEnvyTest.php
 ```
 
-## Ejercicio
-
-Añade envío gratis para clientes en ciertas ciudades y un recargo de fin de semana.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Probablemente, seguirás añadiendo condiciones dentro de `ShippingCalculator` que dependen de detalles internos de `Customer`, esparciendo reglas en el lugar equivocado y volviendo frágiles los cambios.

@@ -1,70 +1,29 @@
-# Shotgun Surgery
+# Shotgun Surgery - Ejercicio en Go
 
-## Definición
+## 📚 Documentación Completa
 
-Cuando necesito hacer un cambio tengo que hacerlo en muchos lugares del código que pueden estar alejados entre sí, incluso en distintos módulos.
+👉 **[Ver documentación completa de Shotgun Surgery](../../../docs/code-smells/change-preventers/shotgun-surgery.md)**
 
-## Ejemplo
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-La misma regla de impuestos está duplicada en muchas clases; cambiarla requiere ediciones en múltiples lugares.
+## 🎯 Ejercicio
 
-```go
-type LineItem struct {
-	Name  string
-	Price float64
-	Qty   int
-}
+**Archivo**: `shotgun_surgery.go`
 
-type PriceCalculator struct{}
+**Tarea**: Cambia el impuesto del 21% al 18.5% con redondeo a 2 decimales.
 
-func (p *PriceCalculator) TotalWithTax(items []LineItem) float64 {
-	subtotal := 0.0
-	for _, item := range items {
-		subtotal += item.Price * float64(item.Qty)
-	}
-	tax := subtotal * 0.21
-	return subtotal + tax
-}
+## Ejecutar tests
 
-type InvoiceService struct{}
-
-func (i *InvoiceService) CreateTotal(items []LineItem) float64 {
-	base := 0.0
-	for _, item := range items {
-		base += item.Price * float64(item.Qty)
-	}
-	vat := base * 0.21
-	return base + vat
-}
-
-type SalesReport struct{}
-
-func (s *SalesReport) Summarize(items []LineItem) string {
-	sum := 0.0
-	for _, item := range items {
-		sum += item.Price * float64(item.Qty)
-	}
-	tax := sum * 0.21
-	total := sum + tax
-	return fmt.Sprintf("total=%.2f", total)
-}
-
-type LoyaltyPoints struct{}
-
-func (l *LoyaltyPoints) Points(items []LineItem) int {
-	base := 0.0
-	for _, item := range items {
-		base += item.Price * float64(item.Qty)
-	}
-	withTax := base + base*0.21
-	return int(withTax / 10)
-}
+```bash
+go test ./code_smells/change_preventers/shotgun_surgery_test.go
 ```
 
-## Ejercicio
-
-Cambia el impuesto del 21% al 18.5% con redondeo a 2 decimales.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Tendrás que buscar cada copia y asegurar un redondeo consistente en todas partes, destacando cómo la duplicación convierte un cambio pequeño en muchas ediciones arriesgadas.

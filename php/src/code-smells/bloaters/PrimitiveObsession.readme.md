@@ -1,52 +1,30 @@
-# Primitive Obsession
+# Primitive Obsession - Ejercicio en PHP
 
-Obsesión primitiva.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Primitive Obsession](../../../../docs/code-smells/bloaters/primitive-obsession.md)**
 
-Conceptos de dominio se modelan con primitivos, lo que obliga a esparcir reglas de validación, formato, y todo tipo de comportamiento, por todo el código.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```php
-<?php
+**Archivo**: `Order.php`
 
-declare(strict_types=1);
+**Tarea**: Introduce soporte para diferentes monedas, para enviar la factura por email, y para formatear la dirección en función del país.
 
-namespace CodeSmells\Bloaters;
+## Ejecutar tests
 
-class Order
-{
-    public function __construct(
-        private string $customerName,
-        private string $customerEmail,
-        private string $address,
-        private float $totalAmount,
-        private string $currency
-    ) {
-    }
-
-    public function sendInvoice(): void
-    {
-        if (!str_contains($this->customerEmail, '@')) {
-            throw new \InvalidArgumentException('Email inválido');
-        }
-        if (empty($this->address)) {
-            throw new \InvalidArgumentException('No se ha indicado dirección');
-        }
-        if ($this->totalAmount <= 0) {
-            throw new \InvalidArgumentException('El monto debe ser mayor que cero');
-        }
-        echo "Factura enviada a {$this->customerName} en {$this->address} por {$this->totalAmount} {$this->currency}\n";
-    }
-}
+```bash
+./vendor/bin/phpunit tests/CodeSmells/Bloaters/PrimitiveObsessionTest.php
 ```
 
-## Ejercicio
-
-Introduce soporte para diferentes monedas, para enviar la factura por email, y para formatear la dirección en función del país.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Dado que los primitivos no nos permiten garantizar la integridad de sus valores, tendrás que introducir validaciones en muchos lugares, incluso de forma repetida. Algunos datos siempre viajan juntos (Data Clump), por lo que tienes que asegurarte de que permanecen juntos.
 

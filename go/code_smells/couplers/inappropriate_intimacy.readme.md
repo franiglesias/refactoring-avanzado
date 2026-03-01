@@ -1,100 +1,29 @@
-# Inappropriate Intimacy
+# Inappropriate Intimacy - Ejercicio en Go
 
-Intimidad inapropiada.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Inappropriate Intimacy](../../../docs/code-smells/couplers/inappropriate-intimacy.md)**
 
-Dos clases tienen intimidad inapropiada cuando pueden acceder y manipular el estado interno de la otra.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-Team y Manager exponen y modifican el estado interno del otro, creando un acoplamiento fuerte y diseños frágiles.
+**Archivo**: `inappropriate_intimacy.go`
 
-```go
-type Budget struct {
-	Amount float64
-}
+**Tarea**: Añade una traza de auditoría cuando cambien los presupuestos y aplica reglas de presupuesto mínimo.
 
-func NewBudget(amount float64) (*Budget, error) {
-	if amount < 900 {
-		return nil, fmt.Errorf("Budget too low")
-	}
-	if amount > 3000 {
-		return nil, fmt.Errorf("Budget too high")
-	}
-	return &Budget{Amount: amount}, nil
-}
+## Ejecutar tests
 
-type Team struct {
-	name    string
-	budget  *Budget
-	manager *Manager
-}
-
-func NewTeam(name string, budget float64) (*Team, error) {
-	b, err := NewBudget(budget)
-	if err != nil {
-		return nil, err
-	}
-	return &Team{
-		name:   name,
-		budget: b,
-	}, nil
-}
-
-func (t *Team) AssignManager(m *Manager) {
-	t.manager = m
-	m.AssignTeam(t)
-}
-
-func (t *Team) RaiseBudget(amount float64) error {
-	newBudget, err := NewBudget(t.budget.Amount + amount)
-	if err != nil {
-		return err
-	}
-	t.budget = newBudget
-	return nil
-}
-
-func (t *Team) Rename(newName string) {
-	t.name = newName
-}
-
-type Manager struct {
-	name string
-	team *Team
-}
-
-func NewManager(name string) *Manager {
-	return &Manager{name: name}
-}
-
-func (m *Manager) AssignTeam(t *Team) error {
-	if m.team != nil {
-		return fmt.Errorf("Team already assigned")
-	}
-	m.team = t
-	return nil
-}
-
-func (m *Manager) RaiseTeamBudget(amount float64) error {
-	if m.team != nil {
-		return m.team.RaiseBudget(amount)
-	}
-	return nil
-}
-
-func (m *Manager) RenameTeam(newName string) {
-	if m.team != nil {
-		m.team.Rename(newName)
-	}
-}
+```bash
+go test ./code_smells/couplers/inappropriate_intimacy_test.go
 ```
 
-## Ejercicio
-
-Añade una traza de auditoría cuando cambien los presupuestos y aplica reglas de presupuesto mínimo.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Como Team y Manager tocan libremente los campos del otro, tendrás que esparcir comprobaciones y registros en muchos lugares, aumentando el acoplamiento y las regresiones.

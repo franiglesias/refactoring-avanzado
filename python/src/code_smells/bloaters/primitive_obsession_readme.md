@@ -1,44 +1,30 @@
-# Primitive Obsession
+# Primitive Obsession - Ejercicio en Python
 
-Obsesión primitiva.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Primitive Obsession](../../../../docs/code-smells/bloaters/primitive-obsession.md)**
 
-Conceptos de dominio se modelan con primitivos, lo que obliga a esparcir reglas de validación, formato, y todo tipo de comportamiento, por todo el código.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```typescript
-class Order {
-  constructor(
-    private customerName: string,
-    private customerEmail: string,
-    private address: string,
-    private totalAmount: number,
-    private currency: string,
-  ) {
-  }
+**Archivo**: `primitive_obsession.py`
 
-  sendInvoice() {
-    if (!this.customerEmail.includes('@')) {
-      throw new Error('Email inválido')
-    }
-    if (!this.address) {
-      throw new Error('No se ha indicado dirección')
-    }
-    if (this.totalAmount <= 0) {
-      throw new Error('El monto debe ser mayor que cero')
-    }
-    console.log(`Factura enviada a ${this.customerName} in ${this.address} por ${this.totalAmount} ${this.currency}`)
-  }
-}
+**Tarea**: Introduce soporte para diferentes monedas, para enviar la facture por email, y para formatear la dirección en función del país.
+
+## Ejecutar tests
+
+```bash
+pytest src/code_smells/bloaters/test_primitive_obsession.py
 ```
 
-## Ejercicio
-
-Introduce soporte para diferentes monedas, para enviar la facture por email, y para formatear la dirección en función del país.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Dado que los primitivos no nos permiten garantizar la integridad de sus valores, tendrás que introducir validaciones en muchos lugares, incluso de forma repetida. Algunos datos siempre viajan juntos (Data Clump), por lo que tienes que asegurarte de que permanecen juntos.
 

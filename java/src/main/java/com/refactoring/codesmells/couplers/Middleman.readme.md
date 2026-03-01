@@ -1,64 +1,29 @@
-# Middleman
+# Middleman - Ejercicio en Java
 
-Intermediario.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Middleman](../../../../../../../docs/code-smells/couplers/middleman.md)**
 
-Una clase actúa como un simple intermediario, delegando todas las llamadas a otra clase sin agregar ningún valor. La clase intermediaria no tiene lógica propia, solo reenvía las llamadas.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```java
-public static class Catalog {
-    private Map<String, String> items = new HashMap<>();
+**Archivo**: `Middleman.java`
 
-    public void add(String id, String name) {
-        items.put(id, name);
-    }
+**Tarea**: Añade funcionalidad de búsqueda por nombre y filtrado por categoría.
 
-    public Optional<String> find(String id) {
-        return Optional.ofNullable(items.get(id));
-    }
+## Ejecutar tests
 
-    public List<String> list() {
-        return new ArrayList<>(items.values());
-    }
-}
-
-public static class Shop {
-    private Catalog catalog;
-
-    public Shop(Catalog catalog) {
-        this.catalog = catalog;
-    }
-
-    // Shop solo delega todas las llamadas a Catalog sin agregar valor
-    public void add(String id, String name) {
-        catalog.add(id, name);
-    }
-
-    public Optional<String> find(String id) {
-        return catalog.find(id);
-    }
-
-    public List<String> list() {
-        return catalog.list();
-    }
-}
-
-public static List<String> demoMiddleman() {
-    Catalog c = new Catalog();
-    Shop s = new Shop(c);
-    s.add("1", "Book");
-    s.add("2", "Pen");
-    return s.list();
-}
+```bash
+mvn test -Dtest=MiddlemanTest
 ```
 
-## Ejercicio
-
-Añade funcionalidad de búsqueda por nombre y filtrado por categoría.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Cada nueva funcionalidad en `Catalog` requerirá añadir un método de delegación correspondiente en `Shop`, sin aportar valor alguno.

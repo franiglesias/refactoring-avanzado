@@ -1,69 +1,29 @@
-# Divergent Change
+# Divergent Change - Ejercicio en Java
 
-Cambio divergente.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Divergent Change](../../../../../../../docs/code-smells/change-preventers/divergent-change.md)**
 
-Una clase se modifica por diferentes razones no relacionadas. Cada vez que hay un cambio de diferente naturaleza, hay que tocar la misma clase, lo que viola el principio de responsabilidad única.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```java
-public static class ProfileManager {
-    private Map<String, User> store = new HashMap<>();
+**Archivo**: `DivergentChange.java`
 
-    // Gestión de usuarios
-    public void register(User user) {
-        if (user.name == null || user.name.trim().isEmpty()) {
-            throw new IllegalArgumentException("invalid name");
-        }
-        if (!user.email.contains("@")) {
-            throw new IllegalArgumentException("invalid email");
-        }
-        store.put(user.id, user);
-    }
+**Tarea**: Añade soporte para exportar a XML y enviar notificaciones SMS.
 
-    public void updateEmail(String id, String newEmail) {
-        if (!newEmail.contains("@")) {
-            throw new IllegalArgumentException("invalid email");
-        }
-        User u = store.get(id);
-        if (u == null) {
-            throw new IllegalArgumentException("not found");
-        }
-        u.email = newEmail;
-        store.put(id, u);
-    }
+## Ejecutar tests
 
-    // Exportación de datos
-    public String exportAsJson() {
-        List<String> users = store.values().stream()
-            .map(u -> String.format("{\"id\":\"%s\",\"name\":\"%s\",\"email\":\"%s\"}",
-                u.id, u.name, u.email))
-            .collect(Collectors.toList());
-        return "[" + String.join(",", users) + "]";
-    }
-
-    public String exportAsCsv() {
-        List<String> rows = new ArrayList<>();
-        rows.add("id,name,email");
-        for (User u : store.values()) {
-            rows.add(String.format("%s,%s,%s", u.id, u.name, u.email));
-        }
-        return String.join("\n", rows);
-    }
-
-    // Notificaciones
-    public String sendWelcomeEmail(User user) {
-        return String.format("Welcome %s! Sent to %s", user.name, user.email);
-    }
-}
+```bash
+mvn test -Dtest=DivergentChangeTest
 ```
 
-## Ejercicio
-
-Añade soporte para exportar a XML y enviar notificaciones SMS.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Cada nuevo formato de exportación o canal de comunicación requiere modificar esta clase, acumulando responsabilidades no relacionadas.

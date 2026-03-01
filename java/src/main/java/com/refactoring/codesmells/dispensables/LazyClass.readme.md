@@ -1,45 +1,29 @@
-# Lazy Class
+# Lazy Class - Ejercicio en Java
 
-Clase perezosa.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Lazy Class](../../../../../../../docs/code-smells/dispensables/lazy-class.md)**
 
-Una clase perezosa es aquella que no aporta suficiente valor para justificar su existencia. Suelen ser clases que solo envuelven una operación trivial o que tienen muy poca responsabilidad, añadiendo una complejidad innecesaria al sistema.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```java
-public static class Address {
-    String name;
-    String line1;
-    String city;
+**Archivo**: `LazyClass.java`
 
-    public Address(String name, String line1, String city) {
-        this.name = name;
-        this.line1 = line1;
-        this.city = city;
-    }
-}
+**Tarea**: Reescribe el código para eliminar la necesidad de la clase `ShippingLabelBuilder`.
 
-public static class ShippingLabelBuilder {
-    public String build(Address a) {
-        String cityPart = a.city != null ? ", " + a.city : "";
-        return String.format("%s — %s%s", a.name, a.line1, cityPart);
-    }
-}
+## Ejecutar tests
 
-public static void printShippingLabel() {
-    Address address = new Address("John Doe", "123 Main St", "New York");
-    ShippingLabelBuilder labelBuilder = new ShippingLabelBuilder();
-    String label = labelBuilder.build(address);
-    System.out.println(label);
-}
+```bash
+mvn test -Dtest=LazyClassTest
 ```
 
-## Ejercicio
-
-Reescribe el código para eliminar la necesidad de la clase `ShippingLabelBuilder`.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Mantener una estructura de clase para una lógica tan simple te obliga a instanciar objetos innecesariamente y añade capas de abstracción que dificultan la legibilidad del código sin ofrecer beneficios a cambio.

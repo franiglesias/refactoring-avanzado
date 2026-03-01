@@ -1,59 +1,29 @@
-# Message Chains
+# Message Chains - Ejercicio en Go
 
-Cadenas de mensajes.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Message Chains](../../../docs/code-smells/couplers/message-chains.md)**
 
-La navegación profunda por grafos de objetos acopla a los clientes a la estructura de los intermediarios y conduce a código frágil.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```go
-type Level2 struct {
-	value int
-}
+**Archivo**: `message_chains.go`
 
-func NewLevel2(value int) *Level2 {
-	return &Level2{value: value}
-}
+**Tarea**: Inserta un nuevo `Level` entre `Root` y `Level1`, o reubica `getValue`.
 
-func (l *Level2) GetValue() int {
-	return l.value
-}
+## Ejecutar tests
 
-type Level1 struct {
-	next *Level2
-}
-
-func NewLevel1(next *Level2) *Level1 {
-	return &Level1{next: next}
-}
-
-func (l *Level1) GetNext() *Level2 {
-	return l.next
-}
-
-type Root struct {
-	next *Level1
-}
-
-func NewRoot(next *Level1) *Root {
-	return &Root{next: next}
-}
-
-func (r *Root) GetNext() *Level1 {
-	return r.next
-}
-
-func ReadDeep(root *Root) int {
-	return root.GetNext().GetNext().GetValue()
-}
+```bash
+go test ./code_smells/couplers/message_chains_test.go
 ```
 
-## Ejercicio
-
-Inserta un nuevo `Level` entre `Root` y `Level1`, o reubica `getValue`.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Observa cómo cada cliente que usa root.GetNext().GetNext().GetValue() debe cambiar, revelando cómo las cadenas de mensajes vuelven costosas refactorizaciones simples.

@@ -1,60 +1,29 @@
-# Message Chains
+# Message Chains - Ejercicio en Java
 
-Cadenas de mensajes.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Message Chains](../../../../../../../docs/code-smells/couplers/message-chains.md)**
 
-El cliente debe conocer toda la cadena de navegación para obtener un valor simple. Esto crea acoplamiento a la estructura interna y cualquier cambio en la cadena rompe el código cliente.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```java
-public static class Level2 {
-    private int value;
+**Archivo**: `MessageChains.java`
 
-    public Level2(int value) {
-        this.value = value;
-    }
+**Tarea**: Añade un nivel adicional (Level3) y métodos para modificar valores en diferentes niveles.
 
-    public int getValue() {
-        return value;
-    }
-}
+## Ejecutar tests
 
-public static class Level1 {
-    private Level2 next;
-
-    public Level1(Level2 next) {
-        this.next = next;
-    }
-
-    public Level2 getNext() {
-        return next;
-    }
-}
-
-public static class Root {
-    private Level1 next;
-
-    public Root(Level1 next) {
-        this.next = next;
-    }
-
-    public Level1 getNext() {
-        return next;
-    }
-}
-
-public static int readDeep(Root root) {
-    // Cliente debe conocer toda la cadena de navegación
-    return root.getNext().getNext().getValue();
-}
+```bash
+mvn test -Dtest=MessageChainsTest
 ```
 
-## Ejercicio
-
-Añade un nivel adicional (Level3) y métodos para modificar valores en diferentes niveles.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Cualquier cambio en la estructura intermedia (añadir, remover o reordenar niveles) rompe todos los lugares que navegan por la cadena.

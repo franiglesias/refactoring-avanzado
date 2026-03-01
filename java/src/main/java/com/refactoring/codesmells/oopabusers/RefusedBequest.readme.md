@@ -1,51 +1,29 @@
-# Refused Bequest
+# Refused Bequest - Ejercicio en Java
 
-Herencia rechazada.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Refused Bequest](../../../../../../../docs/code-smells/oop-abusers/refused-bequest.md)**
 
-Una subclase hereda de una clase base pero no usa (o anula con implementaciones vacías) muchos de los métodos heredados. Esto indica que la herencia no es apropiada - la subclase no cumple con la relación "es-un".
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```java
-public static class BaseController {
-    public void start() {
-        System.out.println("starting");
-    }
+**Archivo**: `RefusedBequest.java`
 
-    public void stop() {
-        System.out.println("stopping");
-    }
+**Tarea**: Añade métodos de configuración (configure, validate) en BaseController que también sean rechazados por ReadOnlyController.
 
-    public void reset() {
-        System.out.println("resetting");
-    }
-}
+## Ejecutar tests
 
-public static class ReadOnlyController extends BaseController {
-    @Override
-    public void start() {
-        // No hace nada - rechaza la herencia
-    }
-
-    @Override
-    public void stop() {
-        // No hace nada - rechaza la herencia
-    }
-}
-
-public static void demoRefusedBequest(boolean readonly) {
-    BaseController controller = readonly ? new ReadOnlyController() : new BaseController();
-    controller.start();
-    controller.stop();
-}
+```bash
+mvn test -Dtest=RefusedBequestTest
 ```
 
-## Ejercicio
-
-Añade métodos de configuración (configure, validate) en BaseController que también sean rechazados por ReadOnlyController.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 La herencia se vuelve cada vez más inapropiada, con más métodos vacíos o que lanzan excepciones, violando el Principio de Sustitución de Liskov.

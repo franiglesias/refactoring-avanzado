@@ -1,66 +1,29 @@
-# Message Chains
+# Message Chains - Ejercicio en PHP
 
-Cadenas de mensajes.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Message Chains](../../../../docs/code-smells/couplers/message-chains.md)**
 
-La navegación profunda por grafos de objetos acopla a los clientes a la estructura de los intermediarios y conduce a código frágil.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```php
-<?php
+**Archivo**: `Root.php`, `Level1.php` y `Level2.php`
 
-declare(strict_types=1);
+**Tarea**: Inserta un nuevo `Level` entre `Root` y `Level1`, o reubica `getValue`.
 
-namespace CodeSmells\Couplers;
+## Ejecutar tests
 
-class Level2
-{
-    public function __construct(private int $value)
-    {
-    }
-
-    public function getValue(): int
-    {
-        return $this->value;
-    }
-}
-
-class Level1
-{
-    public function __construct(private Level2 $next)
-    {
-    }
-
-    public function getNext(): Level2
-    {
-        return $this->next;
-    }
-}
-
-class Root
-{
-    public function __construct(private Level1 $next)
-    {
-    }
-
-    public function getNext(): Level1
-    {
-        return $this->next;
-    }
-}
-
-function readDeep(Root $root): int
-{
-    return $root->getNext()->getNext()->getValue();
-}
+```bash
+./vendor/bin/phpunit tests/CodeSmells/Couplers/MessageChainsTest.php
 ```
 
-## Ejercicio
-
-Inserta un nuevo `Level` entre `Root` y `Level1`, o reubica `getValue`.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Observa cómo cada cliente que usa `$root->getNext()->getNext()->getValue()` debe cambiar, revelando cómo las cadenas de mensajes vuelven costosas refactorizaciones simples.

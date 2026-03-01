@@ -1,41 +1,29 @@
-# Lazy Class
+# Lazy Class - Ejercicio en TypeScript
 
-Clase perezosa.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Lazy Class](../../../../docs/code-smells/dispensables/lazy-class.md)**
 
-Una clase perezosa es aquella que no aporta suficiente valor para justificar su existencia. Suelen ser clases que solo envuelven una operación trivial o que tienen muy poca responsabilidad, añadiendo una complejidad innecesaria al sistema.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-La clase `ShippingLabelBuilder` solo tiene un método que realiza una concatenación de strings simple, algo que podría resolverse con una función pura.
+**Archivo**: `lazy-class.ts`
 
-```typescript
-export type Address = { name: string; line1: string; city?: string }
+**Tarea**: Reescribe el código para eliminar la necesidad de la clase `ShippingLabelBuilder`.
 
-export class ShippingLabelBuilder {
-  build(a: Address): string {
-    return `${a.name} — ${a.line1}${a.city ? ', ' + a.city : ''}`
-  }
-}
+## Ejecutar tests
 
-export function printShippingLabel() {
-  const address: Address = {
-    name: 'John Doe',
-    line1: '123 Main St',
-    city: 'New York',
-  }
-
-  const labelBuilder = new ShippingLabelBuilder()
-  const label = labelBuilder.build(address)
-  console.log(label)
-}
+```bash
+npm test -- lazy-class.test.ts
 ```
 
-## Ejercicio
-
-Reescribe el código para eliminar la necesidad de la clase `ShippingLabelBuilder`.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Mantener una estructura de clase para una lógica tan simple te obliga a instanciar objetos innecesariamente y añade capas de abstracción que dificultan la legibilidad del código sin ofrecer beneficios a cambio.

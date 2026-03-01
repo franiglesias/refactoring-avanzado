@@ -1,65 +1,29 @@
-# Long Parameter List
+# Long Parameter List - Ejercicio en PHP
 
-Lista larga de parámetros.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Long Parameter List](../../../../docs/code-smells/bloaters/long-parameter-list.md)**
 
-Una función recibe más de tres o cuatro parámetros.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```php
-<?php
+**Archivo**: `ReportGenerator.php`
 
-declare(strict_types=1);
+**Tarea**: Añade dos opciones más (p. ej., locale y pageSize) al reporte.
 
-namespace CodeSmells\Bloaters;
+## Ejecutar tests
 
-use DateTime;
-
-class ReportGenerator
-{
-    public function generateReport(
-        string $title,
-        DateTime $startDate,
-        DateTime $endDate,
-        bool $includeCharts,
-        bool $includeSummary,
-        string $authorName,
-        string $authorEmail
-    ): void {
-        echo "Generando reporte: {$title}\n";
-        echo "Desde {$startDate->format('Y-m-d')} hasta {$endDate->format('Y-m-d')}\n";
-        echo "Autor: {$authorName} ({$authorEmail})\n";
-        if ($includeCharts) {
-            echo "Incluyendo gráficos...\n";
-        }
-        if ($includeSummary) {
-            echo "Incluyendo resumen...\n";
-        }
-        echo "Reporte generado exitosamente.\n";
-    }
-}
-
-function demoLongParameterList(): void
-{
-    $gen = new ReportGenerator();
-    $gen->generateReport(
-        'Ventas Q1',
-        new DateTime('2025-01-01'),
-        new DateTime('2025-03-31'),
-        true,
-        false,
-        'Pat Smith',
-        'pat@example.com'
-    );
-}
+```bash
+./vendor/bin/phpunit tests/CodeSmells/Bloaters/LongParameterListTest.php
 ```
 
-## Ejercicio
-
-Añade dos opciones más (p. ej., locale y pageSize) al reporte.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Con más de tres parámetros es difícil recordar con exactitud cuáles son, el orden o el tipo de cada uno. Añadir parámetros no hace más que aumentar la dificultad de uso y mantenimiento.

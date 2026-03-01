@@ -1,64 +1,29 @@
-# Large Class
+# Large Class - Ejercicio en Java
 
-Clase grande.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Large Class](../../../../../../../docs/code-smells/bloaters/large-class.md)**
 
-Una clase contiene muchas propiedades, muchos métodos o muchas líneas de código, acumulando muchas responsabilidades no relacionadas o que pueden responder a necesidades diferentes.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```java
-public static class UserAccount {
-    private String name;
-    private String email;
-    private String password;
-    private Date lastLogin;
-    private int loginAttempts = 0;
-    private List<String> notifications = new ArrayList<>();
-    private boolean isAdmin;
+**Archivo**: `LargeClass.java`
 
-    // --- Autenticación ---
-    public boolean login(String password) {
-        if (this.password.equals(password)) {
-            this.lastLogin = new Date();
-            this.loginAttempts = 0;
-            System.out.println("Inicio de sesión exitoso");
-            return true;
-        } else {
-            this.loginAttempts++;
-            System.out.println("Contraseña incorrecta");
-            return false;
-        }
-    }
+**Tarea**: Añade soporte para autenticación de dos factores (2FA) y preferencias de notificación.
 
-    public void resetPassword(String newPassword) {
-        this.password = newPassword;
-        System.out.println("Contraseña actualizada");
-    }
+## Ejecutar tests
 
-    // --- Perfil ---
-    public void updateEmail(String newEmail) {
-        this.email = newEmail;
-        System.out.println("Correo actualizado");
-    }
-
-    // --- Notificaciones ---
-    public void addNotification(String message) {
-        this.notifications.add(message);
-    }
-
-    // --- Administración ---
-    public void promoteToAdmin() {
-        this.isAdmin = true;
-    }
-}
+```bash
+mvn test -Dtest=LargeClassTest
 ```
 
-## Ejercicio
-
-Añade soporte para autenticación de dos factores (2FA) y preferencias de notificación.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Tocarás autenticación, estado y notificaciones en una clase inflada, aumentando la probabilidad de romper comportamiento no relacionado.

@@ -131,7 +131,6 @@ Tocarás autenticación, estado y notificaciones en una clase inflada, aumentand
 
 ## Referencias en Español
 
-- [Glutton (God Object)](https://franiglesias.github.io/blogtober19-glutton/) - Análisis del antipatrón God Object y cómo refactorizarlo
 - [Object Calisthenics para adelgazar las clases](https://franiglesias.github.io/calistenics-and-small-classes/) - Técnicas prácticas para mantener clases pequeñas y cohesivas
 - [Los principios SOLID (SRP)](https://franiglesias.github.io/principios-solid/) - Explicación del Principio de Responsabilidad Única y su aplicación
 

@@ -1,40 +1,29 @@
-# Comments
+# Comments - Ejercicio en Java
 
-Comentarios.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Comments](../../../../../../../docs/code-smells/dispensables/comments.md)**
 
-Los comentarios excesivos suelen ser una señal de que el código no es lo suficientemente claro por sí mismo. A menudo se utilizan para explicar código obvio o para compensar una mala elección de nombres, añadiendo ruido y riesgo de desactualización.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```java
-/**
- * Esta función suma dos números y devuelve el resultado.
- * Toma el parámetro a que es un número y el parámetro b que también es un número.
- * Luego usa el operador más para calcular la suma de a y b.
- * Finalmente, devuelve esa suma al invocador de esta función.
- */
-public static int add(int a, int b) {
-    // Declara una variable llamada result que contendrá la suma de a y b
-    int result = a + b; // calcula la suma agregando a y b
-    // Devuelve el resultado a quien haya llamado a esta función
-    return result; // fin de la función
-}
+**Archivo**: `Comments.java`
 
-/**
- * Ejemplo de uso de este código con mal olor: llamar a una función trivial
- * que no debería necesitar comentarios
- */
-public static int demoCommentsSmell() {
-    return add(2, 3);
-}
+**Tarea**: Actualiza la función `add` para registrar (log) cuando la suma sea negativa.
+
+## Ejecutar tests
+
+```bash
+mvn test -Dtest=CommentsTest
 ```
 
-## Ejercicio
-
-Actualiza la función `add` para registrar (log) cuando la suma sea negativa.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Observa cómo los comentarios de alrededor se vuelven obsoletos o engañosos rápidamente al realizar cambios, obligándote a editar muchas líneas de comentario por un cambio diminuto en el código, aumentando el riesgo de desalineación entre lo que el código hace y lo que el comentario dice.

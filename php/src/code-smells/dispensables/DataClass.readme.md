@@ -1,77 +1,29 @@
-# Data Class
+# Data Class - Ejercicio en PHP
 
-Clase de datos.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Data Class](../../../../docs/code-smells/dispensables/data-class.md)**
 
-Una clase de datos es aquella que solo contiene campos y métodos para acceder a ellos (getters/setters), sin poseer lógica de negocio propia. Esto suele derivar en modelos de dominio anémicos, donde el comportamiento está disperso en otros servicios o clases que manipulan estos datos.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-`UserRecord` es una clase que solo almacena datos, mientras que la validación y la lógica de creación residen en `UserService`.
+**Archivo**: `UserRecord.php`, `UserService.php` y `UserReportGenerator.php`
 
-```php
-<?php
+**Tarea**: Implementa reglas de dominio adicionales, como requerir verificación de email o restringir el registro a ciertos dominios (ej. `company.com`).
 
-declare(strict_types=1);
+## Ejecutar tests
 
-namespace CodeSmells\Dispensables;
-
-use DateTime;
-
-class UserRecord
-{
-    public function __construct(
-        public string $id,
-        public string $name,
-        public string $email,
-        public DateTime $createdAt
-    ) {
-    }
-}
-
-class UserService
-{
-    public function createUser(string $name, string $email): UserRecord
-    {
-        if (!str_contains($email, '@')) {
-            throw new \InvalidArgumentException('Invalid email');
-        }
-
-        return new UserRecord(uniqid(), $name, $email, new DateTime());
-    }
-
-    public function updateUserEmail(UserRecord $user, string $newEmail): void
-    {
-        if (!str_contains($newEmail, '@')) {
-            throw new \InvalidArgumentException('Invalid email');
-        }
-        $user->email = $newEmail;
-    }
-}
-
-class UserReportGenerator
-{
-    public function generateUserSummary(UserRecord $user): string
-    {
-        return "User {$user->name} ({$user->email}) created on {$user->createdAt->format('Y-m-d')}";
-    }
-}
-
-function demoDataClass(): string
-{
-    $service = new UserService();
-    $report = new UserReportGenerator();
-    $user = $service->createUser('Lina', 'lina@example.com');
-    $service->updateUserEmail($user, 'lina+news@example.com');
-    return $report->generateUserSummary($user);
-}
+```bash
+./vendor/bin/phpunit tests/CodeSmells/Dispensables/DataClassTest.php
 ```
 
-## Ejercicio
-
-Implementa reglas de dominio adicionales, como requerir verificación de email o restringir el registro a ciertos dominios (ej. `company.com`).
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Tendrás que modificar múltiples servicios y lugares que manipulan `UserRecord`. Esto demuestra cómo separar el comportamiento de los datos provoca que cambios simples se dispersen ampliamente por el código (Shotgun Surgery).

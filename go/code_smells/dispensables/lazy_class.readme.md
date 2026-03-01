@@ -1,50 +1,29 @@
-# Lazy Class
+# Lazy Class - Ejercicio en Go
 
-Clase perezosa.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Lazy Class](../../../docs/code-smells/dispensables/lazy-class.md)**
 
-Una clase perezosa es aquella que no aporta suficiente valor para justificar su existencia. Suelen ser clases que solo envuelven una operación trivial o que tienen muy poca responsabilidad, añadiendo una complejidad innecesaria al sistema.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-La clase `ShippingLabelBuilder` solo tiene un método que realiza una concatenación de strings simple, algo que podría resolverse con una función pura.
+**Archivo**: `lazy_class.go`
 
-```go
-type Address struct {
-	Name  string
-	Line1 string
-	City  *string
-}
+**Tarea**: Reescribe el código para eliminar la necesidad de la clase `ShippingLabelBuilder`.
 
-type ShippingLabelBuilder struct{}
+## Ejecutar tests
 
-func (s *ShippingLabelBuilder) Build(a Address) string {
-	cityStr := ""
-	if a.City != nil {
-		cityStr = ", " + *a.City
-	}
-	return fmt.Sprintf("%s — %s%s", a.Name, a.Line1, cityStr)
-}
-
-func PrintShippingLabel() {
-	city := "New York"
-	address := Address{
-		Name:  "John Doe",
-		Line1: "123 Main St",
-		City:  &city,
-	}
-
-	labelBuilder := &ShippingLabelBuilder{}
-	label := labelBuilder.Build(address)
-	fmt.Println(label)
-}
+```bash
+go test ./code_smells/dispensables/lazy_class_test.go
 ```
 
-## Ejercicio
-
-Reescribe el código para eliminar la necesidad de la clase `ShippingLabelBuilder`.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Mantener una estructura de clase para una lógica tan simple te obliga a instanciar objetos innecesariamente y añade capas de abstracción que dificultan la legibilidad del código sin ofrecer beneficios a cambio.

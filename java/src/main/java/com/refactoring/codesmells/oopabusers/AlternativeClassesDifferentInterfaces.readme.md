@@ -1,39 +1,29 @@
-# Alternative Classes with Different Interfaces
+# Alternative Classes with Different Interfaces - Ejercicio en Java
 
-Clases alternativas con diferentes interfaces.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Alternative Classes with Different Interfaces](../../../../../../../docs/code-smells/oop-abusers/alternative-classes-different-interfaces.md)**
 
-Dos o más clases hacen lo mismo pero tienen interfaces diferentes (nombres de métodos distintos, parámetros diferentes). Esto dificulta el uso intercambiable y genera duplicación de lógica cliente.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```java
-public static class TextLogger {
-    public void log(String message) {
-        System.out.println("[text] " + message);
-    }
-}
+**Archivo**: `AlternativeClassesDifferentInterfaces.java`
 
-public static class MessageWriter {
-    public void write(String entry) {
-        System.out.println("[text] " + entry);
-    }
-}
+**Tarea**: Añade soporte para niveles de log (INFO, WARNING, ERROR) en ambas clases.
 
-public static void useAltClasses(String choice, String msg) {
-    if ("logger".equals(choice)) {
-        new TextLogger().log(msg);
-    } else {
-        new MessageWriter().write(msg);
-    }
-}
+## Ejecutar tests
+
+```bash
+mvn test -Dtest=AlternativeClassesDifferentInterfacesTest
 ```
 
-## Ejercicio
-
-Añade soporte para niveles de log (INFO, WARNING, ERROR) en ambas clases.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Tendrás que duplicar la lógica de niveles en ambas clases y en todo el código que las use, en lugar de tener una interfaz común que permita el polimorfismo.

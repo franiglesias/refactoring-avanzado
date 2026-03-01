@@ -1,54 +1,29 @@
-# Middleman
+# Middleman - Ejercicio en TypeScript
 
-Intermediario.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Middleman](../../../../docs/code-smells/couplers/middleman.md)**
 
-Ocurre cuando una clase realiza una única acción: delegar el trabajo a otra clase. Si una clase existe solo como un "pasamanos" hacia otro objeto, es posible que estemos ante una capa de abstracción innecesaria que oscurece al colaborador real.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-`Shop` hace poco más que delegar a `Catalog`, añadiendo una capa innecesaria que oculta dónde ocurre realmente la lógica.
+**Archivo**: `middleman.ts`
 
-```typescript
-export class Catalog {
-  private items = new Map<string, string>()
+**Tarea**: Añade una funcionalidad `searchByPrefix` en `Catalog` y propágala a través de `Shop`.
 
-  add(id: string, name: string): void {
-    this.items.set(id, name)
-  }
+## Ejecutar tests
 
-  find(id: string): string | undefined {
-    return this.items.get(id)
-  }
-
-  list(): string[] {
-    return Array.from(this.items.values())
-  }
-}
-
-export class Shop {
-  constructor(private catalog: Catalog) {
-  }
-
-  add(id: string, name: string): void {
-    this.catalog.add(id, name)
-  }
-
-  find(id: string): string | undefined {
-    return this.catalog.find(id)
-  }
-
-  list(): string[] {
-    return this.catalog.list()
-  }
-}
+```bash
+npm test -- middleman.test.ts
 ```
 
-## Ejercicio
-
-Añade una funcionalidad `searchByPrefix` en `Catalog` y propágala a través de `Shop`.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Añadirás métodos a `Shop` que solo pasan a través hacia `Catalog`, fomentando la duplicación accidental y ocultando dónde vive el comportamiento real cuando necesites cambiarlo después.

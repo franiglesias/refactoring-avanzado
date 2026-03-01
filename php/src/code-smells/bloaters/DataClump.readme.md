@@ -1,77 +1,29 @@
-# Data clump
+# Data Clump - Ejercicio en PHP
 
-Grupo de datos.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Data Clump](../../../../docs/code-smells/bloaters/data-clump.md)**
 
-El mismo grupo de campos de datos viaja junto por muchos lugares, lo que sugiere un Value Object faltante y duplicación.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```php
-<?php
+**Archivo**: `DataClump.php`
 
-declare(strict_types=1);
+**Tarea**: Añade país y provincia y reglas de formateo internacional de la dirección.
 
-namespace CodeSmells\Bloaters;
+## Ejecutar tests
 
-class Invoice
-{
-    private readonly string $customerName;
-    private readonly string $customerCity;
-    private readonly string $customerStreet;
-    private readonly string $customerZip;
-
-    public function __construct(
-        string $customerName,
-        string $customerStreet,
-        string $customerCity,
-        string $customerZip
-    ) {
-        $this->customerName = $customerName;
-        $this->customerStreet = $customerStreet;
-        $this->customerCity = $customerCity;
-        $this->customerZip = $customerZip;
-    }
-
-    public function print(): string
-    {
-        return "Factura para: {$this->customerName}\n" .
-               "Dirección: {$this->customerStreet}, {$this->customerCity}, {$this->customerZip}";
-    }
-}
-
-class ShippingLabel
-{
-    private readonly string $customerName;
-    private readonly string $customerStreet;
-    private readonly string $customerCity;
-    private readonly string $customerZip;
-
-    public function __construct(
-        string $customerName,
-        string $customerStreet,
-        string $customerCity,
-        string $customerZip
-    ) {
-        $this->customerName = $customerName;
-        $this->customerStreet = $customerStreet;
-        $this->customerCity = $customerCity;
-        $this->customerZip = $customerZip;
-    }
-
-    public function print(): string
-    {
-        return "Enviar a: {$this->customerName}\n" .
-               "{$this->customerStreet}, {$this->customerCity}, {$this->customerZip}";
-    }
-}
+```bash
+./vendor/bin/phpunit tests/CodeSmells/Bloaters/DataClumpTest.php
 ```
 
-## Ejercicio
-
-Añade país y provincia y reglas de formateo internacional de la dirección.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Necesitarás modificar constructores, impresores y cualquier lugar que pase estos campos juntos, multiplicando la superficie de cambio.

@@ -1,62 +1,29 @@
-# Data Clump
+# Data Clump - Ejercicio en Java
 
-Grupo de datos.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Data Clump](../../../../../../../docs/code-smells/bloaters/data-clump.md)**
 
-El mismo grupo de campos de datos viaja junto por muchos lugares, lo que sugiere un Value Object faltante y duplicación.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```java
-public static class ProductService {
+**Archivo**: `DataClump.java`
 
-    public void shipProduct(
-            String productId,
-            String street,
-            String city,
-            String postalCode,
-            String country
-    ) {
-        System.out.printf("Shipping product %s to:%n", productId);
-        System.out.printf("%s%n%s, %s%n%s%n", street, city, postalCode, country);
-    }
+**Tarea**: Añade país y provincia y reglas de formateo internacional de la dirección.
 
-    public boolean validateDeliveryAddress(
-            String street,
-            String city,
-            String postalCode,
-            String country
-    ) {
-        return street != null && !street.isEmpty() &&
-                city != null && !city.isEmpty() &&
-                postalCode != null && !postalCode.isEmpty() &&
-                country != null && !country.isEmpty();
-    }
+## Ejecutar tests
 
-    public double calculateShippingCost(
-            String street,
-            String city,
-            String postalCode,
-            String country,
-            double weight
-    ) {
-        double baseCost = 10.0;
-        if (!"Spain".equals(country)) {
-            baseCost += 15.0;
-        }
-        if ("Madrid".equals(city) || "Barcelona".equals(city)) {
-            baseCost += 2.0;
-        }
-        return baseCost + (weight * 0.5);
-    }
-}
+```bash
+mvn test -Dtest=DataClumpTest
 ```
 
-## Ejercicio
-
-Añade país y provincia y reglas de formateo internacional de la dirección.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Necesitarás modificar constructores, validadores y cualquier lugar que pase estos campos juntos, multiplicando la superficie de cambio.

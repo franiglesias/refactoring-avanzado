@@ -1,86 +1,29 @@
-# Parallel Inheritance Hierarchy
+# Parallel Inheritance Hierarchy - Ejercicio en Java
 
-Jerarquía de herencia paralela.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Parallel Inheritance Hierarchy](../../../../../../../docs/code-smells/change-preventers/parallel-inheritance-hierarchy.md)**
 
-Cada vez que añades una subclase a una jerarquía, también debes añadir una subclase correspondiente a otra jerarquía. Las dos jerarquías crecen en paralelo, duplicando esfuerzo.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```java
-public abstract static class Component {
-    public abstract String draw(Renderer renderer);
-}
+**Archivo**: `ParallelInheritanceHierarchy.java`
 
-public static class Button extends Component {
-    private String label;
+**Tarea**: Añade un nuevo componente (Checkbox) y un nuevo renderizador (PlainText).
 
-    public Button(String label) {
-        this.label = label;
-    }
+## Ejecutar tests
 
-    @Override
-    public String draw(Renderer renderer) {
-        return renderer.renderButton(this);
-    }
-
-    public String getLabel() {
-        return label;
-    }
-}
-
-public static class TextBox extends Component {
-    private String text;
-
-    public TextBox(String text) {
-        this.text = text;
-    }
-
-    @Override
-    public String draw(Renderer renderer) {
-        return renderer.renderTextBox(this);
-    }
-
-    public String getText() {
-        return text;
-    }
-}
-
-public abstract static class Renderer {
-    public abstract String renderButton(Button b);
-    public abstract String renderTextBox(TextBox t);
-}
-
-public static class HtmlRenderer extends Renderer {
-    @Override
-    public String renderButton(Button b) {
-        return String.format("<button>%s</button>", b.getLabel());
-    }
-
-    @Override
-    public String renderTextBox(TextBox t) {
-        return String.format("<input value=\"%s\"/>", t.getText());
-    }
-}
-
-public static class MarkdownRenderer extends Renderer {
-    @Override
-    public String renderButton(Button b) {
-        return String.format("[%s]", b.getLabel());
-    }
-
-    @Override
-    public String renderTextBox(TextBox t) {
-        return String.format("_%s_", t.getText());
-    }
-}
+```bash
+mvn test -Dtest=ParallelInheritanceHierarchyTest
 ```
 
-## Ejercicio
-
-Añade un nuevo componente (Checkbox) y un nuevo renderizador (PlainText).
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Cada nuevo componente requiere añadir métodos a todos los renderizadores, y cada nuevo renderizador debe implementar métodos para todos los componentes existentes.

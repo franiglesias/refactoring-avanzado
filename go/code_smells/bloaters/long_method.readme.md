@@ -1,78 +1,30 @@
-# Long method
+# Long Method - Ejercicio en Go
 
-Método largo.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Long Method](../../../docs/code-smells/bloaters/long-method.md)**
 
-Un método en una clase es muy largo.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```go
-type OrderService struct{}
+**Archivo**: `long_method.go`
 
-func (s *OrderService) Process(order *Order) {
-	// Validar el pedido
-	if order.Items == nil || len(order.Items) == 0 {
-		fmt.Println("El pedido no tiene productos")
-		return
-	}
+**Tarea**: Añade soporte de cupones con expiración y multi-moneda (USD/EUR) con reglas de redondeo distintas.
 
-	// Validar precios y cantidades
-	for _, item := range order.Items {
-		if item.Price < 0 || item.Quantity <= 0 {
-			fmt.Println("Producto inválido en el pedido")
-			return
-		}
-	}
+## Ejecutar tests
 
-	// Constantes de negocio (simples por ahora)
-	const TAX_RATE = 0.21           // 21% IVA
-	const FREE_SHIPPING_THRESHOLD = 50.0
-	const SHIPPING_FLAT = 5.0
-
-	// Calcular subtotal
-	subtotal := 0.0
-	for _, item := range order.Items {
-		subtotal += item.Price * float64(item.Quantity)
-	}
-
-	// Descuento por cliente VIP (10% del subtotal)
-	discount := 0.0
-	if order.CustomerType == "VIP" {
-		discount = roundMoney(subtotal * 0.1)
-		fmt.Println("Descuento VIP aplicado")
-	}
-
-	// Base imponible
-	taxable := math.Max(0, subtotal-discount)
-
-	// Impuestos
-	tax := roundMoney(taxable * TAX_RATE)
-
-	// Envío
-	shipping := 0.0
-	if taxable >= FREE_SHIPPING_THRESHOLD {
-		shipping = 0
-	} else {
-		shipping = SHIPPING_FLAT
-	}
-
-	// Total
-	total := roundMoney(taxable + tax + shipping)
-
-	// ... Cientos de líneas más para:
-	// - Registrar en la base de datos (simulado)
-	// - Enviar correo de confirmación
-	// - Imprimir resumen en impresora térmica
-}
+```bash
+go test ./code_smells/bloaters/long_method_test.go
 ```
 
-## Ejercicio
-
-Añade soporte de cupones con expiración y multi-moneda (USD/EUR) con reglas de redondeo distintas.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Tienes que tocar diferentes secciones dentro del método, lo que genera riesgo de cambios indeseados
 y aumenta el esfuerzo de mantenimiento.

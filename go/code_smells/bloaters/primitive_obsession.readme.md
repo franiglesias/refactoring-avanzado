@@ -1,71 +1,30 @@
-# Primitive Obsession
+# Primitive Obsession - Ejercicio en Go
 
-Obsesión primitiva.
+## 📚 Documentación Completa
 
-## Definición
+👉 **[Ver documentación completa de Primitive Obsession](../../../docs/code-smells/bloaters/primitive-obsession.md)**
 
-Conceptos de dominio se modelan con primitivos, lo que obliga a esparcir reglas de validación, formato, y todo tipo de comportamiento, por todo el código.
+La documentación completa incluye:
+- Definición y descripción detallada
+- Síntomas para identificarlo
+- Ejemplo en pseudocódigo
+- Proceso de refactoring paso a paso
+- Técnicas aplicables
+- Referencias en español e inglés
 
-## Ejemplo
+## 🎯 Ejercicio
 
-```go
-package bloaters
+**Archivo**: `primitive_obsession.go`
 
-import "fmt"
+**Tarea**: Introduce soporte para diferentes monedas, para enviar la factura por email, y para formatear la dirección en función del país.
 
-// Order demonstrates primitive obsession code smell
-// Using primitive types instead of domain objects
-type Order struct {
-	CustomerName  string
-	CustomerEmail string
-	Address       string
-	TotalAmount   float64
-	Currency      string
-}
+## Ejecutar tests
 
-// NewOrder creates a new order
-func NewOrder(customerName, customerEmail, address string, totalAmount float64, currency string) *Order {
-	return &Order{
-		CustomerName:  customerName,
-		CustomerEmail: customerEmail,
-		Address:       address,
-		TotalAmount:   totalAmount,
-		Currency:      currency,
-	}
-}
-
-// SendInvoice sends an invoice to the customer
-func (o *Order) SendInvoice() error {
-	// Validation logic scattered everywhere instead of being in domain objects
-	if !containsAt(o.CustomerEmail) {
-		return fmt.Errorf("email inválido")
-	}
-	if o.Address == "" {
-		return fmt.Errorf("no se ha indicado dirección")
-	}
-	if o.TotalAmount <= 0 {
-		return fmt.Errorf("el monto debe ser mayor que cero")
-	}
-	fmt.Printf("Factura enviada a %s in %s por %.2f %s\n",
-		o.CustomerName, o.Address, o.TotalAmount, o.Currency)
-	return nil
-}
-
-func containsAt(email string) bool {
-	for _, c := range email {
-		if c == '@' {
-			return true
-		}
-	}
-	return false
-}
+```bash
+go test ./code_smells/bloaters/primitive_obsession_test.go
 ```
 
-## Ejercicio
-
-Introduce soporte para diferentes monedas, para enviar la factura por email, y para formatear la dirección en función del país.
-
-## Problemas que encontrarás
+## Problema a experimentar
 
 Dado que los primitivos no nos permiten garantizar la integridad de sus valores, tendrás que introducir validaciones en muchos lugares, incluso de forma repetida. Algunos datos siempre viajan juntos (Data Clump), por lo que tienes que asegurarte de que permanecen juntos.
 
