@@ -1,63 +1,53 @@
-# Técnica de refactorización: Cambio en Paralelo (Expand–Migrate–Contract)
+# Expand-Migrate-Contract - Ejercicio en Go
 
-Este ejercicio te ayuda a practicar la técnica de **Parallel Change** en su forma más pura: expandir la interfaz, migrar los consumidores y contraer la interfaz antigua.
+## 📚 Documentación Completa
 
-## Escenario
+👉 **[Ver documentación completa de Expand-Migrate-Contract](../../../../../docs/refactoring/parallel-change/expand-migrate-contract.md)**
 
-Tenemos una estructura `User` con un campo `Name` (nombre completo como string único) y **cuatro funciones consumidoras** que dependen de ese campo:
+La documentación completa incluye:
+- Definición y explicación detallada de la técnica
+- Proceso paso a paso con ejemplos de código
+- Problemas comunes y soluciones
+- Referencias en español e inglés
 
-- `FormatGreeting(user)` — saludo al usuario.
-- `FormatEmailHeader(user)` — cabecera de email con nombre y dirección.
-- `FormatDisplayName(user)` — nombre para mostrar con ID.
-- `BuildUserSummary(users)` — listado de nombres de usuarios.
+## 🎯 Ejercicio
 
-**Objetivo**: Refactorizar `Name` para que sea `FirstName` y `LastName`, aplicando cambio en paralelo para no romper nunca los tests.
+**Objetivo**: Refactorizar el campo `Name` de `User` para que sea `FirstName` y `LastName` sin romper los tests
+
+**Archivo a refactorizar**: `user.go`
 
 ## Ejecutar tests
 
-```shell
+```bash
 go test ./refactoring/parallel_change/expand_migrate_contract
 ```
 
-## Ejercicio: Expand–Migrate–Contract
+## Escenario
+
+Tenemos struct `User` con campo `Name` (nombre completo) y cuatro funciones consumidoras:
+- `FormatGreeting(user)` — saludo al usuario
+- `FormatEmailHeader(user)` — cabecera de email
+- `FormatDisplayName(user)` — nombre para mostrar con ID
+- `BuildUserSummary(users)` — listado de nombres
+
+## Pasos recomendados
 
 ### Fase 1: EXPAND (Expandir)
-
-Añade los campos `FirstName` y `LastName` a la estructura `User` **sin eliminar** el campo `Name`. Puedes hacer que `Name` se calcule a partir de los nuevos campos, o aceptar los tres en la función constructora.
-
-- Los tests deben seguir pasando sin cambios.
-- Haz commit.
+Añadir `FirstName` y `LastName` SIN eliminar `Name`
 
 ### Fase 2: MIGRATE (Migrar)
-
-Migra las funciones consumidoras **una por una** para que usen `FirstName` y/o `LastName` en lugar de `Name`. Después de migrar cada función:
-
-1. Actualiza el test correspondiente si es necesario.
-2. Ejecuta los tests — deben pasar.
-3. Haz commit.
-
-Orden sugerido de migración:
-
-1. `FormatGreeting` — usa solo `FirstName`.
-2. `FormatEmailHeader` — usa `FirstName` + `LastName`.
-3. `FormatDisplayName` — usa `FirstName` + `LastName`.
-4. `BuildUserSummary` — usa `LastName`, `FirstName`.
+Migrar funciones una por una:
+1. `FormatGreeting` → usa `FirstName`
+2. `FormatEmailHeader` → usa `FirstName` + `LastName`
+3. `FormatDisplayName` → usa `FirstName` + `LastName`
+4. `BuildUserSummary` → usa `LastName`, `FirstName`
 
 ### Fase 3: CONTRACT (Contraer)
+Eliminar campo `Name` cuando ningún consumidor lo use
 
-Una vez que **ningún consumidor** use `Name`:
+## Criterios de aceptación
 
-1. Elimina el campo `Name` de la estructura `User`.
-2. Ajusta la función constructora para que solo reciba `FirstName` y `LastName`.
-3. Los tests deben pasar.
-4. Haz commit.
-
-## Uso de TCR (Test && Commit || Revert)
-
-Puedes ejecutar los tests después de cada cambio pequeño:
-
-```bash
-go test ./refactoring/parallel_change/expand_migrate_contract && git commit -am "paso X" || git reset --hard
-```
-
-Si los tests pasan, se hace commit automáticamente. Si fallan, se revierten los cambios al último commit. Esto fuerza pasos pequeños y seguros.
+- ✅ Tests nunca fallan durante el proceso
+- ✅ Commits pequeños entre cada paso
+- ✅ Campo `Name` eliminado al final
+- ✅ Todas las funciones migradas

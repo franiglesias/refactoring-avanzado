@@ -2,6 +2,13 @@
 
 Ejemplos y ejercicios del Curso de Refactoring Avanzado.
 
+## 📚 Documentación
+
+- **[Documentación Genérica](./docs/README.md)**: Explicaciones detalladas independientes del lenguaje con procesos de refactoring paso a paso
+- **[Índice de Code Smells](./docs/code-smells/README.md)**: Catálogo completo de 21 code smells organizados por categoría
+- **[Object Calisthenics](./docs/calisthenics/README.md)**: Guía completa de las 9 reglas de Object Calisthenics con ejemplos y ejercicios
+- **[Técnicas de Refactoring Avanzado](./docs/refactoring/README.md)**: Golden Master y Parallel Change para código legacy
+
 ## Versiones disponibles
 
 Este curso está disponible en múltiples lenguajes:

@@ -1,71 +1,53 @@
-# Técnica de refactorización: Cambio en Paralelo (Expand–Migrate–Contract)
+# Expand-Migrate-Contract - Ejercicio en C#
 
-Este ejercicio te ayuda a practicar la técnica de **Parallel Change** en su forma más pura:
-expandir la interfaz, migrar los consumidores y contraer la interfaz antigua.
+## 📚 Documentación Completa
 
+👉 **[Ver documentación completa de Expand-Migrate-Contract](../../../../../../docs/refactoring/parallel-change/expand-migrate-contract.md)**
 
-## Escenario
+La documentación completa incluye:
+- Definición y explicación detallada de la técnica
+- Proceso paso a paso con ejemplos de código
+- Problemas comunes y soluciones
+- Referencias en español e inglés
 
-Tenemos una clase `User` con un campo `name` (nombre completo como string único) y **cuatro
-funciones consumidoras** que dependen de ese campo:
+## 🎯 Ejercicio
 
-- `formatGreeting(user)` — saludo al usuario.
-- `formatEmailHeader(user)` — cabecera de email con nombre y dirección.
-- `formatDisplayName(user)` — nombre para mostrar con ID.
-- `buildUserSummary(users)` — listado de nombres de usuarios.
+**Objetivo**: Refactorizar el campo `Name` de `User` para que sea `FirstName` y `LastName` sin romper los tests
 
-**Objetivo**: Refactorizar `name` para que sea `firstName` y `lastName`, aplicando cambio en
-paralelo para no romper nunca los tests.
+**Archivo a refactorizar**: `ExpandMigrateContract.cs`
 
 ## Ejecutar tests
 
 ```shell
-npm run test -- src/refactoring/parallel-change/expand-migrate-contract/user.test.ts
+dotnet test --filter "ExpandMigrateContract"
 ```
 
-## Ejercicio: Expand–Migrate–Contract
+## Escenario
+
+Tenemos clase `User` con campo `Name` (nombre completo) y cuatro funciones consumidoras:
+- `FormatGreeting(user)` — saludo al usuario
+- `FormatEmailHeader(user)` — cabecera de email
+- `FormatDisplayName(user)` — nombre para mostrar con ID
+- `BuildUserSummary(users)` — listado de nombres
+
+## Pasos recomendados
 
 ### Fase 1: EXPAND (Expandir)
-
-Añade los campos `firstName` y `lastName` a la clase `User` **sin eliminar** el campo `name`.
-Puedes hacer que `name` se calcule a partir de los nuevos campos, o aceptar los tres en el
-constructor.
-
-- Los tests deben seguir pasando sin cambios.
-- Haz commit (o usa el script TCR).
+Añadir `FirstName` y `LastName` SIN eliminar `Name`
 
 ### Fase 2: MIGRATE (Migrar)
-
-Migra las funciones consumidoras **una por una** para que usen `firstName` y/o `lastName` en lugar
-de `name`. Después de migrar cada función:
-
-1. Actualiza el test correspondiente si es necesario.
-2. Ejecuta los tests — deben pasar.
-3. Haz commit (o usa el script TCR).
-
-Orden sugerido de migración:
-
-1. `formatGreeting` — usa solo `firstName`.
-2. `formatEmailHeader` — usa `firstName` + `lastName`.
-3. `formatDisplayName` — usa `firstName` + `lastName`.
-4. `buildUserSummary` — usa `lastName`, `firstName`.
+Migrar funciones una por una:
+1. `FormatGreeting` → usa `FirstName`
+2. `FormatEmailHeader` → usa `FirstName` + `LastName`
+3. `FormatDisplayName` → usa `FirstName` + `LastName`
+4. `BuildUserSummary` → usa `LastName`, `FirstName`
 
 ### Fase 3: CONTRACT (Contraer)
+Eliminar campo `Name` cuando ningún consumidor lo use
 
-Una vez que **ningún consumidor** use `name`:
+## Criterios de aceptación
 
-1. Elimina el campo `name` de la clase `User`.
-2. Ajusta el constructor para que solo reciba `firstName` y `lastName`.
-3. Los tests deben pasar.
-4. Haz commit (o usa el script TCR).
-
-## Uso del script TCR
-
-Ejecuta el script TCR después de cada cambio pequeño:
-
-```bash
-npm run tcr
-```
-
-Si los tests pasan, se hace commit automáticamente. Si fallan, se revierten los cambios al último
-commit. Esto fuerza pasos pequeños y seguros.
+- ✅ Tests nunca fallan durante el proceso
+- ✅ Commits pequeños entre cada paso
+- ✅ Campo `Name` eliminado al final
+- ✅ Todas las funciones migradas

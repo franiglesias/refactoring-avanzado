@@ -1,86 +1,57 @@
-# Calistenia de Objetos (Object Calisthenics)
+# Object Calisthenics - Ejercicios en Java
 
-Un conjunto de nueve reglas propuestas por Jeff Bay que, aplicadas a nuestro código, pueden mejorar su calidad y aproximarlo a un mejor diseño.
+Object Calisthenics es un conjunto de 9 reglas propuestas por Jeff Bay para mejorar la calidad del código mediante prácticas de diseño disciplinadas.
 
-Se basan en fijarnos en ciertas características aplicables a cualquier código.
+## 📚 Documentación Completa
 
-Si observamos que el código incumple alguna de esas reglas, intentamos arreglarlo para que se ajuste a ella.
+Para explicaciones detalladas de cada regla, ejemplos, proceso de aplicación y referencias:
 
-## Las 9 reglas
+👉 **[Ver documentación completa de Object Calisthenics](../../../../../../docs/calisthenics/README.md)**
 
-1. **No usar abreviaturas** - [NoAbbreviations.java](NoAbbreviations.java)
-2. **No usar ELSE** - [NoElse.java](NoElse.java)
-3. **Un solo nivel de indentación** - [OneLevelIndentation.java](OneLevelIndentation.java)
-4. **Encapsular primitivos** - [WrapPrimitives.java](WrapPrimitives.java)
-5. **Colecciones de primera clase** - [FirstClassCollections.java](FirstClassCollections.java)
-6. **No usar getters y setters** - [NoGettersSetters.java](NoGettersSetters.java)
-7. **Mantener las unidades de código pequeñas** - [SmallEntities.java](SmallEntities.java)
-8. **Máximo de dos variables de instancia por clase** - [MaxTwoInstanceVariables.java](MaxTwoInstanceVariables.java)
-9. **No más de un punto por línea** - [OneDotPerLine.java](OneDotPerLine.java)
+## 🎯 Las 9 Reglas
 
-## Descripción de cada regla
+Cada enlace lleva a la documentación genérica con explicaciones detalladas y ejemplos en todos los lenguajes:
 
-### 1. No usar abreviaturas
-Los identificadores abreviados oscurecen la intención y hacen que sea más costoso comprender los conceptos que maneja el código.
+1. [No usar abreviaturas](../../../../../../docs/calisthenics/01-dont-use-abbreviations.md) - [Ejercicio](NoAbbreviations.java)
+2. [No usar ELSE](../../../../../../docs/calisthenics/02-dont-use-else.md) - [Ejercicio](NoElse.java)
+3. [Un solo nivel de indentación](../../../../../../docs/calisthenics/03-one-indentation-level.md) - [Ejercicio](OneLevelIndentation.java)
+4. [Empaquetar primitivos](../../../../../../docs/calisthenics/04-wrap-primitives.md) - [Ejercicio](WrapPrimitives.java)
+5. [Colecciones de primera clase](../../../../../../docs/calisthenics/05-first-class-collections.md) - [Ejercicio](FirstClassCollections.java)
+6. [No usar getters y setters](../../../../../../docs/calisthenics/06-no-getters-setters.md) - [Ejercicio](NoGettersSetters.java)
+7. [Mantener las unidades pequeñas](../../../../../../docs/calisthenics/07-small-entities.md) - [Ejercicio](SmallEntities.java)
+8. [Máximo dos variables de instancia](../../../../../../docs/calisthenics/08-max-two-instance-variables.md) - [Ejercicio](MaxTwoInstanceVariables.java)
+9. [No más de un punto por línea](../../../../../../docs/calisthenics/09-one-dot-per-line.md) - [Ejercicio](OneDotPerLine.java)
 
-**Refactoring:** Renombrar identificadores.
+## 🚀 Cómo Usar los Ejercicios
 
-### 2. No usar ELSE
-Las cláusulas ELSE ocultan reglas importantes y dificultan la comprensión del flujo del código.
+1. **Lee la documentación** de la regla en docs/calisthenics/
+2. **Estudia el código** del ejercicio en este directorio
+3. **Identifica las violaciones** de la regla
+4. **Aplica refactoring** siguiendo el proceso documentado
+5. **Compara tu solución** con otras implementaciones
 
-**Refactoring:** Aplicar retorno temprano, cláusulas de guarda.
+## 💡 Aprendizaje Recomendado
 
-### 3. Un solo nivel de indentación
-Múltiples niveles de indentación revelan mezcla de niveles de abstracción.
+### Principiantes
+Empieza por reglas más simples:
+- Regla 1: No usar abreviaturas
+- Regla 2: No usar ELSE
+- Regla 7: Mantener unidades pequeñas
 
-**Refactoring:** Extraer métodos, descomponer condicionales.
+### Intermedios
+Continúa con reglas de encapsulación:
+- Regla 3: Un nivel de indentación
+- Regla 4: Empaquetar primitivos
+- Regla 5: Colecciones de primera clase
 
-### 4. Encapsular primitivos
-Los tipos primitivos no protegen las invariantes del dominio.
+### Avanzados
+Aplica las reglas más desafiantes:
+- Regla 6: No getters y setters
+- Regla 8: Máximo dos variables
+- Regla 9: Un punto por línea
 
-**Refactoring:** Introducir value objects.
+## 📖 Referencias
 
-### 5. Colecciones de primera clase
-Encapsular colecciones en objetos que representen conceptos del dominio.
-
-**Refactoring:** Envolver colecciones en clases.
-
-### 6. No usar getters y setters
-Exponer la estructura interna genera acoplamiento.
-
-**Refactoring:** Encapsular campos, Tell Don't Ask.
-
-### 7. Mantener las unidades de código pequeñas
-Clases y métodos grandes tienen múltiples responsabilidades.
-
-**Refactoring:** Extraer clases, extraer métodos.
-
-### 8. Máximo de dos variables de instancia por clase
-Muchas variables de instancia indican responsabilidades múltiples.
-
-**Refactoring:** Introducir value objects, extraer clases.
-
-### 9. No más de un punto por línea
-Evitar exponer la estructura interna (Ley de Demeter).
-
-**Refactoring:** Esconder delegación, extraer métodos.
-
-## Cómo usar estos ejercicios
-
-Cada archivo Java contiene un ejemplo de violación de una regla de calistenia. Tu tarea es:
-
-1. Identificar la violación
-2. Aplicar el refactoring correspondiente
-3. Verificar que el comportamiento se mantiene
-4. Observar cómo mejora el diseño
-
-## Ejecutar los ejemplos
-
-Cada archivo tiene un método `main()` que puedes ejecutar directamente:
-
-```bash
-javac com/refactoring/calisthenics/NoAbbreviations.java
-java com.refactoring.calisthenics.NoAbbreviations
-```
-
-O desde tu IDE favorito.
+- [Documentación genérica](../../../../../../docs/calisthenics/) - Explicaciones independientes del lenguaje
+- [Blog de Fran Iglesias](https://franiglesias.github.io) - Artículos en español sobre Object Calisthenics
+- Jeff Bay - "Object Calisthenics" (The ThoughtWorks Anthology)

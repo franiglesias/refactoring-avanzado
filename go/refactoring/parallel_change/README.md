@@ -1,41 +1,17 @@
-# Técnicas de Refactorización: Cambio en Paralelo
+# Parallel Change - Ejercicios en Go
 
-Este directorio contiene ejercicios prácticos para aplicar diferentes técnicas de refactorización segura en código legado.
+## 📚 Documentación Completa
 
-## Técnicas incluidas
+👉 **[Ver documentación completa de Parallel Change](../../../../docs/refactoring/parallel-change/README.md)**
 
-### 1. Sprout Change (Cambio Brote)
+## 🎯 Técnicas
 
-Técnica para introducir nuevo comportamiento creando código nuevo en paralelo con el antiguo, permitiendo migración gradual.
+- **[Sprout Change](sprout_change/README.md)** - Hacer brotar nuevo código
+- **[Wrap Change](wrap_change/README.md)** - Envolver dependencias
+- **[Expand-Migrate-Contract](expand_migrate_contract/README.md)** - Cambios estructurales en 3 fases
 
-[Ver ejercicio](./sprout_change/)
+## Ejecutar tests
 
-### 2. Wrap Change (Cambio Envolvente)
-
-Técnica para mejorar una dependencia problemática envolviéndola sin cambiar su interfaz pública.
-
-[Ver ejercicio](./wrap_change/)
-
-### 3. Expand-Migrate-Contract
-
-Técnica para refactorizar interfaces existentes de forma segura en tres fases:
-- **Expand**: Añadir nueva interfaz sin eliminar la antigua
-- **Migrate**: Migrar consumidores uno por uno
-- **Contract**: Eliminar interfaz antigua una vez migrados todos los consumidores
-
-[Ver ejercicio](./expand_migrate_contract/)
-
-## Principios generales
-
-Todas estas técnicas comparten principios comunes:
-
-1. **Nunca romper los tests**: Cada paso debe mantener el sistema funcionando
-2. **Cambios incrementales**: Pequeños pasos que pueden comitearse individualmente
-3. **Paralelismo**: Mantener código antiguo y nuevo funcionando simultáneamente durante la transición
-4. **Migración gradual**: Mover consumidores uno por uno en lugar de cambios masivos
-
-## Ejecutar todos los tests
-
-```shell
+```bash
 go test ./refactoring/parallel_change/...
 ```
