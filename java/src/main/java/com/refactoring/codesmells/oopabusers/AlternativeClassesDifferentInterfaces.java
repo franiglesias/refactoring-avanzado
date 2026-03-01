@@ -1,12 +1,5 @@
 package com.refactoring.codesmells.oopabusers;
 
-/**
- * Code Smell: Alternative Classes with Different Interfaces
- * [Clases alternativas con diferentes interfaces]
- *
- * TextLogger y MessageWriter hacen lo mismo pero con diferentes interfaces.
- * Deberían compartir una interfaz común o unificarse.
- */
 public class AlternativeClassesDifferentInterfaces {
 
     public static void main(String[] args) {

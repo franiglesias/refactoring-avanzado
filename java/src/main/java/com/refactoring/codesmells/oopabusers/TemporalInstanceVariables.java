@@ -3,13 +3,6 @@ package com.refactoring.codesmells.oopabusers;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Code Smell: Temporal Instance Variables [Variables de instancia temporales]
- * PizzaOrder usa variables de instancia (size, toppings, address) que solo son
- * válidas durante un período específico del flujo de trabajo.
- *
- * Estas variables deben ser parte de un objeto de estado separado o parámetros.
- */
 public class TemporalInstanceVariables {
 
     public static void main(String[] args) {

@@ -1,8 +1,5 @@
 package com.refactoring.codesmells.dispensables;
 
-/**
- * Example of Duplicated Code smell.
- */
 public class DuplicatedCode {
 
     public static class EmailService {
@@ -67,11 +64,4 @@ public class DuplicatedCode {
             System.out.println("Email sent successfully");
         }
     }
-
-    /*
-     * Exercise: Refactor this code to eliminate duplication
-     * 1. Extract the common validation logic
-     * 2. Extract the common email sending logic
-     * 3. Create a generic sendEmail method that the others can use
-     */
 }

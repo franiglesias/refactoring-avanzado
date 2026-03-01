@@ -3,13 +3,6 @@ package com.refactoring.codesmells.changepreventers;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Code Smell: Parallel Inheritance Hierarchy [Jerarquía de herencia paralela]
- * Cada vez que añades una subclase de Component, también debes añadir una subclase de Renderer.
- * Las jerarquías Component y Renderer crecen en paralelo.
- *
- * Añadir un nuevo componente (ej: Checkbox) requiere también añadir un nuevo renderizador.
- */
 public class ParallelInheritanceHierarchy {
 
     public static void main(String[] args) {

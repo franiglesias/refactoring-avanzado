@@ -1,8 +1,5 @@
 package com.refactoring.codesmells.bloaters;
 
-/**
- * Example of Long Parameter List code smell.
- */
 public class LongParameterList {
 
     public static void createUser(
@@ -31,11 +28,4 @@ public class LongParameterList {
         System.out.printf("Contact: %s%n", phoneNumber);
         System.out.printf("Age: %d, Role: %s, Active: %b%n", age, role, isActive);
     }
-
-    /*
-     * Exercise: Refactor this code to reduce the parameter list
-     * 1. Group related parameters into classes (e.g., Address, PersonalInfo)
-     * 2. Consider using the Builder pattern
-     * 3. Think about which parameters are truly required vs optional
-     */
 }

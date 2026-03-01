@@ -1,8 +1,5 @@
 package com.refactoring.codesmells.oopabusers;
 
-/**
- * Example of Switch Statements code smell.
- */
 public class SwitchStatements {
 
     public enum PaymentMethod {
@@ -77,12 +74,4 @@ public class SwitchStatements {
             }
         }
     }
-
-    /*
-     * Exercise: Refactor this code to use polymorphism instead of switch statements
-     * 1. Create a PaymentStrategy interface with methods: process, calculateFee, getName
-     * 2. Implement the interface for each payment method
-     * 3. Replace the switch statements with polymorphic calls
-     * 4. Notice how adding a new payment method becomes easier
-     */
 }

@@ -1,12 +1,5 @@
 package com.refactoring.codesmells.oopabusers;
 
-/**
- * Code Smell: Refused Bequest [Herencia rechazada]
- * ReadOnlyController hereda de BaseController pero no usa (o anula vacíos)
- * los métodos start() y stop().
- *
- * Esto indica que la herencia no es apropiada - no cumple "es-un".
- */
 public class RefusedBequest {
 
     public static void main(String[] args) {

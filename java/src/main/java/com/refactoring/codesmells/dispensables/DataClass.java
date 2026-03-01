@@ -4,13 +4,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.UUID;
 
-/**
- * Code Smell: Data Class [Clase de datos]
- * UserRecord es una clase que solo contiene datos sin comportamiento propio.
- * Toda la lógica está en otras clases (UserService, UserReportGenerator).
- *
- * La clase UserRecord debería contener la lógica relacionada con usuarios.
- */
 public class DataClass {
 
     public static void main(String[] args) {

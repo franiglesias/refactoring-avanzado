@@ -1,9 +1,5 @@
 package com.refactoring.calisthenics;
 
-/**
- * Example demonstrating using primitives directly.
- * Rule: Wrap all primitives and strings in their own types.
- */
 public class WrapPrimitives {
 
     public static class Order {
@@ -56,14 +52,4 @@ public class WrapPrimitives {
         System.out.printf("Processing order %s for %s (%.2f %s)%n",
                 order.getId(), order.getCustomerName(), order.getAmount(), order.getCurrency());
     }
-
-    /*
-     * Exercise: Refactor this code to wrap primitives in domain types
-     * Create types like:
-     * - Email (with validation)
-     * - Money (with amount and currency)
-     * - OrderId
-     * - CustomerName
-     * This makes the domain model explicit and validation automatic
-     */
 }

@@ -3,13 +3,6 @@ package com.refactoring.calisthenics;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Object Calisthenics: First Class Collections
- * Cualquier clase que contenga una colección no debe contener otras propiedades.
- *
- * Las funciones addProduct, totalPrice y removeProduct operan sobre una lista
- * sin encapsulación. Deberían estar en una clase que envuelva la colección.
- */
 public class FirstClassCollections {
 
     public static void main(String[] args) {

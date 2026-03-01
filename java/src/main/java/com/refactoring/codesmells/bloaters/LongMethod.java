@@ -2,12 +2,6 @@ package com.refactoring.codesmells.bloaters;
 
 import java.util.*;
 
-/**
- * Code Smell: Long Method [Método largo]
- * Este método process() maneja muchas responsabilidades:
- * validación, cálculos, persistencia, envío de email e impresión.
- * Es difícil de leer, mantener y probar.
- */
 public class LongMethod {
 
     public static void main(String[] args) {

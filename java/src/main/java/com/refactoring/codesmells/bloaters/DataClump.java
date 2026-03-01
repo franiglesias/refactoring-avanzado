@@ -1,9 +1,5 @@
 package com.refactoring.codesmells.bloaters;
 
-/**
- * Example of Data Clump code smell.
- * The same group of data (street, city, postalCode, country) appears together repeatedly.
- */
 public class DataClump {
 
     public static class ProductService {
@@ -50,11 +46,4 @@ public class DataClump {
             return baseCost + (weight * 0.5);
         }
     }
-
-    /*
-     * Exercise: Refactor this code to eliminate the data clump
-     * 1. Create an Address class to group these related fields
-     * 2. Update all methods to use the Address class
-     * 3. Consider adding address-related behavior to the Address class
-     */
 }

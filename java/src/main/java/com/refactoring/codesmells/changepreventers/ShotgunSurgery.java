@@ -2,13 +2,6 @@ package com.refactoring.codesmells.changepreventers;
 
 import java.util.List;
 
-/**
- * Code Smell: Shotgun Surgery [Cirugía de escopeta]
- * Cambiar la lógica de cálculo de impuestos requiere modificar múltiples clases.
- * La misma lógica está duplicada en PriceCalculator, InvoiceService, SalesReport y LoyaltyPoints.
- *
- * Un cambio en la tasa de impuestos requiere "cirugía de escopeta" en todas estas clases.
- */
 public class ShotgunSurgery {
 
     public static void main(String[] args) {

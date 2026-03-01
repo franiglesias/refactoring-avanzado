@@ -1,12 +1,5 @@
 package com.refactoring.codesmells.couplers;
 
-/**
- * Code Smell: Message Chains [Cadenas de mensajes]
- * El cliente debe conocer toda la cadena de navegación para obtener un valor simple.
- * root.getNext().getNext().getValue() crea acoplamiento a la estructura interna.
- *
- * Cualquier cambio en la estructura intermedia rompe el código cliente.
- */
 public class MessageChains {
 
     public static void main(String[] args) {

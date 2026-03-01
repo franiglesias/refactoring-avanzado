@@ -2,13 +2,6 @@ package com.refactoring.codesmells.couplers;
 
 import java.util.*;
 
-/**
- * Code Smell: Middleman [Intermediario]
- * Shop actúa como un simple intermediario, delegando todas las llamadas a Catalog
- * sin agregar ningún valor.
- *
- * La clase Shop no tiene lógica propia, solo reenvía las llamadas.
- */
 public class Middleman {
 
     public static void main(String[] args) {

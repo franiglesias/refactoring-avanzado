@@ -1,9 +1,5 @@
 package com.refactoring.calisthenics;
 
-/**
- * Example calculating discount using if-else.
- * Rule: Don't use the ELSE keyword.
- */
 public class NoElse {
 
     public static double calculateDiscount(String customerType, double amount) {
@@ -17,13 +13,4 @@ public class NoElse {
             return amount * 0.05;
         }
     }
-
-    /*
-     * Exercise: Refactor this code to eliminate all else keywords
-     * Techniques to consider:
-     * 1. Early returns
-     * 2. Guard clauses
-     * 3. Polymorphism (strategy pattern)
-     * 4. Look-up tables or maps
-     */
 }

@@ -3,15 +3,6 @@ package com.refactoring.codesmells.changepreventers;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * Code Smell: Divergent Change [Cambio divergente]
- * ProfileManager maneja múltiples razones de cambio:
- * - Gestión de usuarios (registro, actualización)
- * - Exportación de datos (JSON, CSV)
- * - Notificaciones (email)
- *
- * Cada nuevo formato o canal de comunicación requiere modificar esta clase.
- */
 public class DivergentChange {
 
     public static void main(String[] args) {

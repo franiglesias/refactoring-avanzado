@@ -1,9 +1,5 @@
 package com.refactoring.codesmells.couplers;
 
-/**
- * Example of Feature Envy code smell.
- * The method is more interested in the Customer class than its own class.
- */
 public class FeatureEnvy {
 
     public static class Customer {
@@ -87,11 +83,4 @@ public class FeatureEnvy {
                     invoice.getInvoiceNumber(), invoice.getAmount(), customerInfo);
         }
     }
-
-    /*
-     * Exercise: Refactor this code to eliminate feature envy
-     * 1. Move the customer-related logic to the Customer class
-     * 2. Create methods like Customer.formatInfo() and Customer.validate()
-     * 3. Keep the InvoiceService focused on invoice-related operations
-     */
 }

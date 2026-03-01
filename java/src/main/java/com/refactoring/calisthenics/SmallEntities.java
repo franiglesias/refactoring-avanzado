@@ -2,14 +2,6 @@ package com.refactoring.calisthenics;
 
 import java.util.*;
 
-/**
- * Object Calisthenics: Keep Entities Small
- * Las clases y métodos deben ser pequeños. Límites sugeridos:
- * - Clases: máximo 50 líneas
- * - Métodos: máximo 5 líneas
- *
- * ReportService.generateCsvReportFromJson() es demasiado largo y hace demasiado.
- */
 public class SmallEntities {
 
     public static void main(String[] args) {

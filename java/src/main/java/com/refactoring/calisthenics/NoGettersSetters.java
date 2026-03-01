@@ -47,7 +47,6 @@ public class NoGettersSetters {
         }
     }
 
-    // Lógica de negocio fuera de la clase - violación de encapsulación
     public static void pay(BankAccount account, double amount) {
         account.setBalance(account.getBalance() - amount);
     }

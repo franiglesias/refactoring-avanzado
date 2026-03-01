@@ -1,9 +1,5 @@
 package com.refactoring.codesmells.bloaters;
 
-/**
- * Example of Primitive Obsession code smell.
- * Using primitive types instead of domain objects.
- */
 public class PrimitiveObsession {
 
     public static class Order {
@@ -37,12 +33,4 @@ public class PrimitiveObsession {
                     customerName, address, totalAmount, currency);
         }
     }
-
-    /*
-     * Exercise: Refactor this code to use domain objects instead of primitives
-     * 1. Create an Email value object with validation
-     * 2. Create an Address value object
-     * 3. Create a Money value object to handle amount and currency together
-     * 4. Modify the Order to use these value objects
-     */
 }

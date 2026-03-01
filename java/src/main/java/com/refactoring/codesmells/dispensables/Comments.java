@@ -1,10 +1,5 @@
 package com.refactoring.codesmells.dispensables;
 
-/**
- * Code Smell: Comments [Comentarios excesivos]
- * Los comentarios que explican código obvio son innecesarios y pueden quedar desactualizados.
- * El código debe ser auto-explicativo.
- */
 public class Comments {
 
     public static void main(String[] args) {

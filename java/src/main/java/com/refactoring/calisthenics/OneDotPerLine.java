@@ -1,12 +1,5 @@
 package com.refactoring.calisthenics;
 
-/**
- * Object Calisthenics: Only One Dot Per Line
- * Evita encadenar llamadas que exponen la estructura interna.
- *
- * order.getCustomer().getAddress().getCity() viola la Ley de Demeter
- * y crea acoplamiento fuerte con la estructura interna.
- */
 public class OneDotPerLine {
 
     public static void main(String[] args) {

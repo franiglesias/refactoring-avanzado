@@ -1,12 +1,5 @@
 package com.refactoring.codesmells.dispensables;
 
-/**
- * Code Smell: Lazy Class [Clase perezosa]
- * Una clase que no hace lo suficiente para justificar su existencia.
- * ShippingLabelBuilder solo tiene un método simple que podría ser una función independiente.
- *
- * El costo de mantener esta clase no justifica el beneficio que aporta.
- */
 public class LazyClass {
 
     public static void main(String[] args) {

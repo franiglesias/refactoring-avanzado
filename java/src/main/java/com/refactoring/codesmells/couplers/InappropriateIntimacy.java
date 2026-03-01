@@ -1,13 +1,5 @@
 package com.refactoring.codesmells.couplers;
 
-/**
- * Code Smell: Inappropriate Intimacy [Intimidad inapropiada]
- * Manager y Team están demasiado acoplados - Manager conoce demasiado sobre
- * la estructura interna de Team y Budget.
- *
- * Manager manipula directamente el presupuesto y el nombre del equipo,
- * violando el principio de encapsulación.
- */
 public class InappropriateIntimacy {
 
     public static void main(String[] args) {

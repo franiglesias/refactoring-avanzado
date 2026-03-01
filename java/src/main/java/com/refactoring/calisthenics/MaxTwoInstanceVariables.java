@@ -2,13 +2,6 @@ package com.refactoring.calisthenics;
 
 import java.util.*;
 
-/**
- * Object Calisthenics: Maximum Two Instance Variables per Class
- * Las clases con muchas variables de instancia suelen violar el principio de
- * responsabilidad única. Limitar a dos variables fuerza la creación de value objects.
- *
- * CheckoutSession tiene 8 variables de instancia - demasiadas responsabilidades.
- */
 public class MaxTwoInstanceVariables {
 
     public static void main(String[] args) {

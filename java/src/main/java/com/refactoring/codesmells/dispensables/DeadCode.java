@@ -1,10 +1,5 @@
 package com.refactoring.codesmells.dispensables;
 
-/**
- * Code Smell: Dead Code [Código muerto]
- * Código que nunca se ejecuta o nunca se usa.
- * Variables, constantes y métodos no utilizados deben eliminarse.
- */
 public class DeadCode {
 
     // Constante no utilizada
