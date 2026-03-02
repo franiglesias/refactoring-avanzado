@@ -77,7 +77,7 @@ DESPUÉS: Con Sprout Change
                 └─────────────────┐
                                   ▼
         ┌─────────────────────────────────────────┐
-        │ // CÓDIGO NUEVO: Separado y testeable  │
+        │ // CÓDIGO NUEVO: Separado y testeable   │
         │                                         │
         │ function sendOrderNotification(order) { │
         │     recipient = order.customer.email    │
@@ -88,14 +88,14 @@ DESPUÉS: Con Sprout Change
         │ }                                       │
         │                                         │
         │ function formatOrderEmail(order) {      │
-        │     // Lógica de formateo              │
+        │     // Lógica de formateo               │
         │     return template                     │
         │ }                                       │
         └─────────────────────────────────────────┘
                           │
                           ▼
         ┌─────────────────────────────────────────┐
-        │ // TESTS: Solo para código nuevo       │
+        │ // TESTS: Solo para código nuevo        │
         │                                         │
         │ test "sends notification email" {       │
         │     mockEmailService = createMock()     │
