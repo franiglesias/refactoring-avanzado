@@ -4,7 +4,7 @@ Regla 3 de Object Calisthenics
 
 ## Definición
 
-Cada método o función debe contener un único nivel de indentación. Esto significa que no debe haber estructuras de control anidadas (loops dentro de loops, condicionales dentro de loops, etc.).
+Cada método o función debería contener un único nivel de indentación. Esto significa que no debe haber estructuras de control anidadas (loops dentro de loops, condicionales dentro de loops, etc.).
 
 ## Descripción
 
@@ -71,7 +71,7 @@ function processOrders(orders) {
 ```
 
 **Problemas**:
-- 5 niveles de indentación
+- 5 niveles de indentación (8 puntos de complejidad ciclomática)
 - Mezcla validación, cálculo, persistencia y notificación
 - Imposible entender sin leer todo el método
 - Difícil de testear (muchos casos edge)
@@ -151,6 +151,22 @@ function logOutOfStock(item) {
 - Fácil de testear cada comportamiento aisladamente
 - Fácil de modificar sin romper otras partes
 
+La complejidad ciclomática de este código se calcula así:
+
+| Función | Complejidad Ciclomática | Puntos de Decisión |
+|---------|------------------------|-------------------|
+| `processOrders(orders)` | 2 | 1 bucle for |
+| `processOrder(order)` | 3 | 2 condicionales if |
+| `calculateOrderTotal(order)` | 2 | 1 bucle for |
+| `addItemToTotal(order, item)` | 3 | 2 condicionales if |
+| `calculateItemPrice(order, item)` | 2 | 1 condicional if |
+| `applyDiscount(price, discountRate)` | 1 | 0 (función lineal) |
+| `logInvalidOrder(order)` | 1 | 0 (función lineal) |
+| `logOutOfStock(item)` | 1 | 0 (función lineal) |
+| **TOTAL** | **15** | **7 decisiones + 8 funciones** |
+
+Si bien el total es de 15 puntos, puedes ver que la máxima complejidad es 3.
+
 ## Ejercicio
 
 **Tarea**: En el código proporcionado en tu lenguaje, refactoriza los métodos para que cada uno tenga un único nivel de indentación. Extrae comportamiento a métodos auxiliares bien nombrados.
@@ -184,7 +200,7 @@ Métodos como `logOutOfStock(item)` parecen triviales, pero:
 
 Las llamadas a métodos tienen un costo, pero:
 - Es despreciable en la mayoría de aplicaciones
-- Los compiladores modernos inline métodos pequeños automáticamente
+- Los compiladores modernos hacen inline de métodos pequeños automáticamente
 - La ganancia en mantenibilidad supera infinitamente cualquier pérdida de performance
 - Si tienes un cuello de botella real, optimiza ese punto específico (no optimización prematura)
 

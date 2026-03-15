@@ -10,11 +10,11 @@ Los objetos no deben exponer su estado interno mediante getters y setters. En su
 
 **Getters y setters** parecen inocuos, incluso se consideran "buenas prácticas" en algunos contextos. Sin embargo, son una forma sutil de **romper la encapsulación**. Al exponer el estado interno:
 
-1. **Acoplamiento estructural**: El código cliente depende de la estructura interna del objeto
+1. **Acoplamiento estructural**: El código cliente depende de la estructura interna del objeto, dificultando la posibilidad de cambiarla en el futuro
 2. **Lógica esparcida**: Comportamiento que debería estar en el objeto acaba en el código cliente
 3. **Violación de Tell, Don't Ask**: Preguntas por datos para tomar decisiones, en lugar de decirle al objeto qué hacer
 4. **Objetos anémicos**: Clases que son solo contenedores de datos sin comportamiento
-5. **Dificulta evolución**: Cambiar la estructura interna requiere cambiar todo el código cliente
+5. **Dificulta evolución**: Cambiar la estructura interna requiere cambiar todo el código cliente, posiblemente en muchos lugares
 
 La diferencia fundamental:
 
@@ -261,11 +261,11 @@ class BankAccountDTO {
 ```
 
 **Mejoras**:
-- Comportamiento encapsulado en BankAccount
+- Comportamiento encapsulado en `BankAccount`
 - Validaciones dentro del objeto
 - Estado modificado solo internamente
-- No hay getters/setters públicos
-- Tell, Don't Ask aplicado consistentemente
+- No hay _getters/setters_ públicos
+- _Tell, Don't Ask_ aplicado consistentemente
 - Lógica de negocio en el lugar apropiado
 - DTOs solo en boundaries para serialización
 
@@ -304,14 +304,14 @@ test "should set balance to 100" {
 }
 
 // Bien: testear comportamiento
-test "should allow withdrawal when sufficient funds" {
+test "should allow withdrawal given sufficient funds" {
   account = new BankAccount("123", 100)
   account.withdraw(50)
   // Verifica comportamiento: ¿puede hacer otra operación?
   assert account.canWithdraw(30) == true
 }
 
-test "should prevent withdrawal when insufficient funds" {
+test "should prevent withdrawal given insufficient funds" {
   account = new BankAccount("123", 30)
   assertThrows(() => account.withdraw(50))
 }
@@ -327,9 +327,11 @@ Opciones:
 
 ### 4. "¿Qué pasa con Value Objects?"
 
-Value Objects **pueden** tener getters porque son inmutables y no tienen comportamiento que ocultar. El riesgo de getters es cuando permiten mutación externa. En Value Objects, no hay mutación.
+Value Objects **podrían** tener getters porque son inmutables. El riesgo de getters es cuando permiten mutación externa. En Value Objects, no hay mutación.
 
-Aun así, considera proporcionar métodos de comportamiento en lugar de getters cuando tenga sentido.
+Aun así, deberían proporcionar métodos de comportamiento en lugar de getters cuando tenga sentido. Los métodos "mutadores" devuelven instancias nuevas con los valores cambiados.
+
+Típicamente, un getter en un Value Object es para obtener una representación de su valor interno para pasarlo a otras capas.
 
 ### 5. "¿Cómo obtengo información para mostrar en UI?"
 

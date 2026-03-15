@@ -4,7 +4,7 @@ Regla 2 de Object Calisthenics
 
 ## Definición
 
-El código no debe contener cláusulas `else`. En su lugar, debe usar retornos tempranos, cláusulas de guarda, polimorfismo u otras técnicas que eviten la bifurcación explícita del flujo de control.
+El código no debería contener cláusulas `else`. En su lugar, es preferible usar retornos tempranos, cláusulas de guarda, polimorfismo u otras técnicas que eviten la bifurcación explícita del flujo de control.
 
 ## Descripción
 
@@ -16,10 +16,10 @@ Las cláusulas **else** parecen inofensivas, pero introducen varios problemas su
 4. **Esconden reglas de negocio**: Las condiciones importantes quedan enterradas en estructuras if-else
 5. **Complican el testing**: Más caminos de ejecución = más casos de test necesarios
 
-El problema fundamental es que **else invierte la lógica natural de validación**. En lugar de validar condiciones y fallar rápido, procesamos el camino feliz dentro de un bloque if, y el manejo de errores o casos especiales queda en el else.
+El problema fundamental es que **else invierte la lógica natural de validación**. En lugar de validar condiciones y fallar rápido, procesamos el camino feliz dentro de un bloque `if`, y el manejo de errores o casos especiales queda en el `else`.
 
-Eliminar else fuerza a:
-- Expresar las validaciones claramente al inicio (guard clauses)
+Eliminar `else` fuerza a:
+- Expresar las validaciones claramente al inicio (usando guard clauses)
 - Hacer explícitas las reglas de negocio
 - Reducir la anidación de código
 - Separar caminos de ejecución incompatibles (polimorfismo)
@@ -274,12 +274,12 @@ return values.get(type, 0)
 
 ## Técnicas de Refactoring Aplicables
 
-- **Replace Nested Conditional with Guard Clauses**: Extraer validaciones al inicio
+- **Extract Method**: Separar lógica de cada rama en métodos propios
+- **Decompose Conditional**: Extraer condiciones complejas a métodos con nombres descriptivos
+- **Replace Nested Conditional with Guard Clauses**: Controla valores no permitidos al inicio
 - **Replace Conditional with Polymorphism**: Usar herencia/interfaces para variaciones
 - **Introduce Null Object**: Evitar validaciones null con objeto que representa ausencia
 - **Replace Conditional with Strategy**: Encapsular variaciones de algoritmo
-- **Extract Method**: Separar lógica de cada rama en métodos propios
-- **Decompose Conditional**: Extraer condiciones complejas a métodos con nombres descriptivos
 
 ## Beneficios
 

@@ -26,7 +26,7 @@ La solución es crear **Value Objects**: objetos inmutables que:
 - Expresan el dominio explícitamente
 - Son comparables por valor, no por referencia
 
-Los Value Objects son uno de los patrones fundamentales de **Domain-Driven Design**.
+Los Value Objects son uno de los patrones fundamentales de **Domain-Driven Design**, pero podemos aplicarlos a cualquier lenguaje, arquitectura o framework.
 
 ## Síntomas
 

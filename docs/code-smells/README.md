@@ -6,7 +6,7 @@ Los code smells son indicadores de problemas potenciales en el diseño del códi
 
 ### [Bloaters](bloaters/) (5 ejercicios)
 
-Code smells en los que se complica el cambio en el código por producir unidades demasiado grandes o por obligarnos a introducir mucho código auxiliar.
+Code smells en los que se complica el cambio en el código porque las unidades son demasiado grandes o por obligarnos a introducir mucho código auxiliar.
 
 | Code Smell | Descripción | Dificultad |
 |------------|-------------|------------|

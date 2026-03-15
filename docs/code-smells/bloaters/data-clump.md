@@ -8,7 +8,8 @@ El mismo grupo de campos de datos viaja junto por muchos lugares, lo que sugiere
 
 ## Descripción
 
-Un **Data Clump** ocurre cuando el mismo conjunto de variables aparece repetidamente en múltiples lugares del código:
+El **Data Clump** ocurre cuando el mismo conjunto de variables aparece repetidamente en múltiples lugares del código:
+
 - Como parámetros en varios métodos
 - Como campos en diferentes clases
 - Como variables locales con los mismos nombres
@@ -19,7 +20,7 @@ Este patrón sugiere que existe un concepto del dominio que no ha sido modelado 
 
 - Varios métodos aceptan los mismos 3-4 parámetros en el mismo orden
 - Múltiples clases tienen los mismos campos
-- Cambiar la estructura de estos datos requiere modificaciones en muchos lugares
+- Cambiar la estructura de estos datos requiere modificaciones en muchos lugares para mantener la coherencia
 - Los mismos grupos de validaciones se repiten en diferentes ubicaciones
 
 ## Ejemplo
@@ -61,26 +62,31 @@ Necesitarás modificar constructores, impresores y cualquier lugar que pase esto
 ## Proceso de Refactoring
 
 ### 1. Identificar el Data Clump
+
 - Busca grupos de 3 o más campos/parámetros que siempre aparecen juntos
 - Identifica el concepto del dominio que representan (ej: "Address", "Money", "DateRange")
 
 ### 2. Extraer Value Object
+- 
 - Crea una nueva clase/struct que encapsule estos datos
 - Dale un nombre significativo que represente el concepto del dominio
 - Mueve los campos relacionados a esta nueva clase
 
 ### 3. Reemplazar progresivamente
+- 
 - Comienza por una clase o método
 - Reemplaza los campos individuales con una instancia del Value Object
 - Actualiza los constructores/métodos para aceptar el Value Object
 - Ejecuta tests después de cada cambio
 
 ### 4. Añadir comportamiento
+
 - Mueve la lógica relacionada con estos datos al Value Object
 - Ejemplos: validación, formateo, conversiones, comparaciones
 - Esto sigue el principio "Tell, Don't Ask"
 
 ### 5. Consolidar duplicación
+
 - Una vez que todos los lugares usan el Value Object
 - La lógica duplicada desaparece naturalmente
 - Los cambios futuros se hacen en un solo lugar
@@ -94,11 +100,11 @@ Necesitarás modificar constructores, impresores y cualquier lugar que pase esto
 
 ## Beneficios
 
-- **Menos parámetros**: Métodos más fáciles de entender y llamar
-- **Cambios centralizados**: Modificar la estructura una sola vez
-- **Tipo más seguro**: El compilador ayuda a prevenir errores
-- **Comportamiento cohesivo**: La lógica relacionada vive junta
-- **Mejor semántica**: El código expresa conceptos del dominio
+- **Menos parámetros**: Métodos más fáciles de entender y llamar. El objeto introducido representa un concepto que da sentido al conjunto de datos que agrupa.
+- **Cambios centralizados**: Modificar la estructura una sola vez o añadirle comportamiento.
+- **Tipo más seguro**: El compilador ayuda a prevenir errores, el código del objeto se preocupa por mantener sus invariantes.
+- **Comportamiento cohesivo**: La lógica relacionada vive junta.
+- **Mejor semántica**: El código expresa conceptos del dominio.
 
 ## Versiones por Lenguaje
 
