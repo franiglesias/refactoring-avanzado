@@ -142,8 +142,8 @@ Te darás cuenta de que el objeto es una "máquina de estados" frágil. Si un cl
 - [TypeScript](/typescript/src/code-smells/oop-abusers/temporal-instance-variables.ts) - [README](/typescript/src/code-smells/oop-abusers/temporal-instance-variables.readme.md)
 - [Go](/go/code_smells/oop_abusers/temporal_instance_variables.go) - [README](/go/code_smells/oop_abusers/temporal_instance_variables.readme.md)
 - [Java](/java/src/main/java/com/refactoring/codesmells/oopabusers/TemporalInstanceVariables.java) - [README](/java/src/main/java/com/refactoring/codesmells/oopabusers/TemporalInstanceVariables.readme.md)
-- [PHP](/php/src/code-smells/oop-abusers/TemporalInstanceVariables.php) - [README](./php/src/code-smells/oop-abusers/TemporalInstanceVariables.readme.md)
-- [Python](/python/src/code_smells/oop_abusers/temporal_instance_variables.py) - [README](./python/src/code_smells/oop_abusers/temporal_instance_variables_readme.md)
+- [PHP](/php/src/code-smells/oop-abusers/TemporalInstanceVariables.php) - [README](/php/src/code-smells/oop-abusers/TemporalInstanceVariables.readme.md)
+- [Python](/python/src/code_smells/oop_abusers/temporal_instance_variables.py) - [README](/python/src/code_smells/oop_abusers/temporal_instance_variables_readme.md)
 - [C#](/csharp/src/code-smells/oop-abusers/TemporalInstanceVariables.cs) - [README](/csharp/src/code-smells/oop-abusers/temporal-instance-variables.readme.md)
 
 ## Referencias en Español
