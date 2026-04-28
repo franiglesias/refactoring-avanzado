@@ -46,62 +46,27 @@ El proceso es simple pero poderoso:
 
 ### Diagrama de Flujo
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│ FASE 1: CAPTURA DEL COMPORTAMIENTO ACTUAL                  │
-└─────────────────────────────────────────────────────────────┘
-                            │
-                            ▼
-        ┌──────────────────────────────────┐
-        │  Ejecutar código con inputs      │
-        │  representativos                 │
-        └──────────────────────────────────┘
-                            │
-                            ▼
-        ┌──────────────────────────────────┐
-        │  Capturar outputs completos      │
-        │  (archivos, stdout, logs, etc.)  │
-        └──────────────────────────────────┘
-                            │
-                            ▼
-        ┌──────────────────────────────────┐
-        │  Guardar como Golden Master      │
-        │  (archivo de referencia)         │
-        └──────────────────────────────────┘
+```mermaid
+flowchart TD
+    F1["`**FASE 1: CAPTURA DEL COMPORTAMIENTO ACTUAL**`"]:::phase
 
-┌─────────────────────────────────────────────────────────────┐
-│ FASE 2: REFACTORING CON RED DE SEGURIDAD                   │
-└─────────────────────────────────────────────────────────────┘
-                            │
-                            ▼
-        ┌──────────────────────────────────┐
-        │  Hacer cambios en el código      │
-        └──────────────────────────────────┘
-                            │
-                            ▼
-        ┌──────────────────────────────────┐
-        │  Ejecutar con mismos inputs      │
-        └──────────────────────────────────┘
-                            │
-                            ▼
-        ┌──────────────────────────────────┐
-        │  Comparar output nuevo con       │
-        │  Golden Master                   │
-        └──────────────────────────────────┘
-                            │
-                ┌───────────┴───────────┐
-                ▼                       ▼
-        ┌──────────────┐        ┌──────────────┐
-        │  Idénticos   │        │  Diferentes  │
-        │  ✓ Test OK   │        │  ✗ Test FAIL │
-        └──────────────┘        └──────────────┘
-                                        │
-                        ┌───────────────┴────────────────┐
-                        ▼                                ▼
-            ┌───────────────────┐          ┌─────────────────────┐
-            │ Cambio intencional│          │ Bug introducido     │
-            │ Actualizar master │          │ Corregir código     │
-            └───────────────────┘          └─────────────────────┘
+    F1 --> A[Ejecutar código con inputs\nrepresentativos]
+    A --> B[Capturar outputs completos\narchiivos, stdout, logs, etc.]
+    B --> C[Guardar como Golden Master\narchivo de referencia]
+
+    F2["`**FASE 2: REFACTORING CON RED DE SEGURIDAD**`"]:::phase
+
+    C ~~~ F2
+    F2 --> D[Hacer cambios en el código]
+    D --> E[Ejecutar con mismos inputs]
+    E --> G[Comparar output nuevo con\nGolden Master]
+    G --> H{¿Resultado?}
+    H -->|Idénticos| I["✓ Test OK"]
+    H -->|Diferentes| J["✗ Test FAIL"]
+    J --> K[Cambio intencional\nActualizar master]
+    J --> L[Bug introducido\nCorregir código]
+
+    classDef phase fill:#2d2d2d,color:#fff,font-weight:bold
 ```
 
 ## Ejemplo

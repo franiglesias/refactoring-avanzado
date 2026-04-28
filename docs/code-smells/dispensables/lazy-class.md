@@ -120,12 +120,12 @@ Mantener una estructura de clase para una lógica tan simple te obliga a instanc
 
 ## Versiones por Lenguaje
 
-- [TypeScript](../../typescript/src/code-smells/dispensables/lazy-class.ts) - [README](../../typescript/src/code-smells/dispensables/lazy-class.readme.md)
-- [Go](../../go/code_smells/dispensables/lazy_class.go) - [README](../../go/code_smells/dispensables/lazy_class.readme.md)
-- [Java](../../java/src/main/java/com/refactoring/codesmells/dispensables/LazyClass.java) - [README](../../java/src/main/java/com/refactoring/codesmells/dispensables/LazyClass.readme.md)
-- [PHP](../../php/src/code-smells/dispensables/LazyClass.php) - [README](../../php/src/code-smells/dispensables/LazyClass.readme.md)
-- [Python](../../python/src/code_smells/dispensables/lazy_class.py) - [README](../../python/src/code_smells/dispensables/lazy_class_readme.md)
-- [C#](../../csharp/src/code-smells/dispensables/LazyClass.cs) - [README](../../csharp/src/code-smells/dispensables/lazy-class.readme.md)
+- [TypeScript](/typescript/src/code-smells/dispensables/lazy-class.ts) - [README](/typescript/src/code-smells/dispensables/lazy-class.readme.md)
+- [Go](/go/code_smells/dispensables/lazy_class.go) - [README](/go/code_smells/dispensables/lazy_class.readme.md)
+- [Java](/java/src/main/java/com/refactoring/codesmells/dispensables/LazyClass.java) - [README](/java/src/main/java/com/refactoring/codesmells/dispensables/LazyClass.readme.md)
+- [PHP](/php/src/code-smells/dispensables/LazyClass.php) - [README](/php/src/code-smells/dispensables/LazyClass.readme.md)
+- [Python](/python/src/code_smells/dispensables/lazy_class.py) - [README](/python/src/code_smells/dispensables/lazy_class_readme.md)
+- [C#](/csharp/src/code-smells/dispensables/LazyClass.cs) - [README](/csharp/src/code-smells/dispensables/lazy-class.readme.md)
 
 ## Referencias en Español
 

@@ -65,6 +65,8 @@ Añade un nuevo tipo de empleado (`contractor`) con una regla de pago especial (
 
 Tendrás que modificar el `switch` y cualquier otro código que dependa del tipo de empleado. A medida que el sistema crece, olvidar actualizar uno de estos puntos genera bugs difíciles de detectar.
 
+Otro problema típico es que tendrás que "cargar" con propiedades que solo son necesarias para alguno de los tipos.
+
 ## Proceso de Refactoring
 
 ### 1. Identificar switches relacionados
@@ -80,7 +82,7 @@ Tendrás que modificar el `switch` y cualquier otro código que dependa del tipo
 ### 3. Mover comportamiento a las subclases
 - Cada caso del switch se convierte en un método en la subclase correspondiente
 - Ejemplo: `calculatePay()` se implementa diferente en cada subclase
-- Usa **Replace Type Code with Subclasses**
+- Usa **Replace Type Code with Subclasses** 
 
 ### 4. Reemplazar switch con llamada polimórfica
 - En lugar de: `switch(employee.kind) { ... }`

@@ -82,7 +82,7 @@ Existen tres técnicas principales dentro de Parallel Change:
 ESTADO INICIAL: Código Legacy
 ┌─────────────────────────────────────┐
 │  Sistema Viejo                      │
-│  (Funcionando en producción)       │
+│  (Funcionando en producción)        │
 └─────────────────────────────────────┘
 
 
@@ -92,7 +92,7 @@ TÉCNICA 1: SPROUT CHANGE
 │         │                           │
 │         ├──> [Nueva Funcionalidad]  │◄─── Código nuevo aislado
 │         │                           │
-│  (Sin modificar el código viejo)   │
+│  (Sin modificar el código viejo)    │
 └─────────────────────────────────────┘
 
 
@@ -101,9 +101,9 @@ TÉCNICA 2: WRAP CHANGE
 │  [Wrapper/Decorador]                │◄─── Capa nueva
 │         │                           │
 │         ▼                           │
-│  ┌──────────────┐                  │
-│  │Sistema Viejo │                  │◄─── Sin modificar
-│  └──────────────┘                  │
+│  ┌──────────────┐                   │
+│  │Sistema Viejo │                   │◄─── Sin modificar
+│  └──────────────┘                   │
 └─────────────────────────────────────┘
 
 
@@ -112,8 +112,8 @@ TÉCNICA 3: EXPAND-MIGRATE-CONTRACT
 Fase 1: EXPAND
 ┌─────────────────────────────────────┐
 │  API Expandida                      │
-│  ├──> [Interfaz Vieja] ─┐          │
-│  └──> [Interfaz Nueva] ─┤          │
+│  ├──> [Interfaz Vieja] ─┐           │
+│  └──> [Interfaz Nueva] ─┤           │
 │                          ▼          │
 │                  [Implementación]   │
 └─────────────────────────────────────┘
@@ -131,7 +131,7 @@ Fase 3: CONTRACT
 │  API Contraída                      │
 │  [Interfaz Nueva]                   │◄─── Solo nueva
 │         │                           │
-│  (Código viejo eliminado)          │
+│  (Código viejo eliminado)           │
 └─────────────────────────────────────┘
 ```
 
@@ -377,8 +377,8 @@ Has aplicado Parallel Change correctamente cuando:
 ## Versiones por Lenguaje
 
 - [TypeScript](../../../typescript/src/refactoring/parallel-change/) - [README](../../../typescript/src/refactoring/parallel-change/README.md)
-- [Go](../../../go/refactoring/parallel-change/) - [README](../../../go/refactoring/parallel-change/README.md)
-- [Java](../../../java/src/main/java/com/refactoring/refactoring/parallel_change/) - [README](../../../java/src/main/java/com/refactoring/refactoring/parallel_change/README.md)
+- [Go](../../../go/refactoring/parallel_change/) - [README](../../../go/refactoring/parallel_change/README.md)
+- [Java](../../../java/src/main/java/com/refactoring/refactoring/parallelchange/) - [README](../../../java/src/main/java/com/refactoring/parallelchange/README.md)
 - [PHP](../../../php/src/refactoring/parallel-change/) - [README](../../../php/src/refactoring/parallel-change/README.md)
 - [Python](../../../python/src/refactoring/parallel_change/) - [README](../../../python/src/refactoring/parallel_change/README.md)
 - [C#](../../../csharp/src/refactoring/parallel-change/) - [README](../../../csharp/src/refactoring/parallel-change/README.md)

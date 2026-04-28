@@ -138,12 +138,12 @@ Necesitarás añadir `Image` a la jerarquía de componentes y `renderImage` a la
 
 ## Versiones por Lenguaje
 
-- [TypeScript](../../typescript/src/code-smells/change-preventers/parallel-inheritance-hierarchy.ts) - [README](../../typescript/src/code-smells/change-preventers/parallel-inheritance-hierarchy.readme.md)
-- [Go](../../go/code_smells/change_preventers/parallel_inheritance_hierarchy.go) - [README](../../go/code_smells/change_preventers/parallel_inheritance_hierarchy.readme.md)
-- [Java](../../java/src/main/java/com/refactoring/codesmells/changepreventers/ParallelInheritanceHierarchy.java) - [README](../../java/src/main/java/com/refactoring/codesmells/changepreventers/ParallelInheritanceHierarchy.readme.md)
-- [PHP](../../php/src/code-smells/change-preventers/ParallelInheritanceHierarchy.php) - [README](../../php/src/code-smells/change-preventers/ParallelInheritanceHierarchy.readme.md)
-- [Python](../../python/src/code_smells/change_preventers/parallel_inheritance_hierarchy.py) - [README](../../python/src/code_smells/change_preventers/parallel_inheritance_hierarchy_readme.md)
-- [C#](../../csharp/src/code-smells/change-preventers/ParallelInheritanceHierarchy.cs) - [README](../../csharp/src/code-smells/change-preventers/parallel-inheritance-hierarchy.readme.md)
+- [TypeScript](/typescript/src/code-smells/change-preventers/parallel-inheritance-hierarchy.ts) - [README](/typescript/src/code-smells/change-preventers/parallel-inheritance-hierarchy.readme.md)
+- [Go](/go/code_smells/change_preventers/parallel_inheritance_hierarchy.go) - [README](/go/code_smells/change_preventers/parallel_inheritance_hierarchy.readme.md)
+- [Java](/java/src/main/java/com/refactoring/codesmells/changepreventers/ParallelInheritanceHierarchy.java) - [README](/java/src/main/java/com/refactoring/codesmells/changepreventers/ParallelInheritanceHierarchy.readme.md)
+- [PHP](/php/src/code-smells/change-preventers/ParallelInheritanceHierarchy.php) - [README](/php/src/code-smells/change-preventers/ParallelInheritanceHierarchy.readme.md)
+- [Python](/python/src/code_smells/change_preventers/parallel_inheritance_hierarchy.py) - [README](/python/src/code_smells/change_preventers/parallel_inheritance_hierarchy_readme.md)
+- [C#](/csharp/src/code-smells/change-preventers/ParallelInheritanceHierarchy.cs) - [README](/csharp/src/code-smells/change-preventers/parallel-inheritance-hierarchy.readme.md)
 
 ## Referencias en Español
 

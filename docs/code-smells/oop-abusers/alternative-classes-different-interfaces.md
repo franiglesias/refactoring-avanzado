@@ -120,12 +120,12 @@ Al no compartir una interfaz común, te verás obligado a duplicar lógica en m�
 
 ## Versiones por Lenguaje
 
-- [TypeScript](../../typescript/src/code-smells/oop-abusers/alternative-classes-different-interfaces.ts) - [README](../../typescript/src/code-smells/oop-abusers/alternative-classes-different-interfaces.readme.md)
-- [Go](../../go/code_smells/oop_abusers/alternative_classes_different_interfaces.go) - [README](../../go/code_smells/oop_abusers/alternative_classes_different_interfaces.readme.md)
-- [Java](../../java/src/main/java/com/refactoring/codesmells/oopabusers/AlternativeClassesDifferentInterfaces.java) - [README](../../java/src/main/java/com/refactoring/codesmells/oopabusers/AlternativeClassesDifferentInterfaces.readme.md)
-- [PHP](../../php/src/code-smells/oop-abusers/AlternativeClassesDifferentInterfaces.php) - [README](../../php/src/code-smells/oop-abusers/AlternativeClassesDifferentInterfaces.readme.md)
-- [Python](../../python/src/code_smells/oop_abusers/alternative_classes_different_interfaces.py) - [README](../../python/src/code_smells/oop_abusers/alternative_classes_different_interfaces_readme.md)
-- [C#](../../csharp/src/code-smells/oop-abusers/AlternativeClassesDifferentInterfaces.cs) - [README](../../csharp/src/code-smells/oop-abusers/alternative-classes-different-interfaces.readme.md)
+- [TypeScript](/typescript/src/code-smells/oop-abusers/alternative-classes-different-interfaces.ts) - [README](/typescript/src/code-smells/oop-abusers/alternative-classes-different-interfaces.readme.md)
+- [Go](/go/code_smells/oop_abusers/alternative_classes_different_interfaces.go) - [README](/go/code_smells/oop_abusers/alternative_classes_different_interfaces.readme.md)
+- [Java](/java/src/main/java/com/refactoring/codesmells/oopabusers/AlternativeClassesDifferentInterfaces.java) - [README](/java/src/main/java/com/refactoring/codesmells/oopabusers/AlternativeClassesDifferentInterfaces.readme.md)
+- [PHP](/php/src/code-smells/oop-abusers/AlternativeClassesDifferentInterfaces.php) - [README](/php/src/code-smells/oop-abusers/AlternativeClassesDifferentInterfaces.readme.md)
+- [Python](/python/src/code_smells/oop_abusers/alternative_classes_different_interfaces.py) - [README](/python/src/code_smells/oop_abusers/alternative_classes_different_interfaces_readme.md)
+- [C#](/csharp/src/code-smells/oop-abusers/AlternativeClassesDifferentInterfaces.cs) - [README](/csharp/src/code-smells/oop-abusers/alternative-classes-different-interfaces.readme.md)
 
 ## Referencias en Español
 

@@ -135,12 +135,12 @@ Tocarás validación, almacenamiento, exportAsJson/Csv y mensajería en un solo 
 
 ## Versiones por Lenguaje
 
-- [TypeScript](../../typescript/src/code-smells/change-preventers/divergent-change.ts) - [README](../../typescript/src/code-smells/change-preventers/divergent-change.readme.md)
-- [Go](../../go/code_smells/change_preventers/divergent_change.go) - [README](../../go/code_smells/change_preventers/divergent_change.readme.md)
-- [Java](../../java/src/main/java/com/refactoring/codesmells/changepreventers/DivergentChange.java) - [README](../../java/src/main/java/com/refactoring/codesmells/changepreventers/DivergentChange.readme.md)
-- [PHP](../../php/src/code-smells/change-preventers/DivergentChange.php) - [README](../../php/src/code-smells/change-preventers/DivergentChange.readme.md)
-- [Python](../../python/src/code_smells/change_preventers/divergent_change.py) - [README](../../python/src/code_smells/change_preventers/divergent_change_readme.md)
-- [C#](../../csharp/src/code-smells/change-preventers/DivergentChange.cs) - [README](../../csharp/src/code-smells/change-preventers/divergent-change.readme.md)
+- [TypeScript](/typescript/src/code-smells/change-preventers/divergent-change.ts) - [README](/typescript/src/code-smells/change-preventers/divergent-change.readme.md)
+- [Go](/go/code_smells/change_preventers/divergent_change.go) - [README](/go/code_smells/change_preventers/divergent_change.readme.md)
+- [Java](/java/src/main/java/com/refactoring/codesmells/changepreventers/DivergentChange.java) - [README](/java/src/main/java/com/refactoring/codesmells/changepreventers/DivergentChange.readme.md)
+- [PHP](/php/src/code-smells/change-preventers/DivergentChange.php) - [README](/php/src/code-smells/change-preventers/DivergentChange.readme.md)
+- [Python](/python/src/code_smells/change_preventers/divergent_change.py) - [README](/python/src/code_smells/change_preventers/divergent_change_readme.md)
+- [C#](/csharp/src/code-smells/change-preventers/DivergentChange.cs) - [README](/csharp/src/code-smells/change-preventers/divergent-change.readme.md)
 
 ## Referencias en Español
 

@@ -132,12 +132,12 @@ Tendrás que modificar múltiples servicios y lugares que manipulan `UserRecord`
 
 ## Versiones por Lenguaje
 
-- [TypeScript](../../typescript/src/code-smells/dispensables/data-class.ts) - [README](../../typescript/src/code-smells/dispensables/data-class.readme.md)
-- [Go](../../go/code_smells/dispensables/data_class.go) - [README](../../go/code_smells/dispensables/data_class.readme.md)
-- [Java](../../java/src/main/java/com/refactoring/codesmells/dispensables/DataClass.java) - [README](../../java/src/main/java/com/refactoring/codesmells/dispensables/DataClass.readme.md)
-- [PHP](../../php/src/code-smells/dispensables/DataClass.php) - [README](../../php/src/code-smells/dispensables/DataClass.readme.md)
-- [Python](../../python/src/code_smells/dispensables/data_class.py) - [README](../../python/src/code_smells/dispensables/data_class_readme.md)
-- [C#](../../csharp/src/code-smells/dispensables/DataClass.cs) - [README](../../csharp/src/code-smells/dispensables/data-class.readme.md)
+- [TypeScript](/typescript/src/code-smells/dispensables/data-class.ts) - [README](/typescript/src/code-smells/dispensables/data-class.readme.md)
+- [Go](/go/code_smells/dispensables/data_class.go) - [README](/go/code_smells/dispensables/data_class.readme.md)
+- [Java](/java/src/main/java/com/refactoring/codesmells/dispensables/DataClass.java) - [README](/java/src/main/java/com/refactoring/codesmells/dispensables/DataClass.readme.md)
+- [PHP](/php/src/code-smells/dispensables/DataClass.php) - [README](/php/src/code-smells/dispensables/DataClass.readme.md)
+- [Python](/python/src/code_smells/dispensables/data_class.py) - [README](/python/src/code_smells/dispensables/data_class_readme.md)
+- [C#](/csharp/src/code-smells/dispensables/DataClass.cs) - [README](/csharp/src/code-smells/dispensables/data-class.readme.md)
 
 ## Referencias en Español
 

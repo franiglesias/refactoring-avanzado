@@ -108,12 +108,12 @@ Necesitarás modificar constructores, impresores y cualquier lugar que pase esto
 
 ## Versiones por Lenguaje
 
-- [TypeScript](../../typescript/src/code-smells/bloaters/data-clump.ts) - [README](../../typescript/src/code-smells/bloaters/data-clump.readme.md)
-- [Go](../../go/code_smells/bloaters/data_clump.go) - [README](../../go/code_smells/bloaters/data_clump.readme.md)
-- [Java](../../java/src/main/java/com/refactoring/codesmells/bloaters/DataClump.java) - [README](../../java/src/main/java/com/refactoring/codesmells/bloaters/DataClump.readme.md)
-- [PHP](../../php/src/code-smells/bloaters/DataClump.php) - [README](../../php/src/code-smells/bloaters/DataClump.readme.md)
-- [Python](../../python/src/code_smells/bloaters/data_clump.py) - [README](../../python/src/code_smells/bloaters/data_clump_readme.md)
-- [C#](../../csharp/src/code-smells/bloaters/DataClump.cs) - [README](../../csharp/src/code-smells/bloaters/data-clump.readme.md)
+- [TypeScript](/typescript/src/code-smells/bloaters/data-clump.ts) - [README](/typescript/src/code-smells/bloaters/data-clump.readme.md)
+- [Go](/go/code_smells/bloaters/data_clump.go) - [README](/go/code_smells/bloaters/data_clump.readme.md)
+- [Java](/java/src/main/java/com/refactoring/codesmells/bloaters/DataClump.java) - [README](/java/src/main/java/com/refactoring/codesmells/bloaters/DataClump.readme.md)
+- [PHP](/php/src/code-smells/bloaters/DataClump.php) - [README](/php/src/code-smells/bloaters/DataClump.readme.md)
+- [Python](/python/src/code_smells/bloaters/data_clump.py) - [README](/python/src/code_smells/bloaters/data_clump_readme.md)
+- [C#](/csharp/src/code-smells/bloaters/DataClump.cs) - [README](/csharp/src/code-smells/bloaters/data-clump.readme.md)
 
 ## Referencias en Español
 

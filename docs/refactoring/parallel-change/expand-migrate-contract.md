@@ -18,7 +18,7 @@ También conocido como **Parallel Change** o **Expand-Contract Pattern**.
 - Trabajas en sistemas distribuidos o microservicios
 - Necesitas mantener compatibilidad hacia atrás durante semanas o meses
 - No puedes coordinar un despliegue sincronizado de todos los componentes
-- Quieres deployar cambios de forma incremental con capacidad de rollback
+- Quieres desplegar cambios de forma incremental con capacidad de rollback
 - El cambio es estructural y no puede hacerse con un simple refactor automático
 
 ## Problema que Resuelve

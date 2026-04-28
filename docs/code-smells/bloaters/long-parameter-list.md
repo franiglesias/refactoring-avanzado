@@ -128,12 +128,12 @@ Con más de tres parámetros es difícil recordar con exactitud cuáles son, el 
 
 ## Versiones por Lenguaje
 
-- [TypeScript](../../typescript/src/code-smells/bloaters/long-parameter-list.ts) - [README](../../typescript/src/code-smells/bloaters/long-parameter-list.readme.md)
-- [Go](../../go/code_smells/bloaters/long_parameter_list.go) - [README](../../go/code_smells/bloaters/long_parameter_list.readme.md)
-- [Java](../../java/src/main/java/com/refactoring/codesmells/bloaters/LongParameterList.java) - [README](../../java/src/main/java/com/refactoring/codesmells/bloaters/LongParameterList.readme.md)
-- [PHP](../../php/src/code-smells/bloaters/LongParameterList.php) - [README](../../php/src/code-smells/bloaters/LongParameterList.readme.md)
-- [Python](../../python/src/code_smells/bloaters/long_parameter_list.py) - [README](../../python/src/code_smells/bloaters/long_parameter_list_readme.md)
-- [C#](../../csharp/src/code-smells/bloaters/LongParameterList.cs) - [README](../../csharp/src/code-smells/bloaters/long-parameter-list.readme.md)
+- [TypeScript](/typescript/src/code-smells/bloaters/long-parameter-list.ts) - [README](/typescript/src/code-smells/bloaters/long-parameter-list.readme.md)
+- [Go](/go/code_smells/bloaters/long_parameter_list.go) - [README](/go/code_smells/bloaters/long_parameter_list.readme.md)
+- [Java](/java/src/main/java/com/refactoring/codesmells/bloaters/LongParameterList.java) - [README](/java/src/main/java/com/refactoring/codesmells/bloaters/LongParameterList.readme.md)
+- [PHP](/php/src/code-smells/bloaters/LongParameterList.php) - [README](/php/src/code-smells/bloaters/LongParameterList.readme.md)
+- [Python](/python/src/code_smells/bloaters/long_parameter_list.py) - [README](/python/src/code_smells/bloaters/long_parameter_list_readme.md)
+- [C#](/csharp/src/code-smells/bloaters/LongParameterList.cs) - [README](/csharp/src/code-smells/bloaters/long-parameter-list.readme.md)
 
 ## Referencias en Español
 

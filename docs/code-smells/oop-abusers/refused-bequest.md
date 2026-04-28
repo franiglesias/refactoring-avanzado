@@ -4,7 +4,7 @@ Herencia rechazada.
 
 ## Definición
 
-Este smell aparece cuando una subclase hereda de una clase base, pero ignora o sobrescribe con excepciones/operaciones vacías gran parte de lo que hereda. Esto sugiere que la relación de herencia no es adecuada ("is-a") o que la jerarquía de clases necesita ser replanteada, posiblemente usando composición o extrayendo una interfaz más pequeña.
+Este smell aparece cuando una subclase hereda de una clase base, pero ignora o sobrescribe con excepciones u operaciones vacías gran parte de lo que hereda. Esto sugiere que la relación de herencia no es adecuada ("is-a") o que la jerarquía de clases necesita ser replanteada, posiblemente usando composición o extrayendo una interfaz más pequeña.
 
 ## Descripción
 
@@ -135,12 +135,12 @@ Añade un método de ciclo de vida `pause` a la interfaz `Controller` y haz que 
 
 ## Versiones por Lenguaje
 
-- [TypeScript](../../typescript/src/code-smells/oop-abusers/refused-bequest.ts) - [README](../../typescript/src/code-smells/oop-abusers/refused-bequest.readme.md)
-- [Go](../../go/code_smells/oop_abusers/refused_bequest.go) - [README](../../go/code_smells/oop_abusers/refused_bequest.readme.md)
-- [Java](../../java/src/main/java/com/refactoring/codesmells/oopabusers/RefusedBequest.java) - [README](../../java/src/main/java/com/refactoring/codesmells/oopabusers/RefusedBequest.readme.md)
-- [PHP](../../php/src/code-smells/oop-abusers/RefusedBequest.php) - [README](../../php/src/code-smells/oop-abusers/RefusedBequest.readme.md)
-- [Python](../../python/src/code_smells/oop_abusers/refused_bequest.py) - [README](../../python/src/code_smells/oop_abusers/refused_bequest_readme.md)
-- [C#](../../csharp/src/code-smells/oop-abusers/RefusedBequest.cs) - [README](../../csharp/src/code-smells/oop-abusers/refused-bequest.readme.md)
+- [TypeScript](/typescript/src/code-smells/oop-abusers/refused-bequest.ts) - [README](/typescript/src/code-smells/oop-abusers/refused-bequest.readme.md)
+- [Go](/go/code_smells/oop_abusers/refused_bequest.go) - [README](/go/code_smells/oop_abusers/refused_bequest.readme.md)
+- [Java](/java/src/main/java/com/refactoring/codesmells/oopabusers/RefusedBequest.java) - [README](/java/src/main/java/com/refactoring/codesmells/oopabusers/RefusedBequest.readme.md)
+- [PHP](/php/src/code-smells/oop-abusers/RefusedBequest.php) - [README](/php/src/code-smells/oop-abusers/RefusedBequest.readme.md)
+- [Python](/python/src/code_smells/oop_abusers/refused_bequest.py) - [README](/python/src/code_smells/oop_abusers/refused_bequest_readme.md)
+- [C#](/csharp/src/code-smells/oop-abusers/RefusedBequest.cs) - [README](/csharp/src/code-smells/oop-abusers/refused-bequest.readme.md)
 
 ## Referencias en Español
 

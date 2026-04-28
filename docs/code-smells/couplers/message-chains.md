@@ -119,12 +119,12 @@ Observa cómo cada cliente que usa `root.getNext().getNext().getValue()` debe ca
 
 ## Versiones por Lenguaje
 
-- [TypeScript](../../typescript/src/code-smells/couplers/message-chains.ts) - [README](../../typescript/src/code-smells/couplers/message-chains.readme.md)
-- [Go](../../go/code_smells/couplers/message_chains.go) - [README](../../go/code_smells/couplers/message_chains.readme.md)
-- [Java](../../java/src/main/java/com/refactoring/codesmells/couplers/MessageChains.java) - [README](../../java/src/main/java/com/refactoring/codesmells/couplers/MessageChains.readme.md)
-- [PHP](../../php/src/code-smells/couplers/MessageChains.php) - [README](../../php/src/code-smells/couplers/MessageChains.readme.md)
-- [Python](../../python/src/code_smells/couplers/message_chains.py) - [README](../../python/src/code_smells/couplers/message_chains_readme.md)
-- [C#](../../csharp/src/code-smells/couplers/MessageChains.cs) - [README](../../csharp/src/code-smells/couplers/message-chains.readme.md)
+- [TypeScript](/typescript/src/code-smells/couplers/message-chains.ts) - [README](/typescript/src/code-smells/couplers/message-chains.readme.md)
+- [Go](/go/code_smells/couplers/message_chains.go) - [README](/go/code_smells/couplers/message_chains.readme.md)
+- [Java](/java/src/main/java/com/refactoring/codesmells/couplers/MessageChains.java) - [README](/java/src/main/java/com/refactoring/codesmells/couplers/MessageChains.readme.md)
+- [PHP](/php/src/code-smells/couplers/MessageChains.php) - [README](/php/src/code-smells/couplers/MessageChains.readme.md)
+- [Python](/python/src/code_smells/couplers/message_chains.py) - [README](/python/src/code_smells/couplers/message_chains_readme.md)
+- [C#](/csharp/src/code-smells/couplers/MessageChains.cs) - [README](/csharp/src/code-smells/couplers/message-chains.readme.md)
 
 ## Referencias en Español
 

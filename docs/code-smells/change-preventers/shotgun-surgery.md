@@ -130,12 +130,12 @@ Tendrás que buscar cada copia y asegurar un redondeo consistente en todas parte
 
 ## Versiones por Lenguaje
 
-- [TypeScript](../../typescript/src/code-smells/change-preventers/shotgun-surgery.ts) - [README](../../typescript/src/code-smells/change-preventers/shotgun-surgery.readme.md)
-- [Go](../../go/code_smells/change_preventers/shotgun_surgery.go) - [README](../../go/code_smells/change_preventers/shotgun_surgery.readme.md)
-- [Java](../../java/src/main/java/com/refactoring/codesmells/changepreventers/ShotgunSurgery.java) - [README](../../java/src/main/java/com/refactoring/codesmells/changepreventers/ShotgunSurgery.readme.md)
-- [PHP](../../php/src/code-smells/change-preventers/ShotgunSurgery.php) - [README](../../php/src/code-smells/change-preventers/ShotgunSurgery.readme.md)
-- [Python](../../python/src/code_smells/change_preventers/shotgun_surgery.py) - [README](../../python/src/code_smells/change_preventers/shotgun_surgery_readme.md)
-- [C#](../../csharp/src/code-smells/change-preventers/ShotgunSurgery.cs) - [README](../../csharp/src/code-smells/change-preventers/shotgun-surgery.readme.md)
+- [TypeScript](/typescript/src/code-smells/change-preventers/shotgun-surgery.ts) - [README](/typescript/src/code-smells/change-preventers/shotgun-surgery.readme.md)
+- [Go](/go/code_smells/change_preventers/shotgun_surgery.go) - [README](/go/code_smells/change_preventers/shotgun_surgery.readme.md)
+- [Java](/java/src/main/java/com/refactoring/codesmells/changepreventers/ShotgunSurgery.java) - [README](/java/src/main/java/com/refactoring/codesmells/changepreventers/ShotgunSurgery.readme.md)
+- [PHP](/php/src/code-smells/change-preventers/ShotgunSurgery.php) - [README](/php/src/code-smells/change-preventers/ShotgunSurgery.readme.md)
+- [Python](/python/src/code_smells/change_preventers/shotgun_surgery.py) - [README](/python/src/code_smells/change_preventers/shotgun_surgery_readme.md)
+- [C#](/csharp/src/code-smells/change-preventers/ShotgunSurgery.cs) - [README](/csharp/src/code-smells/change-preventers/shotgun-surgery.readme.md)
 
 ## Referencias en Español
 

@@ -121,12 +121,12 @@ Tendrás que actualizar múltiples implementaciones y recordar mantenerlas consi
 
 ## Versiones por Lenguaje
 
-- [TypeScript](../../typescript/src/code-smells/dispensables/duplicated-code.ts) - [README](../../typescript/src/code-smells/dispensables/duplicated-code.readme.md)
-- [Go](../../go/code_smells/dispensables/duplicated_code.go) - [README](../../go/code_smells/dispensables/duplicated_code.readme.md)
-- [Java](../../java/src/main/java/com/refactoring/codesmells/dispensables/DuplicatedCode.java) - [README](../../java/src/main/java/com/refactoring/codesmells/dispensables/DuplicatedCode.readme.md)
-- [PHP](../../php/src/code-smells/dispensables/DuplicatedCode.php) - [README](../../php/src/code-smells/dispensables/DuplicatedCode.readme.md)
-- [Python](../../python/src/code_smells/dispensables/duplicated_code.py) - [README](../../python/src/code_smells/dispensables/duplicated_code_readme.md)
-- [C#](../../csharp/src/code-smells/dispensables/DuplicatedCode.cs) - [README](../../csharp/src/code-smells/dispensables/duplicated-code.readme.md)
+- [TypeScript](/typescript/src/code-smells/dispensables/duplicated-code.ts) - [README](/typescript/src/code-smells/dispensables/duplicated-code.readme.md)
+- [Go](/go/code_smells/dispensables/duplicated_code.go) - [README](/go/code_smells/dispensables/duplicated_code.readme.md)
+- [Java](/java/src/main/java/com/refactoring/codesmells/dispensables/DuplicatedCode.java) - [README](/java/src/main/java/com/refactoring/codesmells/dispensables/DuplicatedCode.readme.md)
+- [PHP](/php/src/code-smells/dispensables/DuplicatedCode.php) - [README](/php/src/code-smells/dispensables/DuplicatedCode.readme.md)
+- [Python](/python/src/code_smells/dispensables/duplicated_code.py) - [README](/python/src/code_smells/dispensables/duplicated_code_readme.md)
+- [C#](/csharp/src/code-smells/dispensables/DuplicatedCode.cs) - [README](/csharp/src/code-smells/dispensables/duplicated-code.readme.md)
 
 ## Referencias en Español
 

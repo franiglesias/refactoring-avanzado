@@ -150,12 +150,12 @@ Como Team y Manager tocan libremente los campos del otro, tendrás que esparcir 
 
 ## Versiones por Lenguaje
 
-- [TypeScript](../../typescript/src/code-smells/couplers/inappropriate-intimacy.ts) - [README](../../typescript/src/code-smells/couplers/inappropriate-intimacy.readme.md)
-- [Go](../../go/code_smells/couplers/inappropriate_intimacy.go) - [README](../../go/code_smells/couplers/inappropriate_intimacy.readme.md)
-- [Java](../../java/src/main/java/com/refactoring/codesmells/couplers/InappropriateIntimacy.java) - [README](../../java/src/main/java/com/refactoring/codesmells/couplers/InappropriateIntimacy.readme.md)
-- [PHP](../../php/src/code-smells/couplers/InappropriateIntimacy.php) - [README](../../php/src/code-smells/couplers/InappropriateIntimacy.readme.md)
-- [Python](../../python/src/code_smells/couplers/inappropriate_intimacy.py) - [README](../../python/src/code_smells/couplers/inappropriate_intimacy_readme.md)
-- [C#](../../csharp/src/code-smells/couplers/InappropriateIntimacy.cs) - [README](../../csharp/src/code-smells/couplers/inappropriate-intimacy.readme.md)
+- [TypeScript](/typescript/src/code-smells/couplers/inappropriate-intimacy.ts) - [README](/typescript/src/code-smells/couplers/inappropriate-intimacy.readme.md)
+- [Go](/go/code_smells/couplers/inappropriate_intimacy.go) - [README](/go/code_smells/couplers/inappropriate_intimacy.readme.md)
+- [Java](/java/src/main/java/com/refactoring/codesmells/couplers/InappropriateIntimacy.java) - [README](/java/src/main/java/com/refactoring/codesmells/couplers/InappropriateIntimacy.readme.md)
+- [PHP](/php/src/code-smells/couplers/InappropriateIntimacy.php) - [README](/php/src/code-smells/couplers/InappropriateIntimacy.readme.md)
+- [Python](/python/src/code_smells/couplers/inappropriate_intimacy.py) - [README](/python/src/code_smells/couplers/inappropriate_intimacy_readme.md)
+- [C#](/csharp/src/code-smells/couplers/InappropriateIntimacy.cs) - [README](/csharp/src/code-smells/couplers/inappropriate-intimacy.readme.md)
 
 ## Referencias en Español
 

@@ -112,12 +112,12 @@ Probablemente, seguirás añadiendo condiciones dentro de `ShippingCalculator` q
 
 ## Versiones por Lenguaje
 
-- [TypeScript](../../typescript/src/code-smells/couplers/feature-envy.ts) - [README](../../typescript/src/code-smells/couplers/feature-envy.readme.md)
-- [Go](../../go/code_smells/couplers/feature_envy.go) - [README](../../go/code_smells/couplers/feature_envy.readme.md)
-- [Java](../../java/src/main/java/com/refactoring/codesmells/couplers/FeatureEnvy.java) - [README](../../java/src/main/java/com/refactoring/codesmells/couplers/FeatureEnvy.readme.md)
-- [PHP](../../php/src/code-smells/couplers/FeatureEnvy.php) - [README](../../php/src/code-smells/couplers/FeatureEnvy.readme.md)
-- [Python](../../python/src/code_smells/couplers/feature_envy.py) - [README](../../python/src/code_smells/couplers/feature_envy_readme.md)
-- [C#](../../csharp/src/code-smells/couplers/FeatureEnvy.cs) - [README](../../csharp/src/code-smells/couplers/feature-envy.readme.md)
+- [TypeScript](/typescript/src/code-smells/couplers/feature-envy.ts) - [README](/typescript/src/code-smells/couplers/feature-envy.readme.md)
+- [Go](/go/code_smells/couplers/feature_envy.go) - [README](/go/code_smells/couplers/feature_envy.readme.md)
+- [Java](/java/src/main/java/com/refactoring/codesmells/couplers/FeatureEnvy.java) - [README](/java/src/main/java/com/refactoring/codesmells/couplers/FeatureEnvy.readme.md)
+- [PHP](/php/src/code-smells/couplers/FeatureEnvy.php) - [README](/php/src/code-smells/couplers/FeatureEnvy.readme.md)
+- [Python](/python/src/code_smells/couplers/feature_envy.py) - [README](/python/src/code_smells/couplers/feature_envy_readme.md)
+- [C#](/csharp/src/code-smells/couplers/FeatureEnvy.cs) - [README](/csharp/src/code-smells/couplers/feature-envy.readme.md)
 
 ## Referencias en Español
 

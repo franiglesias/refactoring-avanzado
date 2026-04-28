@@ -127,12 +127,12 @@ Observa cómo el código muerto cercano dificulta razonar sobre lo que realmente
 
 ## Versiones por Lenguaje
 
-- [TypeScript](../../typescript/src/code-smells/dispensables/dead-code.ts) - [README](../../typescript/src/code-smells/dispensables/dead-code.readme.md)
-- [Go](../../go/code_smells/dispensables/dead_code.go) - [README](../../go/code_smells/dispensables/dead_code.readme.md)
-- [Java](../../java/src/main/java/com/refactoring/codesmells/dispensables/DeadCode.java) - [README](../../java/src/main/java/com/refactoring/codesmells/dispensables/DeadCode.readme.md)
-- [PHP](../../php/src/code-smells/dispensables/DeadCode.php) - [README](../../php/src/code-smells/dispensables/DeadCode.readme.md)
-- [Python](../../python/src/code_smells/dispensables/dead_code.py) - [README](../../python/src/code_smells/dispensables/dead_code_readme.md)
-- [C#](../../csharp/src/code-smells/dispensables/DeadCode.cs) - [README](../../csharp/src/code-smells/dispensables/dead-code.readme.md)
+- [TypeScript](/typescript/src/code-smells/dispensables/dead-code.ts) - [README](/typescript/src/code-smells/dispensables/dead-code.readme.md)
+- [Go](/go/code_smells/dispensables/dead_code.go) - [README](/go/code_smells/dispensables/dead_code.readme.md)
+- [Java](/java/src/main/java/com/refactoring/codesmells/dispensables/DeadCode.java) - [README](/java/src/main/java/com/refactoring/codesmells/dispensables/DeadCode.readme.md)
+- [PHP](/php/src/code-smells/dispensables/DeadCode.php) - [README](/php/src/code-smells/dispensables/DeadCode.readme.md)
+- [Python](/python/src/code_smells/dispensables/dead_code.py) - [README](/python/src/code_smells/dispensables/dead_code_readme.md)
+- [C#](/csharp/src/code-smells/dispensables/DeadCode.cs) - [README](/csharp/src/code-smells/dispensables/dead-code.readme.md)
 
 ## Referencias en Español
 

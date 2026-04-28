@@ -126,12 +126,12 @@ Añadirás métodos a `Shop` que solo pasan a través hacia `Catalog`, fomentand
 
 ## Versiones por Lenguaje
 
-- [TypeScript](../../typescript/src/code-smells/couplers/middleman.ts) - [README](../../typescript/src/code-smells/couplers/middleman.readme.md)
-- [Go](../../go/code_smells/couplers/middleman.go) - [README](../../go/code_smells/couplers/middleman.readme.md)
-- [Java](../../java/src/main/java/com/refactoring/codesmells/couplers/Middleman.java) - [README](../../java/src/main/java/com/refactoring/codesmells/couplers/Middleman.readme.md)
-- [PHP](../../php/src/code-smells/couplers/Middleman.php) - [README](../../php/src/code-smells/couplers/Middleman.readme.md)
-- [Python](../../python/src/code_smells/couplers/middleman.py) - [README](../../python/src/code_smells/couplers/middleman_readme.md)
-- [C#](../../csharp/src/code-smells/couplers/Middleman.cs) - [README](../../csharp/src/code-smells/couplers/middleman.readme.md)
+- [TypeScript](/typescript/src/code-smells/couplers/middleman.ts) - [README](/typescript/src/code-smells/couplers/middleman.readme.md)
+- [Go](/go/code_smells/couplers/middleman.go) - [README](/go/code_smells/couplers/middleman.readme.md)
+- [Java](/java/src/main/java/com/refactoring/codesmells/couplers/Middleman.java) - [README](/java/src/main/java/com/refactoring/codesmells/couplers/Middleman.readme.md)
+- [PHP](/php/src/code-smells/couplers/Middleman.php) - [README](/php/src/code-smells/couplers/Middleman.readme.md)
+- [Python](/python/src/code_smells/couplers/middleman.py) - [README](/python/src/code_smells/couplers/middleman_readme.md)
+- [C#](/csharp/src/code-smells/couplers/Middleman.cs) - [README](/csharp/src/code-smells/couplers/middleman.readme.md)
 
 ## Referencias en Español
 

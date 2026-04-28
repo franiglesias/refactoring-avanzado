@@ -109,12 +109,12 @@ Observa cómo los comentarios de alrededor se vuelven obsoletos o engañosos rá
 
 ## Versiones por Lenguaje
 
-- [TypeScript](../../typescript/src/code-smells/dispensables/comments.ts) - [README](../../typescript/src/code-smells/dispensables/comments.readme.md)
-- [Go](../../go/code_smells/dispensables/comments.go) - [README](../../go/code_smells/dispensables/comments.readme.md)
-- [Java](../../java/src/main/java/com/refactoring/codesmells/dispensables/Comments.java) - [README](../../java/src/main/java/com/refactoring/codesmells/dispensables/Comments.readme.md)
-- [PHP](../../php/src/code-smells/dispensables/Comments.php) - [README](../../php/src/code-smells/dispensables/Comments.readme.md)
-- [Python](../../python/src/code_smells/dispensables/comments.py) - [README](../../python/src/code_smells/dispensables/comments_readme.md)
-- [C#](../../csharp/src/code-smells/dispensables/Comments.cs) - [README](../../csharp/src/code-smells/dispensables/comments.readme.md)
+- [TypeScript](/typescript/src/code-smells/dispensables/comments.ts) - [README](/typescript/src/code-smells/dispensables/comments.readme.md)
+- [Go](/go/code_smells/dispensables/comments.go) - [README](/go/code_smells/dispensables/comments.readme.md)
+- [Java](/java/src/main/java/com/refactoring/codesmells/dispensables/Comments.java) - [README](/java/src/main/java/com/refactoring/codesmells/dispensables/Comments.readme.md)
+- [PHP](/php/src/code-smells/dispensables/Comments.php) - [README](/php/src/code-smells/dispensables/Comments.readme.md)
+- [Python](/python/src/code_smells/dispensables/comments.py) - [README](/python/src/code_smells/dispensables/comments_readme.md)
+- [C#](/csharp/src/code-smells/dispensables/Comments.cs) - [README](/csharp/src/code-smells/dispensables/comments.readme.md)
 
 ## Referencias en Español
 

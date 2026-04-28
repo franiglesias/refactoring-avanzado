@@ -154,12 +154,12 @@ Tienes que tocar diferentes secciones dentro del método, lo que genera riesgo d
 
 ## Versiones por Lenguaje
 
-- [TypeScript](../../typescript/src/code-smells/bloaters/long-method.ts) - [README](../../typescript/src/code-smells/bloaters/long-method.readme.md)
-- [Go](../../go/code_smells/bloaters/long_method.go) - [README](../../go/code_smells/bloaters/long_method.readme.md)
-- [Java](../../java/src/main/java/com/refactoring/codesmells/bloaters/LongMethod.java) - [README](../../java/src/main/java/com/refactoring/codesmells/bloaters/LongMethod.readme.md)
-- [PHP](../../php/src/code-smells/bloaters/LongMethod.php) - [README](../../php/src/code-smells/bloaters/LongMethod.readme.md)
-- [Python](../../python/src/code_smells/bloaters/long_method.py) - [README](../../python/src/code_smells/bloaters/long_method_readme.md)
-- [C#](../../csharp/src/code-smells/bloaters/LongMethod.cs) - [README](../../csharp/src/code-smells/bloaters/long-method.readme.md)
+- [TypeScript](/typescript/src/code-smells/bloaters/long-method.ts) - [README](/typescript/src/code-smells/bloaters/long-method.readme.md)
+- [Go](/go/code_smells/bloaters/long_method.go) - [README](/go/code_smells/bloaters/long_method.readme.md)
+- [Java](/java/src/main/java/com/refactoring/codesmells/bloaters/LongMethod.java) - [README](/java/src/main/java/com/refactoring/codesmells/bloaters/LongMethod.readme.md)
+- [PHP](/php/src/code-smells/bloaters/LongMethod.php) - [README](/php/src/code-smells/bloaters/LongMethod.readme.md)
+- [Python](/python/src/code_smells/bloaters/long_method.py) - [README](/python/src/code_smells/bloaters/long_method_readme.md)
+- [C#](/csharp/src/code-smells/bloaters/LongMethod.cs) - [README](/csharp/src/code-smells/bloaters/long-method.readme.md)
 
 ## Referencias en Español
 

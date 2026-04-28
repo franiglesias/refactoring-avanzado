@@ -135,12 +135,12 @@ Dado que los primitivos no nos permiten garantizar la integridad de sus valores,
 
 ## Versiones por Lenguaje
 
-- [TypeScript](../../typescript/src/code-smells/bloaters/primitive-obsession.ts) - [README](../../typescript/src/code-smells/bloaters/primitive-obsession.readme.md)
-- [Go](../../go/code_smells/bloaters/primitive_obsession.go) - [README](../../go/code_smells/bloaters/primitive_obsession.readme.md)
-- [Java](../../java/src/main/java/com/refactoring/codesmells/bloaters/PrimitiveObsession.java) - [README](../../java/src/main/java/com/refactoring/codesmells/bloaters/PrimitiveObsession.readme.md)
-- [PHP](../../php/src/code-smells/bloaters/PrimitiveObsession.php) - [README](../../php/src/code-smells/bloaters/PrimitiveObsession.readme.md)
-- [Python](../../python/src/code_smells/bloaters/primitive_obsession.py) - [README](../../python/src/code_smells/bloaters/primitive_obsession_readme.md)
-- [C#](../../csharp/src/code-smells/bloaters/PrimitiveObsession.cs) - [README](../../csharp/src/code-smells/bloaters/primitive-obsession.readme.md)
+- [TypeScript](/typescript/src/code-smells/bloaters/primitive-obsession.ts) - [README](/typescript/src/code-smells/bloaters/primitive-obsession.readme.md)
+- [Go](/go/code_smells/bloaters/primitive_obsession.go) - [README](/go/code_smells/bloaters/primitive_obsession.readme.md)
+- [Java](/java/src/main/java/com/refactoring/codesmells/bloaters/PrimitiveObsession.java) - [README](/java/src/main/java/com/refactoring/codesmells/bloaters/PrimitiveObsession.readme.md)
+- [PHP](/php/src/code-smells/bloaters/PrimitiveObsession.php) - [README](/php/src/code-smells/bloaters/PrimitiveObsession.readme.md)
+- [Python](/python/src/code_smells/bloaters/primitive_obsession.py) - [README](/python/src/code_smells/bloaters/primitive_obsession_readme.md)
+- [C#](/csharp/src/code-smells/bloaters/PrimitiveObsession.cs) - [README](/csharp/src/code-smells/bloaters/primitive-obsession.readme.md)
 
 ## Referencias en Español
 

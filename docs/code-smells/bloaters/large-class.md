@@ -122,12 +122,12 @@ Tocarás autenticación, estado y notificaciones en una clase inflada, aumentand
 
 ## Versiones por Lenguaje
 
-- [TypeScript](../../typescript/src/code-smells/bloaters/large-class.ts) - [README](../../typescript/src/code-smells/bloaters/large-class.readme.md)
-- [Go](../../go/code_smells/bloaters/large_class.go) - [README](../../go/code_smells/bloaters/large_class.readme.md)
-- [Java](../../java/src/main/java/com/refactoring/codesmells/bloaters/LargeClass.java) - [README](../../java/src/main/java/com/refactoring/codesmells/bloaters/LargeClass.readme.md)
-- [PHP](../../php/src/code-smells/bloaters/LargeClass.php) - [README](../../php/src/code-smells/bloaters/LargeClass.readme.md)
-- [Python](../../python/src/code_smells/bloaters/large_class.py) - [README](../../python/src/code_smells/bloaters/large_class_readme.md)
-- [C#](../../csharp/src/code-smells/bloaters/LargeClass.cs) - [README](../../csharp/src/code-smells/bloaters/large-class.readme.md)
+- [TypeScript](/typescript/src/code-smells/bloaters/large-class.ts) - [README](/typescript/src/code-smells/bloaters/large-class.readme.md)
+- [Go](/go/code_smells/bloaters/large_class.go) - [README](/go/code_smells/bloaters/large_class.readme.md)
+- [Java](/java/src/main/java/com/refactoring/codesmells/bloaters/LargeClass.java) - [README](/java/src/main/java/com/refactoring/codesmells/bloaters/LargeClass.readme.md)
+- [PHP](/php/src/code-smells/bloaters/LargeClass.php) - [README](/php/src/code-smells/bloaters/LargeClass.readme.md)
+- [Python](/python/src/code_smells/bloaters/large_class.py) - [README](/python/src/code_smells/bloaters/large_class_readme.md)
+- [C#](/csharp/src/code-smells/bloaters/LargeClass.cs) - [README](/csharp/src/code-smells/bloaters/large-class.readme.md)
 
 ## Referencias en Español
 
