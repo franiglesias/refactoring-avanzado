@@ -5,13 +5,13 @@ Ejemplos y ejercicios del Curso de Refactoring Avanzado.
 ## 📚 Documentación
 
 - **[Documentación Genérica](./docs/README.md)**: Explicaciones detalladas independientes del lenguaje con procesos de refactoring paso a paso
-- **[Índice de Code Smells](./docs/code-smells/README.md)**: Catálogo completo de 21 code smells organizados por categoría
 - **[Object Calisthenics](./docs/calisthenics/README.md)**: Guía completa de las 9 reglas de Object Calisthenics con ejemplos y ejercicios
+- **[Índice de Code Smells](./docs/code-smells/README.md)**: Catálogo completo de 21 code smells organizados por categoría
 - **[Técnicas de Refactoring Avanzado](./docs/refactoring/README.md)**: Golden Master y Parallel Change para código legacy
 
 ## Versiones disponibles
 
-Este curso está disponible en múltiples lenguajes:
+Este curso está disponible en los siguientes lenguajes:
 
 - **[TypeScript](./typescript/README.md)**: Versión con Node.js, TypeScript y Vitest
 - **[Python](./python/README.md)**: Versión con Python 3.11+ y pytest
@@ -27,16 +27,6 @@ Sigue las instrucciones específicas de cada versión según el lenguaje que pre
 ## Contenido
 
 Este curso incluye ejemplos y ejercicios organizados en las siguientes categorías:
-
-### Técnicas de Refactoring
-
-Ejercicios prácticos de técnicas avanzadas de refactoring:
-
-- **Golden Master**: Técnica para caracterizar el comportamiento de código legado sin tests
-- **Parallel Change**: Técnicas para realizar cambios seguros en código en producción
-  - Expand-Migrate-Contract
-  - Sprout Change
-  - Wrap Change
 
 ### Mantenimiento diario de código: Calistenia
 
@@ -110,6 +100,16 @@ Code smells debido a la aplicación inadecuada de la orientación a objetos:
 - **Refused bequest**: Subclases que no usan la herencia recibida
 - **Switch statements**: Uso de switch/if-elif en lugar de polimorfismo
 - **Temporal instance variables**: Variables de instancia que solo se usan temporalmente
+
+### Técnicas de Refactoring
+
+Ejercicios prácticos de técnicas avanzadas de refactoring:
+
+- **Golden Master**: Técnica para caracterizar el comportamiento de código legado sin tests
+- **Parallel Change**: Técnicas para realizar cambios seguros en código en producción
+  - Expand-Migrate-Contract
+  - Sprout Change
+  - Wrap Change
 
 ## Estructura del Repositorio
 

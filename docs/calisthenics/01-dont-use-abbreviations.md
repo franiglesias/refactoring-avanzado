@@ -17,19 +17,19 @@ El problema con las abreviaturas es que su significado es ambiguo y depende del 
 - `msg` podría ser "message", "messaging" o "messenger"
 - `addr` podría ser "address" o "addresser"
 
-Los nombres completos eliminan esta ambigüedad y hacen que el código sea **autoexplicativo**. El código debería leerse como prosa, no como un crucigrama que hay que descifrar.
+Los nombres completos eliminan esta ambigüedad y hacen que el código sea **autoexplicativo**. El código debería leerse como prosa, no como un jeroglífico que hay que descifrar.
 
-Además, las abreviaturas suelen ser **inconsistentes** dentro del mismo código base: un desarrollador usa `msg`, otro usa `message`, y un tercero usa `msj`. Esta inconsistencia aumenta la carga cognitiva y dificulta la búsqueda de código.
+Además, las abreviaturas pueden ser **inconsistentes** dentro del mismo código base: un desarrollador usa `msg`, otro usa `message`, y un tercero usa `msj`. Esta inconsistencia aumenta la carga cognitiva y dificulta la búsqueda de código.
 
 ## Síntomas
 
-- Identificadores con menos de 4 caracteres (con excepciones como `id`, `url`, `uri`)
-- Nombres que requieren consultar documentación o contexto para entender
+- Identificadores con menos de 4 caracteres (con excepciones bien conocidas como `id`, `url`, `uri`)
+- Nombres que requieren consultar documentación o contexto para entender a qué se refieren
 - Inconsistencia en abreviaturas (`usr` en un lugar, `user` en otro)
 - Comentarios que explican qué significa una abreviatura
 - Abreviaturas "estándar" que no son universales (`qty`, `amt`, `addr`)
 - Uso de consonantes sin vocales (`fltr`, `cnfg`, `mgr`)
-- Abreviaturas de dominio que no son universales en la empresa
+- Abreviaturas del dominio que no son universales en la empresa
 - Nombres que no se pueden pronunciar en voz alta
 - Dificultad para buscar código (buscar "message" no encuentra "msg")
 

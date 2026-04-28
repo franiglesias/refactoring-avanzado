@@ -11,15 +11,15 @@ El código no debería contener cláusulas `else`. En su lugar, es preferible us
 Las cláusulas **else** parecen inofensivas, pero introducen varios problemas sutiles:
 
 1. **Ocultan el flujo principal**: El código más importante queda anidado dentro de bloques condicionales
-2. **Aumentan la complejidad ciclomática**: Cada else añade un camino de ejecución alternativo
+2. **Aumentan la complejidad ciclomática**: Cada `else` añade un camino de ejecución alternativo
 3. **Dificultan la comprensión**: Requieren mantener múltiples contextos mentales simultáneamente
-4. **Esconden reglas de negocio**: Las condiciones importantes quedan enterradas en estructuras if-else
+4. **Esconden reglas de negocio**: Las condiciones importantes quedan enterradas en estructuras `if-else`
 5. **Complican el testing**: Más caminos de ejecución = más casos de test necesarios
 
-El problema fundamental es que **else invierte la lógica natural de validación**. En lugar de validar condiciones y fallar rápido, procesamos el camino feliz dentro de un bloque `if`, y el manejo de errores o casos especiales queda en el `else`.
+El problema fundamental es que **`else` invierte la lógica natural de validación**. En lugar de validar condiciones y fallar rápido, procesamos el camino feliz dentro de un bloque `if`, y el manejo de errores o casos especiales queda en el bloque `else`.
 
 Eliminar `else` fuerza a:
-- Expresar las validaciones claramente al inicio (usando guard clauses)
+- Expresar las validaciones claramente al inicio (usando _guard clauses_)
 - Hacer explícitas las reglas de negocio
 - Reducir la anidación de código
 - Separar caminos de ejecución incompatibles (polimorfismo)
@@ -174,7 +174,7 @@ class DiscountCalculator {
 Múltiples `return` pueden parecer menos eficientes que un solo punto de salida, pero:
 - La diferencia de rendimiento es imperceptible
 - La ganancia en legibilidad es enorme
-- Los compiladores modernos optimizan ambos casos igual
+- Los compiladores modernos optimizan ambos casos de igual manera
 
 ### 2. Violación de "single exit point"
 
@@ -227,6 +227,10 @@ Son candidatos perfectos para **polimorfismo**, **patrón Strategy**, o **estruc
 → Usar **polimorfismo**, **patrón Strategy** o **estructura de datos**
 
 ### 3. Aplicar Guard Clauses (Tipo A)
+
+Una _guard clause_ verifica una precondición necesaria para que se pueda procesar el input recibido. Si no se cumple la condición, se gestiona o se falla, y se sale de la función. 
+
+Esto garantiza que al algoritmo llegan valores válidos para procesar.
 
 ```pseudocode
 // Antes

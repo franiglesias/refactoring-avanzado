@@ -592,7 +592,7 @@ Todos los conceptos del dominio están modelados como objetos, no primitivos.
 
 ## Referencias en Español
 
-- [Calistenias para objetos de valor](https://franiglesias.github.io/calistenics-and-value-objects/) - Aplicación directa de esta regla
+- [Calistenias para objetos de valor](https://franiglesias.github.io/calistenics-and-value-objects/) - Ejercicio de aplicación directa de esta regla
 - [Primitive obsession](https://franiglesias.github.io/primitive-obsession/) - Problema que esta regla ayuda a resolver
 - [Value Objects](https://franiglesias.github.io/value-objects/) - Guía sobre creación de Value Objects
 

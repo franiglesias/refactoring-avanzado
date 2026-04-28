@@ -476,7 +476,6 @@ Nuevos desarrolladores pueden entender unidades pequeñas gradualmente.
 ## Referencias en Español
 
 - [Métodos largos](https://franiglesias.github.io/long-method/) - Problema de métodos largos y soluciones
-- [Object Calisthenics para adelgazar las clases](https://franiglesias.github.io/calistenics-and-small-classes/) - Técnicas para mantener clases pequeñas
 - [Ejercicio de refactor (2) Extraer hasta la última gota](https://franiglesias.github.io/ejercicio-de-refactor-2/) - Práctica de extracción
 
 ## Referencias

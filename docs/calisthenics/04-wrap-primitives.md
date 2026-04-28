@@ -8,15 +8,15 @@ Los tipos primitivos del lenguaje (strings, números, booleanos, fechas, etc.) q
 
 ## Descripción
 
-**Primitive Obsession** es el code smell de usar tipos primitivos para representar conceptos del dominio que tienen reglas de validación, formato o comportamiento específico.
+**Primitive Obsession** es el _code smell_ de usar tipos primitivos para representar conceptos del dominio que tienen reglas de validación, formato o comportamiento específico.
 
 Problemas de usar primitivos directamente:
 
-1. **Sin validación**: Un string puede ser vacío cuando representa un email, un número puede ser negativo cuando representa una edad
+1. **Sin validación**: Un _string_ puede ser vacío cuando representa un email, un número puede ser negativo cuando representa una edad
 2. **Validación duplicada**: Cada lugar que usa el primitivo debe validar de nuevo
 3. **Comportamiento esparcido**: Lógica relacionada con el concepto está duplicada en múltiples lugares
 4. **Sin expresividad del dominio**: `string` no comunica que es un email, ISBN, DNI, o dirección postal
-5. **Acoplamiento a representación**: Cambiar de string a objeto complejo requiere modificar todo el código cliente
+5. **Acoplamiento a representación**: Cambiar de _string_ a objeto complejo requiere modificar todo el código cliente
 6. **Testing complicado**: Hay que recordar crear datos válidos manualmente en cada test
 
 La solución es crear **Value Objects**: objetos inmutables que:
@@ -316,7 +316,7 @@ Un email es solo un string, ¿por qué crear una clase? Porque:
 - La validación se hace una vez, se usa mil veces
 - El tipo explícito documenta el dominio
 - Cambios futuros están localizados (ej: añadir validación más estricta)
-- El código cliente es más limpio (no hay validaciones everywhere)
+- El código cliente es más limpio (no hay validaciones en todas partes)
 
 ### 2. Dónde poner el límite
 
@@ -333,12 +333,12 @@ Los Value Objects tienen un pequeño overhead, pero:
 - Si tienes un cuello de botella real, optimiza ese punto específico
 - Los lenguajes modernos optimizan objetos pequeños e inmutables
 
-### 4. Compatibilidad con frameworks
+### 4. Compatibilidad con _frameworks_
 
-Algunos frameworks esperan tipos primitivos (serialización JSON, ORMs, etc.):
+Algunos _frameworks_ esperan tipos primitivos (serialización JSON, ORMs, etc.):
 - Usa adaptadores en la capa de infraestructura
-- Convierte entre Value Objects y primitivos en los boundaries
-- El dominio debe ser independiente de frameworks
+- Convierte entre Value Objects y primitivos en los límites (_boundaries_)
+- El dominio debe ser independiente de _frameworks_
 
 ### 5. Value Objects con múltiples valores
 
@@ -383,7 +383,7 @@ class ConceptName {
 ### 3. Hacer inmutable
 
 - Todos los campos deben ser `private` y `final`/`readonly`/`const`
-- No proporcionar setters
+- No proporcionar _setters_
 - Operaciones que "modifican" retornan nuevas instancias
 
 ### 4. Añadir validación

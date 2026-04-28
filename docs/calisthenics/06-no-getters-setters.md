@@ -482,7 +482,6 @@ Sin mutación externa descontrolada = menos estados inconsistentes.
 ## Referencias en Español
 
 - [Refactor cotidiano (6): cuéntame, no me preguntes (tell, don't ask)](https://franiglesias.github.io/everyday-refactor-6/) - Sobre el principio Tell Don't Ask
-- [Calistenias para objetos de valor](https://franiglesias.github.io/calistenics-and-value-objects/) - Incluye discusión sobre getters en Value Objects
 - [Diseño orientado a objetos](https://franiglesias.github.io/tag/oop/) - Series de artículos sobre OOP
 
 ## Referencias

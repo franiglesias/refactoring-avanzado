@@ -278,11 +278,11 @@ class InventoryService {
 - Sin duplicación de lógica
 - Tipo explícito del dominio
 - Inmutabilidad controlada (puedes hacer la colección interna inmutable)
-- Testing simplificado (CartItems es testeable aisladamente)
+- Testing simplificado (`CartItems` es testeable aisladamente)
 
 ## Ejercicio
 
-**Tarea**: En el código proporcionado en tu lenguaje, identifica todas las colecciones y envuélvelas en First-Class Collections que encapsulen el comportamiento específico del dominio.
+**Tarea**: En el código proporcionado en tu lenguaje, identifica todas las colecciones y envuélvelas en _First-Class Collections_ que encapsulen el comportamiento específico del dominio.
 
 **Criterios de éxito**:
 1. Cada colección está envuelta en una clase dedicada
@@ -297,7 +297,7 @@ class InventoryService {
 
 Si tu clase tiene una colección y otros campos, no puedes aplicar esta regla directamente porque dice "no otros campos". Opciones:
 
-**Opción A**: Extrae la colección a su propia clase First-Class Collection, y úsala desde la clase original
+**Opción A**: Extrae la colección a su propia clase _First-Class Collection_, y úsala desde la clase original
 **Opción B**: Si la colección y los otros campos están muy relacionados, quizás necesitas reorganizar el diseño
 
 ### 2. "Es solo una lista, ¿por qué una clase?"
@@ -310,7 +310,7 @@ No expongas la colección directamente. Alternativas:
 - Proporciona métodos específicos (`calculateTotal()`, `hasExpensiveItems()`)
 - Implementa Iterator pattern (`forEach(callback)`)
 - Retorna copias inmutables si necesitas acceso read-only
-- Usa métodos de transformación (`map()`, `filter()`) que retornan nuevas First-Class Collections
+- Usa métodos de transformación (`map()`, `filter()`) que retornan nuevas _First-Class Collections_
 
 ### 4. Performance de encapsulación
 
@@ -449,8 +449,7 @@ Métodos como `hasExpensiveItems()` son más expresivos que `cart.items.filter(.
 
 ## Referencias en Español
 
-- [Calistenias para objetos de valor](https://franiglesias.github.io/calistenics-and-value-objects/) - Incluye discusión sobre colecciones
-- [Object Calisthenics para adelgazar las clases](https://franiglesias.github.io/calistenics-and-small-classes/) - Técnicas para encapsular colecciones
+- [Colecciones de primera clase](https://franiglesias.github.io/calisthenics-4/) - Incluye discusión sobre colecciones
 
 ## Referencias
 

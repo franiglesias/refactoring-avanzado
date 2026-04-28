@@ -547,7 +547,6 @@ Errores ocurren en el objeto apropiado, no en el código cliente.
 ## Referencias en Español
 
 - [Refactor cotidiano (6): cuéntame, no me preguntes (tell, don't ask)](https://franiglesias.github.io/everyday-refactor-6/) - Principio Tell Don't Ask aplicado
-- [Object Calisthenics para adelgazar las clases](https://franiglesias.github.io/calistenics-and-small-classes/) - Incluye discusión sobre encapsulación
 
 ## Referencias
 

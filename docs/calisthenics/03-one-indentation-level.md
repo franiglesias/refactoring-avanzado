@@ -304,7 +304,7 @@ Cada método puede testearse independientemente con casos simples, en lugar de c
 
 ### 4. Debugging Más Fácil
 
-Stack traces más descriptivos, y es más fácil poner breakpoints en comportamiento específico.
+_Stack traces_ más descriptivos, y es más fácil poner _breakpoints_ en comportamiento específico.
 
 ### 5. Reduce Complejidad Ciclomática
 
@@ -340,6 +340,7 @@ Los nombres de métodos documentan el propósito sin necesidad de comentarios.
 ## Referencias
 
 - **"Refactoring: Improving the Design of Existing Code"** - Martin Fowler - Extract Method, Compose Method
+- [The Composed Method Implementation Pattern](https://www.jorgemanrubia.com/2009/06/28/the-composed-method-implementation-pattern/)
 - **"Clean Code"** - Robert C. Martin - Capítulo sobre funciones: "Do One Thing"
 - [Object Calisthenics - William Durand](https://williamdurand.fr/2013/06/03/object-calisthenics/) - Regla #3
 - **"Smalltalk Best Practice Patterns"** - Kent Beck - Composed Method pattern

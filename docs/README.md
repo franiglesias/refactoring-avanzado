@@ -18,6 +18,25 @@ Cada ejercicio incluye:
 
 ## Contenido del Curso
 
+### Object Calisthenics
+
+Object Calisthenics es un conjunto de 9 reglas propuestas por Jeff Bay que, aplicadas a nuestro código, pueden mejorar su calidad y aproximarlo a un mejor diseño mediante prácticas disciplinadas.
+
+**[Ver documentación completa de Object Calisthenics](calisthenics/README.md)**
+
+Las 9 reglas son:
+
+1. [No usar abreviaturas](calisthenics/01-dont-use-abbreviations.md) - Nombres expresivos y completos
+2. [No usar ELSE](calisthenics/02-dont-use-else.md) - Simplificar flujo de control
+3. [Un solo nivel de indentación](calisthenics/03-one-indentation-level.md) - Métodos enfocados
+4. [Empaquetar primitivos](calisthenics/04-wrap-primitives.md) - Value Objects para conceptos del dominio
+5. [Colecciones de primera clase](calisthenics/05-first-class-collections.md) - Encapsular comportamiento de colecciones
+6. [No usar getters y setters](calisthenics/06-no-getters-setters.md) - Tell, Don't Ask
+7. [Mantener las unidades pequeñas](calisthenics/07-small-entities.md) - Clases y métodos pequeños
+8. [Máximo dos variables de instancia](calisthenics/08-max-two-instance-variables.md) - Cohesión alta
+9. [No más de un punto por línea](calisthenics/09-one-dot-per-line.md) - Ley de Demeter
+
+
 ### Code Smells
 
 Los code smells son indicadores de problemas más profundos en el diseño del código. No son bugs, pero sugieren debilidades que pueden dificultar el mantenimiento y la evolución del software.
@@ -69,24 +88,6 @@ Code smells debido a la aplicación inadecuada de la orientación a objetos.
 - [Refused Bequest](code-smells/oop-abusers/refused-bequest.md) - Subclase que no usa la herencia recibida
 - [Switch Statements](code-smells/oop-abusers/switch-statements.md) - Switch sobre tipos en lugar de polimorfismo
 - [Temporal Instance Variables](code-smells/oop-abusers/temporal-instance-variables.md) - Variables de instancia válidas solo en ciertas fases
-
-### Object Calisthenics
-
-Object Calisthenics es un conjunto de 9 reglas propuestas por Jeff Bay que, aplicadas a nuestro código, pueden mejorar su calidad y aproximarlo a un mejor diseño mediante prácticas disciplinadas.
-
-**[Ver documentación completa de Object Calisthenics](calisthenics/README.md)**
-
-Las 9 reglas son:
-
-1. [No usar abreviaturas](calisthenics/01-dont-use-abbreviations.md) - Nombres expresivos y completos
-2. [No usar ELSE](calisthenics/02-dont-use-else.md) - Simplificar flujo de control
-3. [Un solo nivel de indentación](calisthenics/03-one-indentation-level.md) - Métodos enfocados
-4. [Empaquetar primitivos](calisthenics/04-wrap-primitives.md) - Value Objects para conceptos del dominio
-5. [Colecciones de primera clase](calisthenics/05-first-class-collections.md) - Encapsular comportamiento de colecciones
-6. [No usar getters y setters](calisthenics/06-no-getters-setters.md) - Tell, Don't Ask
-7. [Mantener las unidades pequeñas](calisthenics/07-small-entities.md) - Clases y métodos pequeños
-8. [Máximo dos variables de instancia](calisthenics/08-max-two-instance-variables.md) - Cohesión alta
-9. [No más de un punto por línea](calisthenics/09-one-dot-per-line.md) - Ley de Demeter
 
 ### Técnicas de Refactoring Avanzado
 

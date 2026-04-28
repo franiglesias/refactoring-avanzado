@@ -14,7 +14,7 @@ Estas reglas son restricciones deliberadas que nos fuerzan a pensar de manera di
 
 Object Calisthenics no son reglas absolutas que deban aplicarse ciegamente en todo momento. Son **herramientas de entrenamiento** y **guías de diseño** que:
 
-- Revelan problemas de diseño ocultos, que son en sí mismos code-smells.
+- Revelan problemas de diseño ocultos, que son en sí mismos _code-smells_.
 - Fuerzan a crear abstracciones más limpias, atacando síntomas propios de malas abstracciones.
 - Mejoran la expresividad del código, ayudándonos a ser más claros y expresivos.
 - Reducen el acoplamiento, favoreciendo la encapsulación.
@@ -118,7 +118,7 @@ Al aplicar Object Calisthenics de manera consistente:
 3. **Testing más fácil**: Clases pequeñas y cohesivas son simples de testear, incluso triviales.
 4. **Menos bugs**: Menos complejidad = menos lugares para esconder errores.
 5. **Mantenibilidad**: Cambios localizados, bajo acoplamiento, nos ayuda a controlar la complejidad.
-6. **Onboarding más rápido**: Código autoexplicativo reduce curva de aprendizaje.
+6. **Onboarding más rápido**: Código autoexplicativo que reduce la curva de aprendizaje.
 
 ## Referencias en Español
 
