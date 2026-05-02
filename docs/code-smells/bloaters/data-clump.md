@@ -125,4 +125,4 @@ Necesitarás modificar constructores, impresores y cualquier lugar que pase esto
 ## Referencias
 
 - [Refactoring Guru - Data Clumps](https://refactoring.guru/smells/data-clumps)
-- Martin Fowler - "Refactoring: Improving the Design of Existing Code"
+- Martin Fowler: "Refactoring: Improving the Design of Existing Code"

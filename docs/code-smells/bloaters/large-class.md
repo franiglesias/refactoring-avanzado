@@ -137,5 +137,5 @@ Tocarás autenticación, estado y notificaciones en una clase inflada, aumentand
 ## Referencias
 
 - [Refactoring Guru - Large Class](https://refactoring.guru/smells/large-class)
-- Martin Fowler - "Refactoring: Improving the Design of Existing Code"
-- Robert C. Martin - "Clean Code" - Single Responsibility Principle
+- Martin Fowler: "Refactoring: Improving the Design of Existing Code"
+- Robert C. Martin: "Clean Code" (Single Responsibility Principle)

@@ -134,5 +134,5 @@ Al no compartir una interfaz común, te verás obligado a duplicar lógica en m�
 ## Referencias
 
 - [Refactoring Guru - Alternative Classes with Different Interfaces](https://refactoring.guru/smells/alternative-classes-with-different-interfaces)
-- Martin Fowler - "Refactoring: Improving the Design of Existing Code"
-- Gang of Four - "Design Patterns" - Strategy pattern
+- Martin Fowler: "Refactoring: Improving the Design of Existing Code"
+- Gang of Four: "Design Patterns" (Strategy pattern)
