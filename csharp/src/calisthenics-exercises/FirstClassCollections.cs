@@ -12,21 +12,23 @@ public class Product
     }
 }
 
-public static class ProductOperations
+public class ProductOperations
 {
-    public static void AddProduct(List<Product> products, Product product)
+    private readonly List<Product> _products = new();
+
+    public void AddProduct(Product product)
     {
-        var exists = products.Any(p => p.Id == product.Id);
-        if (!exists) products.Add(product);
+        var exists = _products.Any(p => p.Id == product.Id);
+        if (!exists) _products.Add(product);
     }
 
-    public static double TotalPrice(List<Product> products)
+    public double TotalPrice()
     {
-        return products.Sum(p => p.Price);
+        return _products.Sum(p => p.Price);
     }
 
-    public static List<Product> RemoveProduct(List<Product> products, string productId)
+    public void RemoveProduct(string productId)
     {
-        return products.Where(p => p.Id != productId).ToList();
+        _products.RemoveAll(p => p.Id == productId);
     }
 }
