@@ -1,14 +1,18 @@
 export type Product = { id: string; price: number }
 
-export function addProduct(products: Product[], product: Product): void {
-  const exists = products.some((p) => p.id === product.id)
-  if (!exists) products.push(product)
-}
+export class ProductOperations {
+  private products: Product[] = []
 
-export function totalPrice(products: Product[]): number {
-  return products.map((p) => p.price).reduce((a, b) => a + b, 0)
-}
+  addProduct(product: Product): void {
+    const exists = this.products.some((p) => p.id === product.id)
+    if (!exists) this.products.push(product)
+  }
 
-export function removeProduct(products: Product[], productId: string): Product[] {
-  return products.filter((p) => p.id !== productId)
+  totalPrice(): number {
+    return this.products.map((p) => p.price).reduce((a, b) => a + b, 0)
+  }
+
+  removeProduct(productId: string): void {
+    this.products = this.products.filter((p) => p.id !== productId)
+  }
 }
