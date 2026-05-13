@@ -20,42 +20,29 @@ public enum Region
 
 public interface ITaxPolicy
 {
-    // Interface placeholder for future implementation
+
 }
 
 public static class TaxCalculator
 {
     // Regla existente: un único impuesto plano por región; los libros y la comida están exentos en la UE
-    private static decimal CalculateUSTax(List<CartItem> cart)
-    {
-        var usSubtotal = cart.Sum(it => it.Price * it.Qty);
-        return usSubtotal * 0.07m; // 7% plano
-    }
-
-    private static decimal CalculateEUTax(List<CartItem> cart)
-    {
-        var taxable = cart
-            .Where(it => it.Category != "books" && it.Category != "food")
-            .Sum(it => it.Price * it.Qty);
-        return taxable * 0.2m; // 20% plano solo sobre los ítems gravables
-    }
-
-    private static decimal CalculateDefault(List<CartItem> cart)
-    {
-        return 0;
-    }
-
-    // (reglas embebidas en línea)
     public static decimal CalculateTotal(List<CartItem> cart, Region region)
     {
         var subtotal = cart.Sum(it => it.Price * it.Qty);
 
-        decimal tax = region switch
+        decimal tax = 0;
+        if (region == Region.US)
         {
-            Region.US => CalculateUSTax(cart),
-            Region.EU => CalculateEUTax(cart),
-            _ => CalculateDefault(cart)
-        };
+            tax = subtotal * 0.07m; // 7% plano
+        }
+        else if (region == Region.EU)
+        {
+            // exenciones ingenuas en línea
+            var taxable = cart
+                .Where(it => it.Category != "books" && it.Category != "food")
+                .Sum(it => it.Price * it.Qty);
+            tax = taxable * 0.2m; // 20% plano solo sobre los ítems gravables
+        }
 
         return RoundCurrency(subtotal + tax);
     }
