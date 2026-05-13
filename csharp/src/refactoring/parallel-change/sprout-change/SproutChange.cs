@@ -30,6 +30,36 @@ public static class TaxCalculator
     {
         var subtotal = cart.Sum(it => it.Price * it.Qty);
 
+        var tax = CalculateTax(subtotal);
+
+        return RoundCurrency(subtotal + tax);
+    }
+
+    public static decimal RoundCurrency(decimal amount)
+    {
+        return Math.Round(amount, 2);
+    }
+
+    public static decimal CalculateTax(decimal subtotal)
+    {
+        if (region == Region.US || region == Region.EU) {
+             return NewCalculateTax(subtotal);
+        }
+
+         return OldCalculateTax(subtotal);
+    }
+
+    public static decimal NewCalculateTax(decimal subtotal)
+    {
+        decimal tax = 0;
+        if (region == Region.US)
+        {
+            tax = subtotal * 0.17m;
+        }
+    }
+
+    public static decimal OldCalculateTax(decimal subtotal)
+    {
         decimal tax = 0;
         if (region == Region.US)
         {
@@ -43,14 +73,8 @@ public static class TaxCalculator
                 .Sum(it => it.Price * it.Qty);
             tax = taxable * 0.2m; // 20% plano solo sobre los ítems gravables
         }
-
-        return RoundCurrency(subtotal + tax);
-    }
-
-    public static decimal RoundCurrency(decimal amount)
-    {
-        return Math.Round(amount, 2);
-    }
+        return tax;
+   }
 }
 
 // Uso de ejemplo, mantenido simple para estudiantes

@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Optional, Literal
+from typing import Optional, Literal, Protocol
 
 
 @dataclass
@@ -13,8 +13,11 @@ class CartItem:
 Region = Literal['US', 'EU']
 
 
+class TaxPolicy(Protocol):
+    pass
+
+
 # Regla existente: un único impuesto plano por región; los libros y la comida están exentos en la UE
-# (reglas embebidas en línea)
 def calculate_total(cart: list[CartItem], region: Region) -> float:
     subtotal = sum(it.price * it.qty for it in cart)
 
