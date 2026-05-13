@@ -1,0 +1,9 @@
+pdf-engine: tectonic
+table-of-contents: true
+toc-depth: 2
+include-in-header:
+  - docs/fonts.tex
+filters:
+  - docs/strip-emoji.lua
+variables:
+  mainfont: "DejaVu Serif"
