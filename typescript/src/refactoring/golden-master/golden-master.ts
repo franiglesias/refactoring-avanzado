@@ -15,18 +15,21 @@ export type Order = {
 export class ReceiptPrinter {
   // Do not change this function at the beginning of the exercise; first create the Golden Master.
   print(order: Order): string {
-    const now = this.getCurrentDate()
+    const now = new Date(Date.now())
 
     const header = `Recibo ${order.id} - ${now.toLocaleDateString()} ${now.toLocaleTimeString()}`
 
     let subtotal = 0
     let lines = order.items.map((it, idx) => {
-      const lineTotal = round(it.unitPrice * it.quantity)
-      subtotal = round(subtotal + lineTotal)
+      const lineTotal = Math.round(it.unitPrice * it.quantity * 100) / 100
+      subtotal = Math.round((subtotal + lineTotal) * 100) / 100
       return `${idx + 1}. ${it.description} (${it.sku}) x${it.quantity} = $${lineTotal.toFixed(2)}`
     })
-    let luckyDiscountPct = this.discount();
-    const luckyDiscount = round(subtotal * luckyDiscountPct)
+    let luckyDiscountPct = 0
+    if (Math.random() < 0.1) {
+      luckyDiscountPct = Math.random() * 0.05
+    }
+    const luckyDiscount = Math.round(subtotal * luckyDiscountPct * 100) / 100
 
     const taxableGeneral = order.items
       .filter((i) => i.category !== 'books')
@@ -35,9 +38,9 @@ export class ReceiptPrinter {
       .filter((i) => i.category === 'food')
       .reduce((s, i) => s + i.unitPrice * i.quantity * 0.03, 0)
     const generalTax = taxableGeneral * 0.07
-    const taxes = round(generalTax + foodTax)
+    const taxes = Math.round((generalTax + foodTax) * 100) / 100
 
-    const total = round(subtotal - luckyDiscount + taxes)
+    const total = Math.round((subtotal - luckyDiscount + taxes) * 100) / 100
 
     const summary = [
       `Subtotal: $${subtotal.toFixed(2)}`,
@@ -50,22 +53,6 @@ export class ReceiptPrinter {
 
     return [header, ...lines, '---', ...summary].join('\n')
   }
-
-  protected discount() {
-    let luckyDiscountPct = 0
-    if (Math.random() < 0.1) {
-      luckyDiscountPct = Math.random() * 0.05
-    }
-    return luckyDiscountPct;
-  }
-
-  protected getCurrentDate() {
-    return new Date(Date.now());
-  }
-}
-
-function round(n: number): number {
-  return Math.round(n * 100) / 100
 }
 
 const products: Omit<OrderItem, 'quantity'>[] = [
